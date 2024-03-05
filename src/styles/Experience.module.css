@@ -1,0 +1,32 @@
+.container {
+    & h1 {
+        margin-bottom: 0;
+    }
+
+    & h2 {
+        margin: 0;
+    }
+
+    & ul {
+        /* padding-left: 1rem; */
+    }
+
+    & ul li {
+        /* width: 90%; */
+        margin-bottom: 0.5rem;
+    }
+
+    & ul li h3 {
+        margin: 0;
+        font-weight: 1000;
+
+        & span {
+            font-weight: 600;
+        }
+    }
+
+    & ul li h4 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+}

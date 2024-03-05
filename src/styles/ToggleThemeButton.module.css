@@ -1,0 +1,14 @@
+.toggleThemeButton {
+    height: 100%;
+    width: 100%;
+    border: none;
+    /* TODO: background-color: var(--color-accent); */
+    color: #FFFFFF;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.toggleThemeButton:hover {
+    /* background-color: var(--color-accent-2); */
+}
