@@ -1,0 +1,10 @@
+.skill {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    width: fit-content;
+    padding: 0.45rem;
+    border-radius: 0.75rem;
+    background-color: var(--color-accent-2);
+}
