@@ -13,8 +13,8 @@ const ACTIVITIES = [
 
 export default function Intro({ refer }: { refer?: React.RefObject<HTMLDivElement> }) {
     return (
-        <div className="homeSection" ref={refer}>
-            <div className={"homeSectionContent " + styles.heading}>
+        <div ref={refer}>
+            <div className={styles.heading}>
                 <h2><em>Hello, I&apos;m</em></h2>
                 <h1>Jeffrey Ganulin</h1>
                 <Socials displayLocation={true} />
@@ -25,10 +25,6 @@ export default function Intro({ refer }: { refer?: React.RefObject<HTMLDivElemen
                         ))}
                     </div>
                 </div>
-                {/* TODO: Resume; Move to About Me section below? */}
-                <p>
-                    View my resume <a href="#" target="_blank" rel="noreferrer">here</a> or scroll down to learn more about me.
-                </p>
             </div>
         </div>
     );

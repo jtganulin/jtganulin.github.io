@@ -44,7 +44,7 @@ library.add(
 	faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy,
 );
 
-const Router = createBrowserRouter([
+export const Router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,

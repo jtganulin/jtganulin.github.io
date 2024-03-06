@@ -199,6 +199,14 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "type": "Soft Skills",
+        "name": "Quick Learning",
+        "proficiency": "Proficient",
+        "years": 3,
+        "icon": "fa fa-graduation-cap",
+        "color": "#f39c12"
+    },
+    {
+        "type": "Soft Skills",
         "name": "Work Ethic",
         "proficiency": "Proficient",
         "icon": "fa fa-user-tie",
@@ -313,7 +321,7 @@ const SKILLS_DATA: iSkill[] = [
         "type": "Frameworks and Libraries",
         "name": "jQuery UI",
         "proficiency": "Competent",
-        "years": 10,
+        "years": 8,
         "icon": "fab fa-js",
         "color": "lightblue"
     },
@@ -335,7 +343,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "type": "Frameworks and Libraries",
-        "name": "WPF (with XAML)",
+        "name": "WPF",
         "proficiency": "Competent",
         "years": 3,
         "icon": "fab fa-windows",
@@ -378,6 +386,22 @@ const SKILLS_DATA: iSkill[] = [
         "name": "XML",
         "proficiency": "Competent",
         "years": 2,
+        "icon": "fa fa-code",
+        "color": "white"
+    },
+    {
+        "type": "Languages",
+        "name": "XAML",
+        "proficiency": "Familiar",
+        "years": 3,
+        "icon": "fab fa-windows",
+        "color": "lightyellow"
+    },
+    {
+        "type": "Languages",
+        "name": "YAML",
+        "proficiency": "Familiar",
+        "years": 1,
         "icon": "fa fa-code",
         "color": "white"
     },
@@ -680,7 +704,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Supertest",
-        "proficiency": "Competent",
+        "proficiency": "Familiar",
         "years": 2,
         "icon": "fa fa-cogs",
         "color": "#2c3e50"
@@ -711,30 +735,6 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "type": "Soft Skills",
-        "name": "Agile",
-        "proficiency": "Proficient",
-        "years": 3,
-        "icon": "fa fa-tasks",
-        "color": "#009688"
-    },
-    {
-        "type": "Soft Skills",
-        "name": "Kanban",
-        "proficiency": "Competent",
-        "years": 2,
-        "icon": "fa fa-columns",
-        "color": "#4caf50"
-    },
-    {
-        "type": "Tools",
-        "name": "CI/CD",
-        "proficiency": "Competent",
-        "years": 2,
-        "icon": "fa fa-arrow-rotate-right",
-        "color": "#607d8b"
-    },
-    {
-        "type": "Soft Skills",
         "name": "Mentoring",
         "proficiency": "Proficient",
         "years": 3,
@@ -744,7 +744,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Training",
-        "proficiency": "Familiar",
+        "proficiency": "Competent",
         "years": 1,
         "icon": "fa fa-chalkboard-teacher",
         "color": "#3498db"
@@ -776,15 +776,31 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Accountability",
-        "proficiency": "Competent",
+        "proficiency": "Proficient",
         "years": 2,
         "icon": "fa fa-check-square",
         "color": "#27ae60"
     },
     {
-        "type": "Soft Skills",
-        "name": "Scrum",
+        "type": "Methodologies and Practices",
+        "name": "Agile",
+        "proficiency": "Proficient",
+        "years": 3,
+        "icon": "fa fa-tasks",
+        "color": "#009688"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Kanban",
         "proficiency": "Competent",
+        "years": 2,
+        "icon": "fa fa-columns",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Scrum",
+        "proficiency": "Proficient",
         "years": 2,
         "icon": "fa fa-trophy",
         "color": "#3498db"
@@ -822,7 +838,7 @@ const SKILLS_DATA: iSkill[] = [
         "color": "#ef6c00"
     },
     {
-        "type": "Soft Skills",
+        "type": "Methodologies and Practices",
         "name": "PERT Analysis",
         "proficiency": "Competent",
         "years": 2,
@@ -876,7 +892,31 @@ const SKILLS_DATA: iSkill[] = [
         "years": 2,
         "icon": "fa fa-cloud",
         "color": "#009688"
-    }
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Test-Driven Development (TDD)",
+        "proficiency": "Proficient",
+        "years": 3,
+        "icon": "fa fa-check-square",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Behavior-Driven Development (BDD)",
+        "proficiency": "Proficient",
+        "years": 3,
+        "icon": "fa fa-check-square",
+        "color": "#c300ef"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "CI/CD",
+        "proficiency": "Competent",
+        "years": 2,
+        "icon": "fa fa-arrow-rotate-right",
+        "color": "#607d8b"
+    },
 ];
 
 export default SKILLS_DATA;

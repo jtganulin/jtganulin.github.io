@@ -52,3 +52,9 @@
     /* background-color: var(--color-accent); */
     /* color: var(--color-text-opposite); */
 }
+
+@media screen and (max-width: 800px) {
+    .activities {
+        width: 100%;
+    }
+}
