@@ -5,7 +5,11 @@ import Socials from "../components/Socials";
 export default function Contact() {
     return (
         <>
-            <Helmet title="Contact" />
+            <Helmet>
+                <title>Contact</title>
+                <meta name="description" content="Get in touch with me to collaborate on a project or business venture." />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/contact" ?? ""} />
+            </Helmet>
             <h1 className="pageHeading">Contact</h1>
             <main>
                 <p className="pageHeading">

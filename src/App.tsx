@@ -1,5 +1,5 @@
 import { useContext, useRef } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import { ThemeContext } from "./providers/ThemeProvider";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -23,6 +23,7 @@ function App() {
         }).progress(1);
 
         ScrollTrigger.create({
+            trigger: containerRef.current,
             start: "top top",
             end: document.body.scrollHeight,
             onUpdate: (self) => {
@@ -56,9 +57,10 @@ function App() {
                 defaultTitle={import.meta.env.VITE_APP_NAME as string}
                 titleTemplate={"%s - " + import.meta.env.VITE_APP_NAME}
             />
+            <ScrollRestoration />
             <div id="page" data-theme={theme}>
                 <Topbar refer={refer} />
-                <div ref={containerRef} style={{ paddingTop: "7vh" }}>
+                <div ref={containerRef} style={{ marginTop: "7vh" }}>
                     <Outlet />
                 </div>
             </div>

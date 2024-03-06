@@ -86,8 +86,8 @@
     }
 }
 
-.desktopLinks li:not(:last-child) {
-    border-right: 1px solid var(--color-accent);
+.desktopLinks li {
+    border-left: 1px solid var(--color-accent);
 }
 
 .mobileLinks li {
@@ -115,7 +115,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .desktopNav {
         display: none;
     }
@@ -139,13 +139,3 @@
         display: block;
     }
 }
-
-/* @media screen and (min-width: 768px) {
-    .mobileNav {
-        display: none;
-    }
-
-    .desktopNav {
-        display: flex;
-    }
-} */
