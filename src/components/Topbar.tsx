@@ -14,7 +14,6 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
     const Links = ({ ctx }: { ctx: string }) => {
         return (
             <ul className={styles[ctx]}>
-                {ctx === "desktopLinks" && <li><ToggleThemeButton /></li>}
                 {Object.keys(ROUTES).map((route, i) => {
                     return (
                         <li key={i}>
@@ -30,7 +29,7 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
                     );
                 }
                 )}
-                {ctx === "mobileLinks" && <li><ToggleThemeButton /></li>}
+                <ToggleThemeButton />
             </ul>
         );
     };

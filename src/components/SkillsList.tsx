@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import type { ChangeEvent } from 'react';
 import SKILLS_DATA from '../assets/SkillData';
 import type { iSkill } from '../assets/SkillData';
@@ -15,7 +15,7 @@ interface iSkillsListProps {
 }
 
 export default function SkillsList({
-    displayCategories = ["Soft Skills", "Languages", "Frameworks and Libraries", "Platforms", "Tools", "Databases", "Operating Systems"],
+    displayCategories = ["Soft Skills", "Methodologies and Practices", "Languages", "Frameworks and Libraries", "Platforms", "Tools", "Databases", "Operating Systems"],
     showSearch = false,
     showLegend = false,
     showYears = false,
@@ -24,24 +24,25 @@ export default function SkillsList({
     const [search, setSearch] = useState<string>("");
     const [filteredSkills, setFilteredSkills] = useState<iSkill[]>(SKILLS_DATA);
 
-    // TODO: change to use onChange instead of useEffect to update filteredSkills
-    useEffect(() => {
+    const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const searchText = e.target.value;
+        setSearch(searchText);
+        
         if (showSearch) {
-            if (search.trim() !== "")
-                setFilteredSkills(SKILLS_DATA.filter(skill => skill.name.toLowerCase().includes(search.toLowerCase())));
-            else
+            if (searchText.trim() !== "") {
+                setFilteredSkills(SKILLS_DATA.filter(skill => skill.name.toLowerCase().includes(searchText.toLowerCase())));
+            } else {
                 setFilteredSkills(SKILLS_DATA);
-        } else {
-            setFilteredSkills(SKILLS_DATA);
+            }
         }
-    }, [search, showSearch]);
+    };
 
     return (
         <div className={styles.skillsContainer}>
             <h2>My Skills</h2>
             {showSearch && (
                 <div className={styles.searchContainer}>
-                    <input type="text" placeholder="Search my skills..." value={search} onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)} />
+                    <input type="text" placeholder="Search my skills..." value={search} onChange={handleSearchChange} />
                     <button onClick={() => setSearch("")}>Clear</button>
                 </div>
             )}

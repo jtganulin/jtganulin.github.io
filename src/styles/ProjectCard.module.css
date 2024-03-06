@@ -73,7 +73,6 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-/* TODO: Move to skills List */
 .skills {
     display: flex;
     align-self: flex-start;
@@ -117,7 +116,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .projectCard {
         width: 95%;
         margin: 0 auto;

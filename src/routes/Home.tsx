@@ -13,50 +13,53 @@ import Experience from '../views/Experience';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-    const container = useRef(null);
+    const containerRef = useRef(null);
 
-    useGSAP((context, contextSafe) => {
+    useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
 
         gsap.utils.toArray("section").forEach((section, i) => {
-            section.querySelector("." + styles.bg)!.style.backgroundImage = `url(https://picsum.photos/800/400?random=${i})`;
+            const sectionElement = section as HTMLElement;
+            sectionElement.querySelector("." + styles.bg)!.style.backgroundImage = `url(https://picsum.photos/800/400?random=${i})`;
 
             // Fade in the sections on scroll
-            section.tl = gsap.timeline({
+            sectionElement.tl = gsap.timeline({
                 scrollTrigger: {
-                    trigger: section,
+                    trigger: sectionElement,
                     start: "top bottom",
                     end: "bottom top",
                     scrub: true,
                     invalidateOnRefresh: true
                 }
-            }, contextSafe);
+            });
 
         });
 
         return () => {
             // Clean up the scroll trigger on unmount; we only want to kill the Home scroll trigger
             ScrollTrigger.getAll().forEach((trigger) => {
-                if (trigger.vars.trigger === container.current) {
+                if (trigger.vars.trigger === containerRef.current) {
                     trigger.kill();
                 }
             });
 
             // Remove any event listeners
         }
-    }, { scope: container });
+    }, { scope: containerRef });
 
     return (
         <>
             <Helmet>
                 <title>Home</title>
-                <link rel="canonical" href="https://.com/" />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/" ?? ""} />
             </Helmet>
-            <main ref={container} className={styles.main}>
+            <main ref={containerRef} className={styles.main}>
                 <section id="hello">
                     <div className={styles.homeSection}>
                         <div className={styles.homeSectionContent}>
                             <Intro />
+                            {/* TODO: Resume; Move to About Me section below? */}
+                            <p>View my resume <a href="#" target="_blank" rel="noreferrer">here</a> or scroll down to learn more about me.</p>
                         </div>
                     </div>
                     <div className={styles.bg}></div>
@@ -65,6 +68,7 @@ export default function Home() {
                     <div className={styles.homeSection}>
                         <div className={styles.homeSectionContent}>
                             <Bio />
+                            <p><em>Scroll further to view my education, experience, and skills.</em></p>
                         </div>
                     </div>
                     <div className={styles.bg}></div>
@@ -73,6 +77,7 @@ export default function Home() {
                     <div className={styles.homeSection}>
                         <div className={styles.homeSectionContent}>
                             <Education />
+                            <p><em>Scroll further to view my experience and skills.</em></p>
                         </div>
                     </div>
                     <div className={styles.bg}></div>
@@ -81,6 +86,7 @@ export default function Home() {
                     <div className={styles.homeSection}>
                         <div className={styles.homeSectionContent}>
                             <Experience />
+                            <p><em>Scroll further to view my technical and soft skills.</em></p>
                         </div>
                     </div>
                     <div className={styles.bg}></div>
@@ -93,6 +99,15 @@ export default function Home() {
                     </div>
                     <div className={styles.bg}></div>
                 </section>
+                <div>
+                    <button
+                        onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                        className={styles.scrollToTop}
+                        aria-label="Scroll to Top"
+                    >
+                        <span>↑ Back to Top</span>
+                    </button>
+                </div>
             </main>
         </>
     );

@@ -9,8 +9,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Light Mode Color Theme */
-  /* --color-background: #FEEFE5; */
-  --color-background: #E1E0DC;
+  --color-background: #e1e0dc;
   --color-text-primary: #000000;
   --color-text-alt: #838383;
   --color-text-opposite: #FFFFFF;
@@ -95,15 +94,18 @@ main {
   width: 80%;
 }
 
-/* TODO: Fix home education section */
-details {
-  cursor: pointer !important;
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .constraint {
-    padding: 0rem;
+    padding: 0;
     width: 100%;
-    /* padding: 0.25rem; */
   }
 }
