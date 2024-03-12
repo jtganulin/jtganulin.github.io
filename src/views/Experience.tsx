@@ -21,20 +21,9 @@ export default function Experience() {
                 </ul>
                 <h3>Projects</h3>
                 <p>
+                    {/* Possibly show various projects in slider? */}
                     I&apos;ve collaborated and led multiple projects spanning various technologies stacks and target industries, including academic, personal, and professionally scoped projects. You can view my completed projects on my <Link to="/projects">Projects</Link> page.
                 </p>
-                {/* <ul>
-                        <li>
-                            <h4>VillageHours - A Non-profit Organization Management Platform</h4>
-                            <h5><em>Full-stack Developer</em></h5>
-                            <ul>
-                                <li>Collaborated with a team of 5 to develop a platform for non-profit organizations to manage their members, events, and expenses, using React, TypeScript, and Node.js, with a MySQL database.</li>
-                                <li>Implemented a RESTful API to handle user authentication, and data retrieval and modification.</li>
-                                <li>Designed and developed a user interface with a focus on intuitive user experience and accessibility, using Chakra UI and custom CSS.</li>
-                                <li>Mentored junior team members in best practices for chosen tech stack, code quality, testing, and documentation.</li>
-                            </ul>
-                        </li>
-                    </ul> */}
             </div>
         </div>
     );
