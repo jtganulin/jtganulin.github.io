@@ -16,13 +16,12 @@
     display: flex;
     flex-direction: row;
     row-gap: 1rem;
-    align-items: center;
-    align-self: flex-start;
     width: 100%;
     flex-wrap: wrap;
 
-    & a svg {
-        cursor: pointer;
+
+    & svg, & path {
+        cursor: pointer !important;
     }
 }
 
