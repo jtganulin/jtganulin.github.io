@@ -115,7 +115,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Leadership",
-        "proficiency": "Proficient",
+        "proficiency": "Competent",
         "years": 5,
         "icon": "fa fa-users",
         "color": "gold"
@@ -814,7 +814,7 @@ const SKILLS_DATA: iSkill[] = [
         "color": "#2ecc71"
     },
     {
-        "type": "Tools",
+        "type": "Frameworks and Libraries",
         "name": "ImageMagick",
         "proficiency": "Competent",
         "years": 2,
@@ -886,7 +886,7 @@ const SKILLS_DATA: iSkill[] = [
         "color": "#4a148c"
     },
     {
-        "type": "Tools",
+        "type": "Frameworks and Libraries",
         "name": "Axios",
         "proficiency": "Competent",
         "years": 2,
@@ -917,6 +917,102 @@ const SKILLS_DATA: iSkill[] = [
         "icon": "fa fa-arrow-rotate-right",
         "color": "#607d8b"
     },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Unit Testing",
+        "proficiency": "Proficient",
+        "years": 3,
+        "icon": "fa fa-check-square",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Integration Testing",
+        "proficiency": "Familiar",
+        "years": 1,
+        "icon": "fa fa-check-square",
+        "color": "#607d8b"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "End-to-End Testing",
+        "proficiency": "Competent",
+        "years": 2,
+        "icon": "fa fa-check-square",
+        "color": "#c300ef"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Mutation Testing",
+        "proficiency": "Familiar",
+        "years": 1,
+        "icon": "fa fa-check-square",
+        "color": "#d0ff00"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Static Analysis",
+        "proficiency": "Competent",
+        "years": 2,
+        "icon": "fa fa-check-square",
+        "color": "#4565f7"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Responsive Web Design",
+        "proficiency": "Proficient",
+        "years": 10,
+        "icon": "fa fa-sliders-h",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Web Accessibility",
+        "proficiency": "Familiar",
+        "years": 2,
+        "icon": "fa fa-globe",
+        "color": "#607d8b"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "SEO",
+        "proficiency": "Competent",
+        "years": 3,
+        "icon": "fa fa-search",
+        "color": "#c300ef"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Google Analytics",
+        "proficiency": "Competent",
+        "years": 3,
+        "icon": "fa fa-chart-line",
+        "color": "#d0ff00"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Google My Business",
+        "proficiency": "Competent",
+        "years": 3,
+        "icon": "fa fa-chart-line",
+        "color": "#4565f7"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Google Search Console",
+        "proficiency": "Competent",
+        "years": 3,
+        "icon": "fa fa-chart-line",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Requirements Engineering",
+        "proficiency": "Proficient",
+        "years": 5,
+        "icon": "fa fa-book",
+        "color": "#607d8b"
+    }
 ];
 
 export default SKILLS_DATA;
