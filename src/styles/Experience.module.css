@@ -8,11 +8,10 @@
     }
 
     & ul {
-        /* padding-left: 1rem; */
+        padding-left: 1rem;
     }
 
     & ul li {
-        /* width: 90%; */
         margin-bottom: 0.5rem;
     }
 
