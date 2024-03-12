@@ -22,7 +22,7 @@
 
 .desktopNav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
     align-self: flex-end;
     height: 100%;
