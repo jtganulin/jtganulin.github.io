@@ -1,13 +1,13 @@
 import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import type { Project } from '../assets/ProjectData';
+import type { iProject } from '../assets/ProjectData';
 import styles from '../styles/ProjectCard.module.css';
 import SKILLS_DATA from '../assets/SkillData';
 import SkillBadge from './SkillBadge';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({ project }: { project: iProject }) {
     for (let i = 0; i < project?.skills?.length; i++) {
         if (!SKILLS_DATA.find(s => s.name === project.skills[i])) {
             console.log("Skill not found: " + project.skills[i]);
@@ -75,20 +75,8 @@ export default function ProjectCard({ project }: { project: Project }) {
                 <div className={styles.skillsBlur}></div>
             </div>
             <div className={styles.projectLinks}>
-                {/* {project?.github && (
-                    <Link to={project?.github} target="_blank" rel="noopener, noreferrer" title={"View live demo of " + project.title}>
-                        View Project on Github
-                    </Link>
-                )}
-                {project?.url && (
-                    <Link to={project?.url} target="_blank" rel="noopener, noreferrer" title={"View live demo of " + project.title}>
-                        View Project Demo
-                    </Link>
-                )} */}
-                <Link to={"/projects/" + project.slug}>
-                    <button>
-                        View Project Details
-                    </button>
+                <Link to={"/projects/" + project.slug} role="button">
+                    <button>View Project Details</button>
                 </Link>
             </div>
         </div>
