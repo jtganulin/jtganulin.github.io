@@ -1,4 +1,4 @@
-export interface Project {
+export interface iProject {
     slug: string;
     title: string;
     subtitle?: string;
@@ -245,6 +245,6 @@ const PROJECTS_DATA = [
         images: [],
         skills: ["HTML", "CSS", "JavaScript", "React", "GSAP", "TypeScript", "Python", "Git", "GitHub", "Figma", "Markdown"],
     },
-] as Project[];
+] as iProject[];
 
 export default PROJECTS_DATA;

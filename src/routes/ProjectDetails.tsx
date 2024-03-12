@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import type { Project as ProjectType } from "../assets/ProjectData";
+import type { iProject } from "../assets/ProjectData";
 import PROJECTS_DATA from "../assets/ProjectData";
 import SKILLS_DATA from '../assets/SkillData';
 import SkillBadge from '../components/SkillBadge';
@@ -11,8 +11,8 @@ import styles from "../styles/ProjectDetails.module.css";
 export default function ProjectDetails({ slug }: { slug?: string; }) {
     const params = useParams();
 
-    const project: (ProjectType | undefined) = useMemo(() => {
-        return PROJECTS_DATA?.find?.((project: ProjectType) => project.slug === params?.slug || project.slug === slug);
+    const project: (iProject | undefined) = useMemo(() => {
+        return PROJECTS_DATA?.find?.((project: iProject) => project.slug === params?.slug || project.slug === slug);
     }, [params, slug]);
 
     if (!project) {
