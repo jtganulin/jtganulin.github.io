@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -21,14 +21,15 @@ import {
 
 import ThemeProvider from './providers/ThemeProvider';
 
-import App from './App.tsx';
-import Home from './routes/Home.tsx';
-import About from './routes/About.tsx';
-import Contact from './routes/Contact.tsx';
-import Projects from './routes/Projects.tsx';
-import ProjectDetails from './routes/ProjectDetails.tsx';
-import NotFound from './routes/NotFound.tsx';
+import LoadingPage from "./routes/LoadingPage";
 import ErrorPage from './routes/ErrorPage';
+const App = lazy(() => import('./App.tsx'));
+const Home = lazy(() => import('./routes/Home.tsx'));
+const About = lazy(() => import('./routes/About.tsx'));
+const Contact = lazy(() => import('./routes/Contact.tsx'));
+const Projects = lazy(() => import('./routes/Projects.tsx'));
+const ProjectDetails = lazy(() => import('./routes/ProjectDetails.tsx'));
+const NotFound = lazy(() => import('./routes/NotFound.tsx'));
 
 import './index.css';
 
@@ -44,13 +45,11 @@ library.add(
     faCogs, faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy,
 );
 
-export const Router = createBrowserRouter([
+const Router = createBrowserRouter([
     {
         path: '/',
         element: (
-            <ErrorBoundary FallbackComponent={ErrorPage}>
-                <App />
-            </ErrorBoundary>
+            <App />
         ),
         children: [
             {
@@ -84,9 +83,13 @@ export const Router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <>
         <React.StrictMode>
-            <ThemeProvider>
-                <RouterProvider router={Router} />
-            </ThemeProvider>
+            <ErrorBoundary FallbackComponent={ErrorPage}>
+                <Suspense fallback={<LoadingPage />}>
+                    <ThemeProvider>
+                        <RouterProvider router={Router} />
+                    </ThemeProvider>
+                </Suspense>
+            </ErrorBoundary>
         </React.StrictMode>
     </>
 );
