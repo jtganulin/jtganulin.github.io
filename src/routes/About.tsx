@@ -22,7 +22,7 @@ export default function About() {
             <Helmet>
                 <title>About Me</title>
                 <meta name="description" content="Learn more about Jeffrey Ganulin, a full-stack software engineer located in Atlanta, GA." />
-                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/about" ?? ""} />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/about"} />
             </Helmet>
             <div className="constraint">
                 <h1 className="pageHeading">About Me</h1>

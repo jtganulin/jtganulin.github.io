@@ -10,7 +10,7 @@ export default function Projects() {
             <Helmet>
                 <title>Projects</title>
                 <meta name="description" content="View my collection of personal, academic, and professional projects, ranging from full-stack web development, to desktop and mobile applications." />
-                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/projects" ?? ""} />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/projects"} />
             </Helmet>
             <div className="constraint">
                 <h1 className="pageHeading">Projects</h1>
