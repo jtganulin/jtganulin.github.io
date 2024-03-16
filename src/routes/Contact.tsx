@@ -10,17 +10,23 @@ export default function Contact() {
                 <meta name="description" content="Get in touch with me to collaborate on a project or business venture." />
                 <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/contact" ?? ""} />
             </Helmet>
-            <h1 className="pageHeading">Contact</h1>
-            <main>
-                <p className="pageHeading">
-                    Looking to get in touch to collaborate on a project, or seeking a valuable contributor for your business venture?
-                    <br />
-                    Reach out to me via any of the following social media platforms, or by <a href="mailto:jganulin6@gmail.com">email</a>.
-                </p>
-                <div className="center">
-                    <Socials displayLocation />
-                </div>
-            </main>
+            <div className="constraint">
+                <h1 className="pageHeading">Contact</h1>
+                <main>
+                    <p className="pageHeading">
+                        Looking to get in touch to collaborate on a project, or seeking a valuable contributor for your business venture?
+                        <br />
+                        Reach out to me on LinkedIn, GitHub, or by email using the buttons below.
+                        <br />
+                        I currently live in the northern Atlanta, GA area <em>(Timezone EST (UTC-5))</em>, and am open to remote work opportunities.
+                        <br />
+                        Thanks for your time and interest in viewing my portfolio!
+                    </p>
+                    <div className="center">
+                        <Socials />
+                    </div>
+                </main>
+            </div>
         </>
     );
 }
