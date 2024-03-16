@@ -22,23 +22,29 @@ export default function Home() {
             const sectionElement = section as HTMLElement;
             sectionElement.querySelector("." + styles.bg)!.style.backgroundImage = `url(https://picsum.photos/800/400?random=${i})`;
 
-            // Fade in the sections on scroll
-            sectionElement.tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: sectionElement,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: true,
-                    invalidateOnRefresh: true
-                }
-            });
+            // Fade in the sections' (after the first) content as they come into view, and on reverse scroll
+            if (i > 0) {
+                gsap.fromTo(sectionElement.querySelector("." + styles.homeSectionContent), {
+                    autoAlpha: 0,
+                }, {
+                    autoAlpha: 1,
+                    ease: "power2.inOut",
+                    scrollTrigger: {
+                        trigger: sectionElement,
+                        start: "top 80%",
+                        end: "bottom 20%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+            }
 
+            // TODO: Add parallax effect to the background images
         });
 
         return () => {
             // Clean up the scroll trigger on unmount; we only want to kill the Home scroll trigger
             ScrollTrigger.getAll().forEach((trigger) => {
-                if (trigger.vars.trigger === containerRef.current) {
+                if (trigger.vars.trigger === containerRef?.current) {
                     trigger.kill();
                 }
             });
@@ -47,6 +53,8 @@ export default function Home() {
         }
     }, { scope: containerRef });
 
+    // TODO: Add parallax effect and custom images
+    // TODO: Only show Scroll to Top button when not at top of page
     return (
         <>
             <Helmet>
@@ -58,11 +66,12 @@ export default function Home() {
                     <div className={styles.homeSection}>
                         <div className={styles.homeSectionContent}>
                             <Intro />
-                            {/* TODO: Resume; Move to About Me section below? */}
-                            <p>View my resume <a href="#" target="_blank" rel="noreferrer">here</a> or scroll down to learn more about me.</p>
+                            <p>View my resume <a href="/about?resume" target="_blank" rel="noreferrer">here</a> or scroll down to learn more about me.</p>
                         </div>
                     </div>
-                    <div className={styles.bg}></div>
+                    <div className={styles.bgContainer}>
+                        <div className={styles.bg}></div>
+                    </div>
                 </section>
                 <section id="bio">
                     <div className={styles.homeSection}>
@@ -71,7 +80,9 @@ export default function Home() {
                             <p><em>Scroll further to view my education, experience, and skills.</em></p>
                         </div>
                     </div>
-                    <div className={styles.bg}></div>
+                    <div className={styles.bgContainer}>
+                        <div className={styles.bg}></div>
+                    </div>
                 </section>
                 <section id="education">
                     <div className={styles.homeSection}>
@@ -80,7 +91,9 @@ export default function Home() {
                             <p><em>Scroll further to view my experience and skills.</em></p>
                         </div>
                     </div>
-                    <div className={styles.bg}></div>
+                    <div className={styles.bgContainer}>
+                        <div className={styles.bg}></div>
+                    </div>
                 </section>
                 <section id="experience">
                     <div className={styles.homeSection}>
@@ -89,7 +102,9 @@ export default function Home() {
                             <p><em>Scroll further to view my technical and soft skills.</em></p>
                         </div>
                     </div>
-                    <div className={styles.bg}></div>
+                    <div className={styles.bgContainer}>
+                        <div className={styles.bg}></div>
+                    </div>
                 </section>
                 <section id="skills">
                     <div className={styles.homeSection}>
@@ -97,7 +112,9 @@ export default function Home() {
                             <SkillsList showSearch showLegend showProficiency /* showYears */ />
                         </div>
                     </div>
-                    <div className={styles.bg}></div>
+                    <div className={styles.bgContainer}>
+                        <div className={styles.bg}></div>
+                    </div>
                 </section>
                 <div>
                     <button

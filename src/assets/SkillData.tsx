@@ -201,7 +201,6 @@ const SKILLS_DATA: iSkill[] = [
         "type": "Soft Skills",
         "name": "Quick Learning",
         "proficiency": "Proficient",
-        "years": 3,
         "icon": "fa fa-graduation-cap",
         "color": "#f39c12"
     },

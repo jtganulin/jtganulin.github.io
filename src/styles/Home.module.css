@@ -32,13 +32,19 @@
     flex-shrink: 0;
 }
 
-.bg {
+.bgContainer {
     width: 50%;
     min-height: 100%;
+    overflow: hidden;
+}
+
+.bg {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .sectionTitle {
@@ -53,10 +59,14 @@
     background-color: var(--color-background);
     color: var(--color-text-primary);
     border: none;
-    border-radius: 50%;
+    border-radius: 501rem;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    &:hover {
+        background-color: var(--color-accent);
+    }
 }
 
 @media screen and (max-width: 800px) {
