@@ -8,7 +8,7 @@ export default function Contact() {
             <Helmet>
                 <title>Contact</title>
                 <meta name="description" content="Get in touch with me to collaborate on a project or business venture." />
-                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/contact" ?? ""} />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/contact"} />
             </Helmet>
             <div className="constraint">
                 <h1 className="pageHeading">Contact</h1>
