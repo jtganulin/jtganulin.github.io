@@ -1,0 +1,141 @@
+.topbar {
+    z-index: 1000;
+    background-color: var(--color-accent-2);
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    border: 0;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.topbar h1 {
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+    flex-grow: 1;
+    padding-left: 2vh;
+}
+
+.desktopNav {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    align-self: flex-end;
+    height: 100%;
+}
+
+.mobileNav {
+    display: none;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--color-accent-2);
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    z-index: 1000;
+}
+
+.desktopLinks, .mobileLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.desktopLinks {
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.mobileLinks {
+    flex-direction: column;
+}
+
+.desktopLinks li,
+.mobileLinks li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    & a {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        /* color: var(--color-text-primary); */
+        transition: background-color 0.2s ease;
+        text-align: center;
+    }
+
+    & a:hover {
+        background-color: var(--color-accent);
+    }
+}
+
+.desktopLinks li {
+    border-left: 1px solid var(--color-accent);
+}
+
+.mobileLinks li {
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.displayMobileNav {
+    display: none;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    align-self: flex-start
+}
+
+.activeLink {
+    background-color: var(--color-accent);
+}
+
+.menuButton {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .desktopNav {
+        display: none;
+    }
+
+    .menuButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 10%;
+        background-color: var(--color-accent);
+        border: none;
+        color: #fff;
+    }
+
+    .menuButton:hover {
+        background-color: var(--color-accent-2);
+    }
+
+    .displayMobileNav {
+        display: block;
+    }
+}
