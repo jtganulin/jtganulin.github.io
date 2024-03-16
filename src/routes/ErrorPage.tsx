@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "../styles/ErrorPage.module.css";
 import { Helmet } from "react-helmet";
 
-export default function ErrorPage({ error, resetErrorBoundary }: { error: Error, resetErrorBoundary?: () => void; }) {
+export default function ErrorPage({ error }: { error: Error }) {
     return (
         <>
             <Helmet>

@@ -1,6 +1,6 @@
 import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import type { iProject } from '../assets/ProjectData';
 import styles from '../styles/ProjectCard.module.css';
 import SKILLS_DATA from '../assets/SkillData';

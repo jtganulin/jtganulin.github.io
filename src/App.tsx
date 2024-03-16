@@ -13,7 +13,7 @@ function App() {
     const containerRef = useRef<HTMLDivElement>(null);
     const { theme } = useContext(ThemeContext);
 
-    useGSAP((context, contextSafe) => {
+    useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
 
         const showAnim = gsap.from(refer.current, {
