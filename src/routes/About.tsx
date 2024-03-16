@@ -27,7 +27,6 @@ export default function About() {
             <div className="constraint">
                 <h1 className="pageHeading">About Me</h1>
                 {/* TODO: Picture */}
-                {/* TODO: Break these into sections (Motivation, Values, Background, etc.) */}
                 <main>
                     <div className="center">
                         <button onClick={(e) => showResume(e)} className={styles.resumeButton}>View my Resume</button>
@@ -62,12 +61,13 @@ export default function About() {
                         <br />
                         I&apos;m passionate about open-source software and have contributed to a number of projects on GitHub, both in terms of code and documentation.
                         You can view my projects and contributions on my <Link to="/projects">Projects</Link> page.
+                        <br />
+                        I am also an advocate for diversity and inclusion in the tech industry, and I am always looking to connect with others who share this passion.
                     </p>
                     <h4>Personal Interests</h4>
                     <p>
-                        
-                        I am also an advocate for diversity and inclusion in the tech industry, and I am always looking to connect with others who share this passion.
-
+                        Outside of academic and professional pursuits, I enjoy reading and writing, hiking, and video games, as well as photography. I also enjoy traveling and learning about different cultures, and their cuisines and languages. I&apos;m also a food enthusiast, and amateur chef and baker.
+                        <br />
                         If you believe I&apos;d be a good fit for your team, or if you&apos;d like to connect, please feel free to reach out to me through my <Link to="/contact">Contact</Link> page.
                     </p>
                     <SkillsList showLegend showProficiency showYears showSearch />

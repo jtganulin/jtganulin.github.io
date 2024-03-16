@@ -969,7 +969,7 @@ const SKILLS_DATA: iSkill[] = [
         "name": "Web Accessibility",
         "proficiency": "Familiar",
         "years": 2,
-        "icon": "fa fa-globe",
+        "icon": "fa fa-heart-holding-hands",
         "color": "#607d8b"
     },
     {
