@@ -7,7 +7,7 @@ const ROUTES: Record<string, [string, string]> = {
     "Home": ["/", "Go to the homepage"],
     "Projects": ["/projects", "See my work and projects"],
     "About Me": ["/about", "Learn more about me"],
-    "Contact": ["/contact", "Get in touch with me"]
+    "Contact Me": ["/contact", "Get in touch with me"]
 };
 
 export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivElement> }) {
