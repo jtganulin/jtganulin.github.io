@@ -20,7 +20,8 @@ export default function Home() {
 
         gsap.utils.toArray("section").forEach((section, i) => {
             const sectionElement = section as HTMLElement;
-            sectionElement.querySelector("." + styles.bg)!.style.backgroundImage = `url(https://picsum.photos/800/400?random=${i})`;
+            // TODO: Add custom images
+            (sectionElement.querySelector("." + styles.bg)! as HTMLElement).style.backgroundImage = `url(https://picsum.photos/800/400?random=${i})`;
 
             // Fade in the sections' (after the first) content as they come into view, and on reverse scroll
             if (i > 0) {
