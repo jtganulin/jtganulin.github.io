@@ -49,7 +49,9 @@ const Router = createBrowserRouter([
     {
         path: '/',
         element: (
-            <App />
+            <ErrorBoundary FallbackComponent={ErrorPage}>
+                <App />
+            </ErrorBoundary>
         ),
         children: [
             {
@@ -83,13 +85,11 @@ const Router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <>
         <React.StrictMode>
-            <ErrorBoundary FallbackComponent={ErrorPage}>
+            <ThemeProvider>
                 <Suspense fallback={<LoadingPage />}>
-                    <ThemeProvider>
-                        <RouterProvider router={Router} />
-                    </ThemeProvider>
+                    <RouterProvider router={Router} />
                 </Suspense>
-            </ErrorBoundary>
+            </ThemeProvider>
         </React.StrictMode>
     </>
 );
