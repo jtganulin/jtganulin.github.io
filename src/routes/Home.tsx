@@ -12,7 +12,6 @@ import Education from '../views/Education';
 import SkillsList from '../components/SkillsList';
 import Experience from '../views/Experience';
 
-
 export default function Home() {
     const containerRef = useRef(null);
 
