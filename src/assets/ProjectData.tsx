@@ -165,7 +165,7 @@ const PROJECTS_DATA = [
         title: "Multi-File Text Replacer",
         subtitle: "Replace text across multiple text files on Windows",
         summary: "Utility for Windows that allows replacement of a given string or regular expression pattern across multiple text files.",
-        description: "For scenarios where you need to replace text (either via string input or regular expression pattern) throughout multilpe separate text files, Multi-File Text Replacer is a utility for Windows that allows you to do just that. The utility is designed to be easy to use, simple, and efficient. Multi-File Text Replacer was developed as a personal project to solve a problem I encountered in my own work. The utility was developed using C# and WPF (with XAML). The utility aims to present relevant controls and information to the user in a clear and quick to grasp manner, and also emphasizes safety and reliability, with its ability to create backups of files before making changes.",
+        description: "For scenarios where you need to replace text (either via string input or regular expression pattern) throughout multiple separate text files, Multi-File Text Replacer is a utility for Windows that allows you to do just that. The utility is designed to be easy to use, simple, and efficient. Multi-File Text Replacer was developed as a personal project to solve a problem I encountered in my own work. The utility was developed using C# and WPF (with XAML). The utility aims to present relevant controls and information to the user in a clear and quick to grasp manner, and also emphasizes safety and reliability, with its ability to create backups of files before making changes.",
         accomplishments: [
             "Designed and developed a utility for Windows that allows replacement of a given string or regular expression pattern across multiple text files, using C# and WPF (with XAML).",
             "Designed the utility to be easy to use, simple, and efficient, and to present relevant controls and information to the user in a clear and quick to grasp manner.",
@@ -175,7 +175,7 @@ const PROJECTS_DATA = [
         url: "",
         github: "https://github.com/jtganulin/multi-file-text-replacer",
         images: ["MultiFileTextReplacer1.jpg", "MultiFileTextReplacer2.jpg", "MultiFileTextReplacer3.jpg"],
-        skills: ["C#", "WPF (with XAML)", "Git", "GitHub", "Regular Expressions", "Microsoft Visual Studio", "Windows"],
+        skills: ["C#", "WPF", "XAML", "Git", "GitHub", "Regular Expressions", "Microsoft Visual Studio", "Windows"],
     },
     {
         slug: "ImageCombiner",
