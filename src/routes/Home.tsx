@@ -3,14 +3,15 @@ import Helmet from 'react-helmet';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import styles from '../styles/Home.module.css';
 
+// TODO: Lazily load sections, and use a loading spinner; fade in sections as they load if the user is scrolling
 import Intro from '../views/Intro';
 import Bio from '../views/Bio';
 import Education from '../views/Education';
 import SkillsList from '../components/SkillsList';
 import Experience from '../views/Experience';
 
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
     const containerRef = useRef(null);
