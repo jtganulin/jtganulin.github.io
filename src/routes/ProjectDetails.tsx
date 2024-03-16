@@ -24,7 +24,7 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
             <Helmet>
                 <title>{project.title}</title>
                 <meta name="description" content={project.description} />
-                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/projects/" + project.slug ?? ""} />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/projects/" + project.slug} />
             </Helmet>
             <div className="constraint">
                 <div className={styles.titleContainer}>

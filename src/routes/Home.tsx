@@ -60,7 +60,7 @@ export default function Home() {
         <>
             <Helmet>
                 <title>Home</title>
-                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/" ?? ""} />
+                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/"} />
             </Helmet>
             <main ref={containerRef} className={styles.main}>
                 <section id="hello">
