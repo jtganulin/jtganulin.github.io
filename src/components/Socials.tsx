@@ -3,7 +3,7 @@ import type { IconName } from "@fortawesome/fontawesome-svg-core";
 
 import styles from "../styles/Socials.module.css";
 
-export default function Socials({ displayLocation = false }: { displayLocation: boolean }) {
+export default function Socials({ displayLocation = false }: { displayLocation?: boolean }) {
     return (
         <div className={styles.socialsContainer}>
             {displayLocation && (
