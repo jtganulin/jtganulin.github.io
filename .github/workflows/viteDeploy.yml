@@ -65,6 +65,10 @@ jobs:
             ${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      - name: Set env vars
+        run: "echo 'VITE_APP_NAME=${{ vars.VITE_APP_NAME }} > .env && echo 'VITE_APP_DOMAIN=${{ vars.VITE_APP_DOMAIN }} >> .env"
+      - name: Print env vars
+        run: cat .env
       - name: Build with Vite
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
       - name: Upload artifact
