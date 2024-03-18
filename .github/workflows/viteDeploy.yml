@@ -66,7 +66,9 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Set env vars
-        run: "echo 'VITE_APP_NAME=${{ vars.VITE_APP_NAME }}' > .env && echo 'VITE_APP_DOMAIN=${{ vars.VITE_APP_DOMAIN }}' >> .env"
+        run: |
+          printf "VITE_APP_NAME=%q\n" "${{ vars.VITE_APP_NAME }}" > .env 
+          printf "VITE_APP_DOMAIN=%q\n" "${{ vars.VITE_APP_DOMAIN }}" >> .env
       - name: Print env vars
         run: cat .env
       - name: Build with Vite
