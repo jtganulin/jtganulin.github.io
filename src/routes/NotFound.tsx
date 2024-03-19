@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Helmet from "react-helmet";
 
 export default function NotFound() {
@@ -7,9 +8,9 @@ export default function NotFound() {
             <title>Page Not Found</title>
             <meta name="robots" content="noindex, nofollow" />
         </Helmet>
-        <div>
-            <h1>404</h1>
-            <p>Page not found</p>
+        <div className="center">
+            <h1 className="pageHeading">Error 404</h1>
+            <p>Page not found. Try checking the URL for any typos or head to the <Link to="/">homepage.</Link></p>
         </div>
         </>
     );
