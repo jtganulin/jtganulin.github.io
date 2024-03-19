@@ -3,6 +3,7 @@ import type { iProject } from "../assets/ProjectData";
 import PROJECTS_DATA from "../assets/ProjectData";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Projects.module.css";
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 export default function Projects() {
     return (
