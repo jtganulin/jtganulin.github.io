@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -45,7 +45,7 @@ library.add(
     faCogs, faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy,
 );
 
-const Router = createBrowserRouter([
+const Router = createHashRouter([
     {
         path: '/',
         element: (
