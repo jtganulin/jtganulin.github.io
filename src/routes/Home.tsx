@@ -67,7 +67,7 @@ export default function Home() {
                     <div className={styles.homeSection}>
                         <div className={styles.homeSectionContent}>
                             <Intro />
-                            <p>View my resume <a href="/about?resume" target="_blank" rel="noreferrer">here</a> or scroll down to learn more about me.</p>
+                            <p>View my resume <a href="/#/about?resume" target="_blank" rel="noreferrer">here</a> or scroll down to learn more about me.</p>
                         </div>
                     </div>
                     <div className={styles.bgContainer}>
