@@ -663,7 +663,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Tools",
         "name": "Docker",
-        "proficiency": "Proficient",
+        "proficiency": "Familiar",
         "years": 3,
         "icon": "fa fa-database",
         "color": "#0db7ed"
