@@ -62,12 +62,6 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
                     <div className={styles.description}>
                         {project.description}
                     </div>
-                    <h3>Skills Used</h3>
-                    <div className={styles.skills}>
-                        {project?.skills?.map?.((skill: string) => (
-                            <SkillBadge key={project.slug + skill} skill={SKILLS_DATA.find(s => s.name === skill)!} />
-                        ))}
-                    </div>
                     <h3>Accomplishments</h3>
                     <div className={styles.accomplishments}>
                         <ul>
@@ -75,6 +69,12 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
                                 <li key={accomplishment}>{accomplishment}</li>
                             ))}
                         </ul>
+                    </div>
+                    <h3>Skills Used</h3>
+                    <div className={styles.skills}>
+                        {project?.skills?.map?.((skill: string) => (
+                            <SkillBadge key={project.slug + skill} skill={SKILLS_DATA.find(s => s.name === skill)!} />
+                        ))}
                     </div>
                     <div className={styles.links}>
                         {project?.github && (
