@@ -123,7 +123,7 @@ export default function Home() {
                         className={styles.scrollToTop}
                         aria-label="Scroll to Top"
                     >
-                        <span>↑ Back to Top</span>
+                        ↑ <span>Back to Top</span>
                     </button>
                 </div>
             </main>
