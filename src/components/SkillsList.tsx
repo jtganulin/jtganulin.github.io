@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import type { ChangeEvent } from 'react';
+import { useEffect, useState } from 'react';
 import SKILLS_DATA from '../assets/SkillData';
 import type { iSkill } from '../assets/SkillData';
 import SkillBadge from './SkillBadge';
@@ -24,25 +23,24 @@ export default function SkillsList({
     const [search, setSearch] = useState<string>("");
     const [filteredSkills, setFilteredSkills] = useState<iSkill[]>(SKILLS_DATA);
 
-    const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
-        const searchText = e.target.value;
-        setSearch(searchText);
-        
+    useEffect(() => {
         if (showSearch) {
-            if (searchText.trim() !== "") {
-                setFilteredSkills(SKILLS_DATA.filter(skill => skill.name.toLowerCase().includes(searchText.toLowerCase())));
+            if (search.trim() !== "") {
+                setFilteredSkills(SKILLS_DATA.filter(skill => skill.name.toLowerCase().includes(search.toLowerCase())));
             } else {
                 setFilteredSkills(SKILLS_DATA);
             }
+        } else {
+            setFilteredSkills(SKILLS_DATA);
         }
-    };
+    }, [search, showSearch]);
 
     return (
         <div className={styles.skillsContainer}>
             <h2>My Skills</h2>
             {showSearch && (
                 <div className={styles.searchContainer}>
-                    <input type="text" placeholder="Search my skills..." value={search} onChange={handleSearchChange} />
+                    <input type="text" placeholder="Search my skills..." value={search} onChange={(e) => setSearch(e.target.value)} />
                     <button onClick={() => setSearch("")}>Clear</button>
                 </div>
             )}
