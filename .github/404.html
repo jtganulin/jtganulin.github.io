@@ -8,8 +8,8 @@
     </head>
     <body>
         <script>
-            const newPath = window.location.hash ? `/${window.location.hash.substr(1)}` : '/';
-            window.location.replace ? window.location.replace(newPath) : (window.location.href = newPath);
+            const path = window.location.pathname;
+            window.location.replace ? window.location.replace("/#" + path) : window.location.href = "/#" + path;
         </script>
     </body>
 </html>
