@@ -7,6 +7,7 @@ import PROJECTS_DATA from "../assets/ProjectData";
 import SKILLS_DATA from '../assets/SkillData';
 import SkillBadge from '../components/SkillBadge';
 import styles from "../styles/ProjectDetails.module.css";
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 export default function ProjectDetails({ slug }: { slug?: string; }) {
     const params = useParams();
@@ -28,28 +29,25 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
             </Helmet>
             <div className="constraint">
                 <div className={styles.titleContainer}>
-                    <div>
-                        <h1>{project.title}</h1>
-                        {project?.subtitle && (
-                            <h4>{project.subtitle}</h4>
-                        )}
-                    </div>
-                    {/* <Link title="Back to All Projects" to="/projects"><button>Back to All Projects</button></Link> */}
+                    <h1>{project.title}</h1>
+                    {project?.subtitle && (
+                        <h4>{project.subtitle}</h4>
+                    )}
                 </div>
-                <div>
-                    {project?.images && project.images.length > 1 && (
+                <div className={styles.projectContent}>
+                    {project?.images && project?.images?.length > 1 && (
                         <div className={styles.images}>
                             <CarouselProvider
                                 naturalSlideWidth={1920}
                                 naturalSlideHeight={1080}
-                                totalSlides={project.images.length ?? 0}
+                                totalSlides={project?.images?.length ?? 0}
                                 isPlaying={true}
                             >
                                 <Slider>
                                     {project?.images?.map?.((image: string) => (
                                         <Slide key={image} index={project.images!.indexOf(image)}>
                                             {/* TODO: Srcset: On mobile use scaled thumbnail, on tablet and desktop use full-size image */}
-                                            <img src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
+                                            <img height={1080} width={1920} src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
                                         </Slide>
                                     ))}
                                 </Slider>
