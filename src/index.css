@@ -100,7 +100,7 @@ a {
     &:not(:has(button)):hover {
         text-decoration: underline;
         background-color: var(--color-accent);
-        /* color: var(--color-text-opposite); */
+        color: white; /* TODO: Change upon adjusting color scheme */
     }
 }
 
