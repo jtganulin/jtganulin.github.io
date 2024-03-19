@@ -1,6 +1,6 @@
 .resumeButton {
     background-color: var(--color-accent);
-    color: var(--color-text-primary);
+    color: white; /* TODO: Update upon new color scheme */
     padding: 0.5rem 1rem;
     border: 0;
     border-radius: 0.5rem;
