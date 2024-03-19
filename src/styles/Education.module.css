@@ -11,6 +11,7 @@
     & details {
         padding: 1rem;
         background-color: var(--color-accent-2);
+        color: white; /* TODO: Update upon new color scheme */
     }
 
     & details[open] summary {

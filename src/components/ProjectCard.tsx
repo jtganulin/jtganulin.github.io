@@ -7,7 +7,7 @@ import SKILLS_DATA from '../assets/SkillData';
 import SkillBadge from './SkillBadge';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-export default function ProjectCard({ project }: { project: iProject }) {
+export default function ProjectCard({ project }: { project: iProject; }) {
     for (let i = 0; i < project?.skills?.length; i++) {
         if (!SKILLS_DATA.find(s => s.name === project.skills[i])) {
             console.log("Skill not found: " + project.skills[i]);
@@ -74,11 +74,13 @@ export default function ProjectCard({ project }: { project: iProject }) {
                 </div>
                 <div className={styles.skillsBlur}></div>
             </div>
-            <div className={styles.projectLinks}>
-                <Link to={"/projects/" + project.slug} role="button">
-                    <button>View Project Details</button>
-                </Link>
-            </div>
+            {project?.description && (
+                <div className={styles.projectLinks}>
+                    <Link to={"/projects/" + project.slug} role="button">
+                        <button>View Project Details</button>
+                    </Link>
+                </div>
+            )}
         </div>
     );
 }

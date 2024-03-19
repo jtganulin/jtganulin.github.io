@@ -4,16 +4,14 @@
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    /* width: %; */
     flex-grow: 1;
-    /* min-height: 44%; */
-    /* margin: 20px; */
     padding: 1em;
     border-radius: 10px;
     background-color: var(--color-accent-2);
     color: var(--color-text-primary);
     box-shadow: 0 0 1px 1px var(--color-accent);
     transition: all 0.3s ease-in-out;
+    font-weight: 400;
 }
 
 .projectIntro {
@@ -22,9 +20,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    /* min-height: 20%; */
     margin: 0;
-    /* margin-bottom: 3rem; */
     text-align: center;
 
     & h3 {
@@ -89,7 +85,7 @@
 
 .skills div {
     background-color: var(--color-accent);
-    color: var(--color-text-primary);
+    color: white; /* TODO: Update upon new color scheme */
     padding: 0.25rem;
     margin: 0.25rem;
     border-radius: 1rem;
@@ -106,7 +102,7 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: var(--color-accent);
-    color: var(--color-text-primary);
+    color: white; /* TODO: Update upon new color scheme */
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;

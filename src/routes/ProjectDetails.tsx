@@ -37,27 +37,29 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
                     {/* <Link title="Back to All Projects" to="/projects"><button>Back to All Projects</button></Link> */}
                 </div>
                 <div>
-                    <div className={styles.images}>
-                        <CarouselProvider
-                            naturalSlideWidth={1920}
-                            naturalSlideHeight={1080}
-                            totalSlides={project?.images?.length ?? 0}
-                            isPlaying={true}
-                        >
-                            <Slider>
-                                {project?.images?.map?.((image: string) => (
-                                    <Slide key={image} index={project.images!.indexOf(image)}>
-                                        {/* TODO: Srcset: On mobile use scaled thumbnail, on tablet and desktop use full-size image */}
-                                        <img src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
-                                    </Slide>
-                                ))}
-                            </Slider>
-                            <div className={styles.imageControls}>
-                                <ButtonBack>Back</ButtonBack>
-                                <ButtonNext>Next</ButtonNext>
-                            </div>
-                        </CarouselProvider>
-                    </div>
+                    {project?.images && project.images.length > 1 && (
+                        <div className={styles.images}>
+                            <CarouselProvider
+                                naturalSlideWidth={1920}
+                                naturalSlideHeight={1080}
+                                totalSlides={project.images.length ?? 0}
+                                isPlaying={true}
+                            >
+                                <Slider>
+                                    {project?.images?.map?.((image: string) => (
+                                        <Slide key={image} index={project.images!.indexOf(image)}>
+                                            {/* TODO: Srcset: On mobile use scaled thumbnail, on tablet and desktop use full-size image */}
+                                            <img src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
+                                        </Slide>
+                                    ))}
+                                </Slider>
+                                <div className={styles.imageControls}>
+                                    <ButtonBack>Back</ButtonBack>
+                                    <ButtonNext>Next</ButtonNext>
+                                </div>
+                            </CarouselProvider>
+                        </div>
+                    )}
                     <h3>Description</h3>
                     <div className={styles.description}>
                         {project.description}
