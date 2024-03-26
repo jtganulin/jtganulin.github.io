@@ -21,12 +21,6 @@
         background-color: var(--color-text-alt);
         color: white;
     }
-
-    & button {
-        background-color: var(--color-accent);
-        border-radius: 0.5rem;
-        border: 0;
-    }
 }
 
 .categoryContainer {
