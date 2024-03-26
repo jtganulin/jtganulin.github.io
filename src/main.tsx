@@ -23,8 +23,8 @@ import ThemeProvider from './providers/ThemeProvider';
 
 import LoadingPage from "./routes/LoadingPage";
 import ErrorPage from './routes/ErrorPage';
-const App = lazy(() => import('./App.tsx'));
-const Home = lazy(() => import('./routes/Home.tsx'));
+import App from './App.tsx';
+import Home from './routes/Home.tsx';
 const About = lazy(() => import('./routes/About.tsx'));
 const Contact = lazy(() => import('./routes/Contact.tsx'));
 const Projects = lazy(() => import('./routes/Projects.tsx'));
