@@ -7,7 +7,7 @@ interface ThemeContextProps {
 
 const ThemeContext = createContext<ThemeContextProps>({
     theme: "",
-    toggleTheme: () => {},
+    toggleTheme: () => void(0),
 });
 
 function ThemeProvider({ children }: { children: React.ReactNode }) {
@@ -35,6 +35,9 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
         }
     }, []);
 
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", theme);
+    }, [theme]);
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
