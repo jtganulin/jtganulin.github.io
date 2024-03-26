@@ -2,7 +2,7 @@ export interface iProject {
     slug: string;
     title: string;
     subtitle?: string;
-    type?: "Academic" | "Personal" | "Professional";
+    type: "Academic" | "Personal" | "Professional";
     summary: string;
     description: string;
     accomplishments: string[];
@@ -62,7 +62,7 @@ const PROJECTS_DATA = [
             "Performed unit and component tests using Jest and React Testing Library.",
         ],
         type: "Academic",
-        url: "",
+        url: "https://intrepid.herokuapp.com/",
         github: "https://github.com/jtganulin/intrepid-swe6733",
         images: ["Intrepid1.jpg", "Intrepid2.jpg", "Intrepid3.jpg", "Intrepid4.jpg", "Intrepid5.jpg"],
         skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "Passport.js", "Git", "GitHub", "Heroku", "CircleCI", "Atlassian Jira", "Material UI",
@@ -90,7 +90,7 @@ const PROJECTS_DATA = [
             "Performed E2E testing using Cypress.",
         ],
         type: "Academic",
-        url: "",
+        url: "https://fireside-gaming-frontend.herokuapp.com/",
         github: "https://github.com/jtganulin/Team-5-Web-Services-Engineering",
         images: ["FiresideGaming1.jpg", "FiresideGaming2.jpg", "FiresideGaming3.jpg", "FiresideGaming4.jpg", "FiresideGaming5.jpg",],
         skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "Python", "Django", "SQL", "SQLite", "Git", "GitHub", "Heroku", "REST APIs", "CircleCI", "Atlassian Jira", "Leadership", "Communication", "Teamwork", "Agile", "Scrum", "Kanban", "CI/CD", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Mentoring", "Training", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
@@ -155,7 +155,7 @@ const PROJECTS_DATA = [
             "Prioritized the game's cross-browser compatibility and performance."
         ],
         type: "Personal",
-        url: "",
+        url: "https://jgproductions.x10.bz/Dice/",
         github: "https://github.com/jtganulin/Dice",
         images: ["Dice1.jpg", "Dice2.jpg", "Dice3.jpg"],
         skills: ["HTML", "CSS", "JavaScript", "jQuery", "Git", "GitHub", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Creativity", "Accountability"],
