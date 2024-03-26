@@ -3,15 +3,15 @@
     width: 50%;
     border: none;
     outline: none;
+    border-radius: 0;
     border-left: 1px solid var(--color-accent);
     background-color: var(--color-accent-2);
-    color: #FFFFFF;
     overflow: hidden;
     transition: background-color 0.2s ease;
-    cursor: pointer;
 }
 
 .toggleThemeButton:hover {
+    box-shadow: none;
     background-color: var(--color-accent);
 }
 
