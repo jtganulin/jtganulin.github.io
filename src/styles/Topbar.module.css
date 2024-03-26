@@ -1,7 +1,7 @@
 .topbar {
     z-index: 1000;
     background-color: var(--color-accent-2);
-    height: 7vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -31,12 +31,13 @@
 .mobileNav {
     display: none;
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 10vh);
     background-color: var(--color-accent-2);
     position: fixed;
-    top: 7vh;
+    top: 10vh;
     left: 0;
     z-index: 1000;
+    border-top: 1px solid var(--color-accent);
 }
 
 .desktopLinks, .mobileLinks {
@@ -75,8 +76,7 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #FFFFFF;
-        /* color: var(--color-text-primary); */
+        color: #FFFFFF; /* TODO: Change upon adjusting color scheme */
         transition: background-color 0.2s ease;
         text-align: center;
     }
@@ -111,7 +111,7 @@
     background-color: var(--color-accent);
 }
 
-.menuButton {
+.mobileMenuButton {
     display: none;
 }
 
@@ -120,19 +120,24 @@
         display: none;
     }
 
-    .menuButton {
+    .mobileMenuButton {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 0;
+        width: 15%;
         height: 100%;
-        width: 10%;
-        background-color: var(--color-accent);
-        border: none;
-        color: #fff;
-    }
-
-    .menuButton:hover {
         background-color: var(--color-accent-2);
+        color: #fff;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        & svg {
+            height: 2rem;
+            width: 2rem;
+        }
     }
 
     .displayMobileNav {
