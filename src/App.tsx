@@ -1,6 +1,5 @@
-import { useContext, useRef } from "react";
+import { useRef } from "react";
 import { Outlet, ScrollRestoration } from "react-router-dom";
-import { ThemeContext } from "./providers/ThemeProvider";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -11,7 +10,6 @@ import Topbar from "./components/Topbar";
 function App() {
     const refer = useRef<HTMLDivElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
-    const { theme } = useContext(ThemeContext);
 
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -58,11 +56,9 @@ function App() {
                 titleTemplate={"%s - " + import.meta.env.VITE_APP_NAME}
             />
             <ScrollRestoration />
-            <div id="page" data-theme={theme}>
-                <Topbar refer={refer} />
-                <div ref={containerRef} style={{ marginTop: "10vh" }}>
-                    <Outlet />
-                </div>
+            <Topbar refer={refer} />
+            <div ref={containerRef} style={{ marginTop: "10vh" }}>
+                <Outlet />
             </div>
         </>
     );
