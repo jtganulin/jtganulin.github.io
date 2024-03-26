@@ -29,7 +29,7 @@ export default function About() {
                 {/* TODO: Picture */}
                 <main>
                     <div className="center">
-                        <button onClick={(e) => showResume(e)} className={styles.resumeButton}>View my Resume</button>
+                        <button onClick={(e) => showResume(e)}>View my Resume</button>
                     </div>
                     <h4>Summary</h4>
                     <p>
