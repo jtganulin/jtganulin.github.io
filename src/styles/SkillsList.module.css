@@ -18,8 +18,8 @@
         border-radius: 0.5rem;
         padding: 0.5rem;
         border: 0;
-        background-color: var(--color-text-alt);
-        color: white;
+        background-color: white; /* TODO: Change upon adjusting color scheme */
+        color: black;
     }
 }
 

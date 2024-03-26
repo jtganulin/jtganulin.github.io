@@ -8,7 +8,7 @@
     padding: 1em;
     border-radius: 10px;
     background-color: var(--color-accent-2);
-    color: var(--color-text-primary);
+    color: white; /* TODO: Update upon new color scheme */
     box-shadow: 0 0 1px 1px var(--color-accent);
     transition: all 0.3s ease-in-out;
     font-weight: 400;
@@ -103,8 +103,6 @@
     border-radius: 0.5rem;
     background-color: var(--color-accent);
     color: white; /* TODO: Update upon new color scheme */
-    border: none;
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -128,13 +126,5 @@
 
     .skillsContainer {
         margin: 0.5rem auto;
-    }
-
-    .skillsBlur {
-        top: -30%;
-    }
-
-    .skills {
-        /* max-height: 10vh; */
     }
 }
