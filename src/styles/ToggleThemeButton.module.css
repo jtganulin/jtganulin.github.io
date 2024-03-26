@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 800px) {
     .toggleThemeButton {
-        border: none;
+        border: none !important;
         width: 100%;
     }
 }
