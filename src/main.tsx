@@ -12,7 +12,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faMapPin, faCloud, faDatabase, faCode, faTerminal, faArrowRotateRight,
-    faMoon, faSun, faUsers, faComments, faQuestionCircle,
+    faMoon, faSun, faUsers, faComments, faQuestionCircle, faExternalLinkAlt,
     faPalette, faAdjust, faBolt, faSearch, faHandHoldingHeart, faHourglass,
     faUserSecret, faGraduationCap, faProjectDiagram, faChartLine,
     faFileCode, faTasks, faColumns, faUserTie, faSlidersH, faPassport, faTrophy,
@@ -42,7 +42,7 @@ library.add(
     faQuestionCircle, faChartLine, faPalette, faAdjust, faBolt, faSearch, faEnvelope,
     faHandHoldingHeart, faHourglass, faUserSecret, faGraduationCap, faProjectDiagram,
     faMarkdown, faFileCode, faTasks, faColumns, faUserTie, faChalkboardTeacher, faTools,
-    faCogs, faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy,
+    faCogs, faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy, faExternalLinkAlt,
 );
 
 const Router = createHashRouter([
