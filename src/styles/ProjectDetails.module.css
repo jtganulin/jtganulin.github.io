@@ -17,8 +17,6 @@
     & a {
         background-color: var(--color-accent-2);
         align-self: center;
-        /* width: 6rem;
-        height: 3rem; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -41,7 +39,8 @@
         aspect-ratio: 16/9;
     }
 
-    & div.imageControls {
+    & .imageControls {
+        margin: 1rem auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

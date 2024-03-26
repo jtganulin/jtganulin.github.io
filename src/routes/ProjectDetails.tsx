@@ -3,6 +3,8 @@ import { Navigate, useParams } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import type { iProject } from "../assets/ProjectData";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { IconName } from "@fortawesome/fontawesome-svg-core";
 import PROJECTS_DATA from "../assets/ProjectData";
 import SKILLS_DATA from '../assets/SkillData';
 import SkillBadge from '../components/SkillBadge';
@@ -36,34 +38,49 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
                 </div>
                 <div className={styles.projectContent}>
                     {project?.images && project?.images?.length > 1 && (
-                        <div className={styles.images}>
-                            <CarouselProvider
-                                naturalSlideWidth={1920}
-                                naturalSlideHeight={1080}
-                                totalSlides={project?.images?.length ?? 0}
-                                isPlaying={true}
-                            >
-                                <Slider>
-                                    {project?.images?.map?.((image: string) => (
-                                        <Slide key={image} index={project.images!.indexOf(image)}>
-                                            {/* TODO: Srcset: On mobile use scaled thumbnail, on tablet and desktop use full-size image */}
-                                            <img height={1080} width={1920} src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
-                                        </Slide>
-                                    ))}
-                                </Slider>
-                                <div className={styles.imageControls}>
-                                    <ButtonBack>&lt; Previous</ButtonBack>
-                                    <ButtonNext>Next &gt;</ButtonNext>
-                                </div>
-                            </CarouselProvider>
-                        </div>
+                        <CarouselProvider
+                            className={styles.images}
+                            naturalSlideWidth={1920}
+                            naturalSlideHeight={1080}
+                            totalSlides={project?.images?.length ?? 0}
+                            isPlaying={true}
+                        >
+                            <Slider>
+                                {project?.images?.map?.((image: string) => (
+                                    <Slide key={image} index={project.images!.indexOf(image)}>
+                                        {/* TODO: Srcset: On mobile use scaled thumbnail, on tablet and desktop use full-size image */}
+                                        <img height={1080} width={1920} src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
+                                    </Slide>
+                                ))}
+                            </Slider>
+                            <div className={styles.imageControls}>
+                                <ButtonBack>&lt; Previous</ButtonBack>
+                                <ButtonNext>Next &gt;</ButtonNext>
+                            </div>
+                        </CarouselProvider>
                     )}
+                    <div className={styles.links}>
+                        {project?.github && (
+                            <div>
+                                <a href={project?.github} target="_blank" rel="noopener, noreferrer" title={"View source code for " + project.title}>
+                                    <FontAwesomeIcon icon={"fab fa-github" as IconName} /> View Project on Github
+                                </a>
+                            </div>
+                        )}
+                        {project?.url && (
+                            <div>
+                                <a href={project?.url} target="_blank" rel="noopener, noreferrer" title={"View live demo of " + project.title}>
+                                    <FontAwesomeIcon icon={"fas fa-external-link-alt" as IconName} /> View Project Demo
+                                </a>
+                            </div>
+                        )}
+                    </div>
                     <h3>Description</h3>
-                    <div className={styles.description}>
+                    <div>
                         {project.description}
                     </div>
                     <h3>Accomplishments</h3>
-                    <div className={styles.accomplishments}>
+                    <div>
                         <ul>
                             {project?.accomplishments?.map?.((accomplishment: string) => (
                                 <li key={accomplishment}>{accomplishment}</li>
@@ -75,18 +92,6 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
                         {project?.skills?.map?.((skill: string) => (
                             <SkillBadge key={project.slug + skill} skill={SKILLS_DATA.find(s => s.name === skill)!} />
                         ))}
-                    </div>
-                    <div className={styles.links}>
-                        {project?.github && (
-                            <a href={project?.github} target="_blank" rel="noopener, noreferrer" title={"View source code for " + project.title}>
-                                View Project on Github
-                            </a>
-                        )}
-                        {project?.url && (
-                            <a href={project?.url} target="_blank" rel="noopener, noreferrer" title={"View live demo of " + project.title}>
-                                View Project Demo
-                            </a>
-                        )}
                     </div>
                 </div>
             </div>
