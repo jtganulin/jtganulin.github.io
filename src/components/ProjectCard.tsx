@@ -51,8 +51,6 @@ export default function ProjectCard({ project }: { project: iProject; }) {
                         interval={3500}
                         infinite={true}
                     >
-                        {/* <ButtonBack className={styles.carouselButtonBack}>Back</ButtonBack>
-                        <ButtonNext className={styles.carouselButtonNext}>Next</ButtonNext> */}
                         <Slider>
                             {project?.images?.map((image, index) => (
                                 <Slide index={index} key={project.slug + index}>

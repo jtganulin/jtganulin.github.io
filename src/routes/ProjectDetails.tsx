@@ -52,8 +52,8 @@ export default function ProjectDetails({ slug }: { slug?: string; }) {
                                     ))}
                                 </Slider>
                                 <div className={styles.imageControls}>
-                                    <ButtonBack>Back</ButtonBack>
-                                    <ButtonNext>Next</ButtonNext>
+                                    <ButtonBack>&lt; Previous</ButtonBack>
+                                    <ButtonNext>Next &gt;</ButtonNext>
                                 </div>
                             </CarouselProvider>
                         </div>
