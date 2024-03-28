@@ -46,7 +46,7 @@ export default function SkillsList({
             )}
             {showLegend && (
                 <div className={styles.legend}>
-                    <span title="I have proven experience with this technology and can use it numerous situations"><Gold /> Proficient</span> &bull; <span title="I am comfortable with this technology but I'm not yet an expert with it"><Silver /> Competent</span> &bull; <span title="I know basic concepts about this technology but have not used it extensively"><Bronze /> Familiar</span>
+                    <span title="I have proven experience with this technology and can use it in numerous situations"><Gold /> Proficient</span> &bull; <span title="I am comfortable with this technology but I'm not yet an expert with it"><Silver /> Competent</span> &bull; <span title="I know basic concepts about this technology but have not used it extensively"><Bronze /> Familiar</span>
                 </div>
             )}
             {showYears && (
