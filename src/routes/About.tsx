@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SkillsList from "../components/SkillsList";
-import styles from "../styles/About.module.css";
 
 export default function About() {
     // If the query string has "resume," show the resume modal
