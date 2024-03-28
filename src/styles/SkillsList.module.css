@@ -42,3 +42,16 @@
         font-size: 0.8rem;
     }
 }
+
+.legend {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+
+    span {
+        border-bottom: 1px solid var(--color-accent);
+    }
+}
