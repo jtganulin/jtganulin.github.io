@@ -29,12 +29,7 @@ function App() {
             }
         });
 
-        // When the user loses focus on the page, pause the animation
-        window.addEventListener("blur", () => {
-            showAnim.pause();
-        });
-
-        // When the user focuses on the page, play the animation
+        // When the user re-focuses on the page, show topbar
         window.addEventListener("focus", () => {
             showAnim.play();
         });
@@ -44,8 +39,6 @@ function App() {
             ScrollTrigger.getAll().forEach((trigger) => {
                 trigger.kill();
             });
-
-            // Remove any event listeners
         }
     });
 
