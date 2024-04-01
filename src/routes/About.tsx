@@ -25,21 +25,30 @@ export default function About() {
             </Helmet>
             <div className="constraint">
                 <h1 className="pageHeading">About Me</h1>
-                {/* TODO: Picture */}
                 <main>
                     <div className="center">
+                        <img src="/images/Me.jpg" alt="Jeffrey Ganulin" width="200" height="200" style={{
+                            borderRadius: "50%",
+                            border: "2px solid var(--color-accent)",
+                            aspectRatio: "4 / 3",
+                            objectFit: "cover",
+                            marginBottom: "1rem",
+                        }} />
                         <button onClick={(e) => showResume(e)}>View my Resume</button>
                     </div>
                     <h4>Summary</h4>
                     <p>
-                        I&apos;m Jeffrey Ganulin, a full-stack software engineer, located in Atlanta, GA, seeking
-                        employment where my passion for technology and keen attention to detail can be used
-                        to bring value to industry and society.
+                        I&apos;m Jeffrey Ganulin, a full-stack software engineer, located in Atlanta, GA, seeking 
+                        employment where my passion for technology and keen attention to detail can be used 
+                        to bring value to industry and society. I&apos;ve been passionate about technology and how 
+                        it can be used to solve problems and improve lives since I was young, and I&apos;m excited
+                        to use my skills, experience, and unique perspectives to make a positive impact wherever I can.
                     </p>
                     <h4>Educational Journey</h4>
                     <p>
-                        My education includes a Master&apos;s degree in Software Engineering and a Bachelor&apos;s degree in Information Technology from Kennesaw State University, and an Associate&apos;s degree in Computer Science from the University of North Georgia.
-                        In addition to formal education, I&apos;ve enjoyed self-led learning through online courses and tutorials.
+                        My education includes a Master&apos;s degree in Software Engineering as well as a Bachelor&apos;s degree in Information Technology,
+                        both from Kennesaw State University, and an Associate&apos;s degree in Computer Science from the University of North Georgia.
+                        In addition to formal education, I&apos;ve learned extensively through self-led research, online courses, and documentation.
                         I&apos;m a quick learner especially when it comes to the field of technology, and I am always looking to learn new technologies and improve my skills.
                     </p>
                     <h4>Technical Background</h4>
