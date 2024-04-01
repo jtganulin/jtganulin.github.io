@@ -20,6 +20,7 @@ export default function Intro({ refer }: { refer?: React.RefObject<HTMLDivElemen
                     border: "2px solid var(--color-accent)",
                     aspectRatio: "4 / 3",
                     objectFit: "cover",
+                    marginBottom: "1rem",
                 }} />
                 <h2><em>Hello, I&apos;m</em></h2>
                 <h1>Jeffrey Ganulin</h1>
