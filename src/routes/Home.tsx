@@ -43,14 +43,14 @@ export default function Home() {
         });
 
         // Scroll to Top button fade in/out
-        gsap.fromTo(containerRef.current.querySelector("." + styles.scrollToTop), {
+        gsap.fromTo((containerRef.current as unknown as Element).querySelector("." + styles.scrollToTop), {
             autoAlpha: 0,
         }, {
             autoAlpha: 1,
             ease: "power2.inOut",
             scrollTrigger: {
                 // When the user scrolls past the first section
-                trigger: containerRef.current.firstChild,
+                trigger: (containerRef.current as unknown as Element).querySelector("section"),
                 start: "bottom top",
                 toggleActions: "play none none reverse"
             }
