@@ -42,6 +42,20 @@ export default function Home() {
             // TODO: Add parallax effect to the background images
         });
 
+        // Scroll to Top button fade in/out
+        gsap.fromTo(containerRef.current.querySelector("." + styles.scrollToTop), {
+            autoAlpha: 0,
+        }, {
+            autoAlpha: 1,
+            ease: "power2.inOut",
+            scrollTrigger: {
+                // When the user scrolls past the first section
+                trigger: containerRef.current.firstChild,
+                start: "bottom top",
+                toggleActions: "play none none reverse"
+            }
+        });
+
         return () => {
             // Clean up the scroll trigger on unmount; we only want to kill the Home scroll trigger
             ScrollTrigger.getAll().forEach((trigger) => {
@@ -55,7 +69,6 @@ export default function Home() {
     }, { scope: containerRef });
 
     // TODO: Add parallax effect and custom images
-    // TODO: Only show Scroll to Top button when not at top of page
     return (
         <>
             <Helmet>
