@@ -14,7 +14,7 @@ export default function Contact() {
                 <h1 className="pageHeading">Contact Me</h1>
                 <main>
                     <p>
-                        Looking to get in touch to collaborate on a project, or seeking a valuable contributor for your business venture? 
+                        Looking to get in touch to collaborate on a project, or seeking a valuable contributor for your business venture?
                         Reach out to me on LinkedIn, GitHub, or by email using the buttons below.
                     </p>
                     <p>
@@ -22,9 +22,7 @@ export default function Contact() {
                         <br />
                         Thanks for your time and interest in viewing my portfolio!
                     </p>
-                    <div className="center">
-                        <Socials />
-                    </div>
+                    <Socials expanded />
                 </main>
             </div>
         </>
