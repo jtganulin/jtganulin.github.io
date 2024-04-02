@@ -52,6 +52,15 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
     return (
         <>
             <div className={styles.topbar} ref={refer}>
+                <img src="/images/Me.jpg" alt="Jeffrey Ganulin" width="75" height="75" style={{
+                    borderRadius: "50%",
+                    border: "2px solid var(--color-accent)",
+                    aspectRatio: "4 / 3",
+                    objectFit: "cover",
+                    display: "flex",
+                    alignSelf: "center",
+                    justifySelf: "center"
+                }} />
                 <h1 className={styles.heading}>Jeffrey Ganulin&apos;s Portfolio</h1>
                 <nav className={styles.desktopNav}>
                     <Links ctx="desktopLinks" />
