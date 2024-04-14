@@ -12,12 +12,27 @@
     border-bottom: 2px solid var(--color-accent);
 }
 
-.topbar h1 {
-    margin: 0;
-    justify-self: center;
-    align-self: center;
+.siteLogoTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    flex-wrap: nowrap;
     flex-grow: 1;
-    padding-left: 2vh;
+
+    & img, h1 {
+        cursor: pointer;
+    }
+
+    & h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        margin-left: 1rem;
+    }
 }
 
 .desktopNav {
@@ -96,15 +111,6 @@
 
 .displayMobileNav {
     display: none;
-}
-
-.heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    align-self: flex-start
 }
 
 .activeLink {
