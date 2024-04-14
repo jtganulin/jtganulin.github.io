@@ -1,6 +1,7 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import styles from '../styles/Topbar.module.css';
 import ToggleThemeButton from './ToggleThemeButton';
+import Avatar from './Avatar';
 
 // Page friendly name: [path, caption]
 const ROUTES: Record<string, [string, string]> = {
@@ -10,8 +11,10 @@ const ROUTES: Record<string, [string, string]> = {
     "Contact Me": ["/contact", "Get in touch with me"]
 };
 
-export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivElement> }) {
-    const Links = ({ ctx }: { ctx: string }) => {
+export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivElement>; }) {
+    const navigate = useNavigate();
+
+    const Links = ({ ctx }: { ctx: string; }) => {
         return (
             <ul className={styles[ctx]}>
                 {Object.keys(ROUTES).map((route, i) => {
@@ -42,26 +45,20 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
         // TODO: Figure why have any other link except Home causes a horizontal overflow on mobile
 
         // While the menu is being displayed, prevent the user from scrolling the page
-/*         if (mobileNav.classList.contains(styles.displayMobileNav)) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "auto";
-        } */
-    }
+        /*         if (mobileNav.classList.contains(styles.displayMobileNav)) {
+                    document.body.style.overflow = "hidden";
+                } else {
+                    document.body.style.overflow = "auto";
+                } */
+    };
 
     return (
         <>
             <div className={styles.topbar} ref={refer}>
-                <img src="/images/Me.jpg" alt="Jeffrey Ganulin" width="75" height="75" style={{
-                    borderRadius: "50%",
-                    border: "2px solid var(--color-accent)",
-                    aspectRatio: "4 / 3",
-                    objectFit: "cover",
-                    display: "flex",
-                    alignSelf: "center",
-                    justifySelf: "center"
-                }} />
-                <h1 className={styles.heading}>Jeffrey Ganulin&apos;s Portfolio</h1>
+                <div className={styles.siteLogoTitle} onClick={() => navigate("/")}>
+                    <Avatar width="75" height="75" style={{ marginLeft: "0.75rem" }} />
+                    <h1>Jeffrey Ganulin&apos;s Portfolio</h1>
+                </div>
                 <nav className={styles.desktopNav}>
                     <Links ctx="desktopLinks" />
                 </nav>

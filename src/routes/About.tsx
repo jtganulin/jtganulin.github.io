@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Avatar from "../components/Avatar";
 import SkillsList from "../components/SkillsList";
 
 export default function About() {
@@ -27,11 +28,7 @@ export default function About() {
                 <h1 className="pageHeading">About Me</h1>
                 <main>
                     <div className="center">
-                        <img src="/images/Me.jpg" alt="Jeffrey Ganulin" width="200" height="200" style={{
-                            borderRadius: "50%",
-                            border: "2px solid var(--color-accent)",
-                            aspectRatio: "4 / 3",
-                            objectFit: "cover",
+                        <Avatar height="200" width="200" style={{
                             marginBottom: "1rem",
                         }} />
                         <button onClick={(e) => showResume(e)}>View my Resume</button>
