@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
+import { HelmetProvider } from 'react-helmet-async';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faGitAlt, faJs, faHtml5, faCss3Alt, faReact, faNode, faPhp, faPython,
@@ -85,11 +86,13 @@ const Router = createHashRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <>
         <React.StrictMode>
-            <ThemeProvider>
-                <Suspense fallback={<LoadingPage />}>
-                    <RouterProvider router={Router} />
-                </Suspense>
-            </ThemeProvider>
+            <HelmetProvider>
+                <ThemeProvider>
+                    <Suspense fallback={<LoadingPage />}>
+                        <RouterProvider router={Router} />
+                    </Suspense>
+                </ThemeProvider>
+            </HelmetProvider>
         </React.StrictMode>
     </>
 );
