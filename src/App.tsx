@@ -3,7 +3,7 @@ import { Outlet, ScrollRestoration } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import Topbar from "./components/Topbar";
 

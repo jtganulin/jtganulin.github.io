@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import Avatar from "../components/Avatar";
 import SkillsList from "../components/SkillsList";
 

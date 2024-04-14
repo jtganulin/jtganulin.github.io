@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import Helmet from 'react-helmet';
+import { Helmet } from "react-helmet-async";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import type { iProject } from "../assets/ProjectData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
