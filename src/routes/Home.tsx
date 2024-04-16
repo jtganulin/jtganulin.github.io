@@ -1,4 +1,4 @@
-import { lazy, useRef, Suspense } from 'react';
+import { useRef } from 'react';
 import { Helmet } from "react-helmet-async";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
