@@ -19,9 +19,9 @@ const Background = ({ index }: { index: number; }) => {
                 style={{
                     maxWidth: "100%",
                     height: "100%",
-                    objectFit: "cover",
+                    objectFit: "fill",
                     objectPosition: "center",
-                    aspectRatio: "1.333333333"
+                    aspectRatio: 1.3333
                 }}
             />
         </div>
@@ -103,7 +103,7 @@ export default function Home() {
                             scale: zoom.scale,
                             origin: zoom.origin,
                             duration: 2,
-                            ease: "power1.inOut"
+                            ease: "sine"
                         });
                     } else { // if user leaves the section
                         const imgElement: HTMLElement | null = sectionElement.querySelector<HTMLElement>("." + styles.bgContainer + " img");
@@ -111,7 +111,7 @@ export default function Home() {
                             scale: 1,
                             origin: [0.5, 0.5],
                             duration: 1,
-                            ease: "power1.inOut"
+                            ease: "none"
                         });
                     }
                 }
@@ -184,11 +184,7 @@ export default function Home() {
                     <p><em>Scroll further to view my technical and soft skills.</em></p>
                 </HomeSection>
                 <HomeSection id="skills" bgIndex={5}>
-                    <h2>Skills</h2>
-                    <p>Click on a skill to view more information.</p>
-                    {/* TODO: Fix warping of background image when searching */}
-
-                    <SkillsList showSearch showLegend showProficiency /* showYears */ />
+                    <SkillsList showSearch showLegend showProficiency />
                 </HomeSection>
                 <div>
                     <button
