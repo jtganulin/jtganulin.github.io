@@ -68,30 +68,10 @@ button, a {
     }
 }
 
-main {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.pageHeading {
-    margin: 1rem auto;
-    text-align: center;
-    width: 95%;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem auto;
-    width: 80%;
-}
-
 a {
     text-decoration: none;
     color: var(--color-accent);
-    
+
     &:not(:has(button)):hover {
         text-decoration: underline;
         background-color: var(--color-accent);
@@ -110,6 +90,26 @@ button {
         background-color: var(--color-accent);
         box-shadow: 0 0 0.25rem 0.25rem var(--color-accent-2);
     }
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pageHeading {
+    margin: 1rem auto;
+    text-align: center;
+    width: 95%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    width: 80%;
 }
 
 @media screen and (max-width: 800px) {
