@@ -169,6 +169,7 @@ export default function Home() {
             <main ref={containerRef} className={styles.main}>
                 <HomeSection id="hello" bgIndex={1}>
                     <Intro />
+                    <br />
                     <p>View my resume <a href="/#/about?resume">here</a> or scroll down to learn more about me.</p>
                 </HomeSection>
                 <HomeSection id="bio" bgIndex={2}>
@@ -192,7 +193,7 @@ export default function Home() {
                         className={styles.scrollToTop}
                         aria-label="Scroll to Top"
                     >
-                        ↑ <span>Back to Top</span>
+                        ↑ Back to Top
                     </button>
                 </div>
             </main>
