@@ -18,9 +18,8 @@
     align-items: center;
     justify-content: flex-start;
     height: 100%;
-    flex-wrap: nowrap;
     flex-grow: 1;
-
+    
     & img, h1 {
         cursor: pointer;
     }

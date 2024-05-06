@@ -56,7 +56,10 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
         <>
             <div className={styles.topbar} ref={refer}>
                 <div className={styles.siteLogoTitle} onClick={() => navigate("/")}>
-                    <Avatar width="75" height="75" style={{ marginLeft: "0.75rem" }} />
+                    <Avatar style={{
+                        marginLeft: "0.75rem",
+                        maxHeight: "85%"
+                    }} />
                     <h1>Jeffrey Ganulin&apos;s Portfolio</h1>
                 </div>
                 <nav className={styles.desktopNav}>
