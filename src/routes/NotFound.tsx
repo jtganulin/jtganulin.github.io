@@ -9,8 +9,8 @@ export default function NotFound() {
             <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         <div className="center">
-            <h1 className="pageHeading">Error 404</h1>
-                <p>Page not found. Try checking the URL for any typos or head to the <Link to="/">homepage</Link>.</p>
+            <h1 className="pageHeading">Page Not Found - Error 404</h1>
+                <p>Try checking the URL for any typos or head to the <Link to="/">homepage</Link>.</p>
                 <p>To quickly view my resume, click <a href="/JeffreyGanulinResume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
         </div>
         </>
