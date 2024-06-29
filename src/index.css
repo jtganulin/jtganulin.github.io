@@ -9,7 +9,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* Light Mode Color Theme */
-    --color-background: #e7e5e0c9;
+    --color-background: #e7e5e0ea;
     --color-text-primary: #000000;
     --color-text-alt: #838383;
     --color-text-opposite: #FFFFFF;
@@ -43,6 +43,10 @@ body {
     background-color: var(--color-background);
     color: var(--color-text-primary);
     overflow-x: hidden;
+}
+
+#contentContainer {
+    margin-top: max(75px, 10vh);
 }
 
 .constraint {
