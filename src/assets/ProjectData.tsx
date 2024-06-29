@@ -199,7 +199,7 @@ const PROJECTS_DATA = [
     {
         slug: "PMOS",
         title: "PMO Management System",
-        subtitle: "PMO and Contract Management System.",
+        subtitle: "PMO and Contract Management System",
         summary: "Bachelor's Capstone Project - Platform for PMO and College Staff Contract Management.",
         description: "This system, created as part of a Bachelor's Capstone Project for the B.S. in IT Program at Kennesaw State University, allows school administration to easily manage contracts and projects. The system allows for the creation and management of contracts, and the management of project details, including project requirements, tasks, and deadlines. The system also allows for the management of project staff, and the tracking of project progress. The system was developed using HTML, CSS, JavaScript, PHP, and MySQL. The system was developed as a group project, and our group followed Agile and Scrum methodologies to develop the application.",
         accomplishments: [
