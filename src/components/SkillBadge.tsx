@@ -8,9 +8,9 @@ export default function SkillBadge({ skill, showProficiency = true, showYears = 
     return (
         <div key={skill?.name} className={styles.skill}>
             {showProficiency && 
-                (skill?.proficiency === "Proficient" ? (
+                (skill?.proficiency === "Advanced" ? (
                     <Gold />
-                ) : skill?.proficiency === "Competent" ? (
+                ) : skill?.proficiency === "Intermediate" ? (
                     <Silver />
                 ) : (
                     <Bronze />

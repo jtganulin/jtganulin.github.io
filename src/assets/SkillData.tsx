@@ -11,7 +11,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Databases",
         "name": "MySQL",
-        "proficiency": "Proficient",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fa fa-database",
         "color": "gold"
@@ -19,7 +19,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Databases",
         "name": "MariaDB",
-        "proficiency": "Proficient",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fa fa-database",
         "color": "orange"
@@ -27,7 +27,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "React",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 2,
         "icon": "fab fa-react",
         "color": "cyan"
@@ -35,7 +35,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Node.js",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 2,
         "icon": "fab fa-node",
         "color": "green"
@@ -43,7 +43,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Express",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 2,
         "icon": "fab fa-node",
         "color": "white"
@@ -51,7 +51,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "jQuery",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 11,
         "icon": "fab fa-js",
         "color": "lightblue"
@@ -59,7 +59,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "JavaScript",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 12,
         "icon": "fab fa-js",
         "color": "yellow"
@@ -67,7 +67,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "HTML",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 13,
         "icon": "fab fa-html5",
         "color": "orange"
@@ -75,7 +75,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "CSS",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 12.5,
         "icon": "fab fa-css3-alt",
         "color": "blue"
@@ -83,7 +83,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "PHP",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 9,
         "icon": "fab fa-php",
         "color": "violet"
@@ -91,7 +91,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Python",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 10,
         "icon": "fab fa-python",
         "color": "green"
@@ -99,7 +99,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Operating Systems",
         "name": "Windows",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 20,
         "icon": "fab fa-windows",
         "color": "white"
@@ -107,7 +107,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "GitHub",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 5,
         "icon": "fab fa-github",
         "color": "purple"
@@ -115,7 +115,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Leadership",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fa fa-users",
         "color": "gold"
@@ -123,146 +123,146 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Communication",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-comments",
         "color": "lightblue"
     },
     {
         "type": "Soft Skills",
         "name": "Teamwork",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-users",
         "color": "green"
     },
     {
         "type": "Soft Skills",
         "name": "Problem Solving",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-question-circle",
         "color": "red"
     },
     {
         "type": "Soft Skills",
         "name": "Time Management",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-hourglass",
         "color": "orange"
     },
     {
         "type": "Soft Skills",
         "name": "Organization",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-tasks",
         "color": "purple"
     },
     {
         "type": "Soft Skills",
         "name": "Critical Thinking",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-bolt",
         "color": "yellow"
     },
     {
         "type": "Soft Skills",
         "name": "Creativity",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-palette",
         "color": "lightgreen"
     },
     {
         "type": "Soft Skills",
         "name": "Adaptability",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-adjust",
         "color": "lightblue"
     },
     {
         "type": "Soft Skills",
         "name": "Self-Motivation",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-bolt",
         "color": "red"
     },
     {
         "type": "Soft Skills",
         "name": "Flexibility",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-adjust",
         "color": "orange"
     },
     {
         "type": "Soft Skills",
         "name": "Attention to Detail",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-search",
         "color": "purple"
     },
     {
         "type": "Soft Skills",
         "name": "Quick Learning",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-graduation-cap",
         "color": "#f39c12"
     },
     {
         "type": "Soft Skills",
         "name": "Work Ethic",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-user-tie",
         "color": "yellow"
     },
     {
         "type": "Soft Skills",
         "name": "Empathy",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-hand-holding-heart",
         "color": "pink"
     },
     {
         "type": "Soft Skills",
         "name": "Patience",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-hourglass",
         "color": "lightblue"
     },
     {
         "type": "Soft Skills",
         "name": "Confidence",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-user-tie",
         "color": "red"
     },
     {
         "type": "Soft Skills",
         "name": "Resilience",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-arrow-rotate-right",
         "color": "purple"
     },
     {
         "type": "Soft Skills",
         "name": "Integrity",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-user-secret",
         "color": "yellow"
     },
     {
         "type": "Soft Skills",
         "name": "Curiosity",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-question-circle",
         "color": "lightgreen"
     },
     {
         "type": "Soft Skills",
         "name": "Technical Writing",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "icon": "fa fa-book",
         "color": "lightblue"
     },
     {
         "name": "Insomnia REST Client",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 5,
         "icon": "fa fa-moon",
         "color": "purple",
@@ -270,7 +270,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "VS Code",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 5,
         "icon": "fa fa-code",
         "color": "lightblue",
@@ -278,7 +278,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "Microsoft Office Suite",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 15,
         "icon": "fab fa-microsoft",
         "color": "gold",
@@ -287,7 +287,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Databases",
         "name": "MongoDB",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-database",
         "color": "green"
@@ -295,7 +295,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Databases",
         "name": "SQLite",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 1,
         "icon": "fa fa-database",
         "color": "lightblue"
@@ -303,7 +303,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Laravel",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 6,
         "icon": "fab fa-php",
         "color": "red"
@@ -311,7 +311,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Redux",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 1,
         "icon": "fab fa-react",
         "color": "purple",
@@ -319,7 +319,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "jQuery UI",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 8,
         "icon": "fab fa-js",
         "color": "lightblue"
@@ -327,7 +327,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Bootstrap",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fab fa-bootstrap",
         "color": "blue"
@@ -335,7 +335,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "WinForms",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 6,
         "icon": "fab fa-windows",
         "color": "lightyellow"
@@ -343,7 +343,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "WPF",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fab fa-windows",
         "color": "lightyellow"
@@ -351,7 +351,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "TypeScript",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-js",
         "color": "yellow"
@@ -359,7 +359,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "SQL",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fa fa-database",
         "color": "lightblue"
@@ -367,7 +367,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Java",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 10,
         "icon": "fab fa-java",
         "color": "red"
@@ -375,7 +375,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "C#",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 9,
         "icon": "fa fa-code",
         "color": "teal"
@@ -383,7 +383,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "XML",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-code",
         "color": "white"
@@ -391,7 +391,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "XAML",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 3,
         "icon": "fab fa-windows",
         "color": "lightyellow"
@@ -399,7 +399,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "YAML",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-code",
         "color": "white"
@@ -407,7 +407,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Operating Systems",
         "name": "Linux",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fab fa-linux",
         "color": "orange"
@@ -415,7 +415,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "Heroku",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-cloud",
         "color": "violet"
@@ -423,7 +423,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "Figma",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-figma",
         "color": "white"
@@ -431,7 +431,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "Atlassian Jira",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-jira",
         "color": "blue"
@@ -439,14 +439,14 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "Atlassian Trello",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 1,
         "icon": "fab fa-trello",
         "color": "blue"
     },
     {
         "name": "Git",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-git-alt",
         "color": "red",
@@ -454,7 +454,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "Postman",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 1,
         "icon": "fa fa-cloud",
         "color": "purple",
@@ -462,7 +462,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "Microsoft Visual Studio",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 6,
         "icon": "fa fa-code",
         "color": "purple",
@@ -470,7 +470,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "PyCharm",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fab fa-python",
         "color": "green",
@@ -478,7 +478,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "IntelliJ IDEA",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fab fa-java",
         "color": "teal",
@@ -486,7 +486,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "Eclipse",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 4,
         "icon": "fab fa-java",
         "color": "purple",
@@ -494,7 +494,7 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "name": "Adobe Photoshop CS6",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 5,
         "icon": "fa fa-image",
         "color": "blue",
@@ -503,7 +503,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Databases",
         "name": "PostgreSQL",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-database",
         "color": "blue"
@@ -511,7 +511,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Databases",
         "name": "Microsoft SQL Server",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-database",
         "color": "yellow"
@@ -519,7 +519,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Django",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-python",
         "color": "green"
@@ -527,7 +527,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Tailwind",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-css3-alt",
         "color": "blue"
@@ -535,7 +535,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Chakra UI",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 2,
         "icon": "fab fa-css3-alt",
         "color": "cyan"
@@ -543,7 +543,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "React Query",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-react",
         "color": "lightblue"
@@ -551,7 +551,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "JavaFX",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-java",
         "color": "red"
@@ -559,7 +559,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Swing",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-java",
         "color": "red"
@@ -567,7 +567,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Tkinter",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-python",
         "color": "green"
@@ -575,7 +575,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "C",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-code",
         "color": "darkblue"
@@ -583,7 +583,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Perl",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-code",
         "color": "darkblue"
@@ -591,7 +591,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Bash",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-terminal",
         "color": "lightgreen"
@@ -599,7 +599,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "French",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 4,
         "icon": "fa fa-passport",
         "color": "blue"
@@ -607,7 +607,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Spanish",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 2,
         "icon": "fa fa-passport",
         "color": "yellow"
@@ -615,7 +615,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Operating Systems",
         "name": "macOS",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 3,
         "icon": "fab fa-apple",
         "color": "white"
@@ -623,7 +623,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "Amazon Web Services",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-aws",
         "color": "orange"
@@ -631,7 +631,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "Microsoft Azure",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-microsoft",
         "color": "cornflowerblue"
@@ -639,7 +639,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "CircleCI",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-arrow-rotate-right",
         "color": "green"
@@ -647,14 +647,14 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Platforms",
         "name": "WordPress",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-wordpress",
         "color": "blue"
     },
     {
         "name": "Android Studio",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 2,
         "icon": "fab fa-android",
         "color": "lightgreen",
@@ -663,7 +663,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Tools",
         "name": "Docker",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 3,
         "icon": "fa fa-database",
         "color": "#0db7ed"
@@ -671,7 +671,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Markdown",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-markdown",
         "color": "#083fa1"
@@ -679,7 +679,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Cypress",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-cogs",
         "color": "#17202a"
@@ -687,7 +687,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Jest",
-        "proficiency": "Proficient",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fab fa-js",
         "color": "#99425b"
@@ -695,7 +695,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "React Testing Library",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-react",
         "color": "#61dafb"
@@ -703,7 +703,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Supertest",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 2,
         "icon": "fa fa-cogs",
         "color": "#2c3e50"
@@ -711,7 +711,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "Vitest",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fab fa-js",
         "color": "#646464"
@@ -719,7 +719,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Tools",
         "name": "JSDoc",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-file-code",
         "color": "#f0db4f"
@@ -727,7 +727,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Tools",
         "name": "Google Docs",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 3,
         "icon": "fab fa-google",
         "color": "#4285f4"
@@ -735,7 +735,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Mentoring",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 3,
         "icon": "fa fa-user-tie",
         "color": "#8e44ad"
@@ -743,7 +743,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Training",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 1,
         "icon": "fa fa-chalkboard-teacher",
         "color": "#3498db"
@@ -751,7 +751,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Documentation",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 3,
         "icon": "fa fa-book",
         "color": "#34495e"
@@ -759,7 +759,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Presentation",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-chalkboard-teacher",
         "color": "#e74c3c"
@@ -767,7 +767,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Responsibility",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 3,
         "icon": "fa fa-tasks",
         "color": "#e67e22"
@@ -775,7 +775,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Soft Skills",
         "name": "Accountability",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 2,
         "icon": "fa fa-check-square",
         "color": "#27ae60"
@@ -783,7 +783,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Agile",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 3,
         "icon": "fa fa-tasks",
         "color": "#009688"
@@ -791,7 +791,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Kanban",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-columns",
         "color": "#4caf50"
@@ -799,7 +799,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Scrum",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 2,
         "icon": "fa fa-trophy",
         "color": "#3498db"
@@ -807,7 +807,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Languages",
         "name": "Regular Expressions",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 10,
         "icon": "fa fa-code",
         "color": "#2ecc71"
@@ -815,70 +815,6 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Frameworks and Libraries",
         "name": "ImageMagick",
-        "proficiency": "Competent",
-        "years": 2,
-        "icon": "fa fa-image",
-        "color": "#4a148c"
-    },
-    {
-        "type": "Frameworks and Libraries",
-        "name": "GSAP",
-        "proficiency": "Familiar",
-        "years": 1,
-        "icon": "fa fa-sliders-h",
-        "color": "#00695c"
-    },
-    {
-        "type": "Tools",
-        "name": "Marvel",
-        "proficiency": "Competent",
-        "years": 1,
-        "icon": "fa fa-trophy",
-        "color": "#ef6c00"
-    },
-    {
-        "type": "Methodologies and Practices",
-        "name": "PERT Analysis",
-        "proficiency": "Competent",
-        "years": 2,
-        "icon": "fa fa-chart-line",
-        "color": "#f57c00"
-    },
-    {
-        "type": "Tools",
-        "name": "REST APIs",
-        "proficiency": "Proficient",
-        "years": 5,
-        "icon": "fa fa-cloud",
-        "color": "#4caf50"
-    },
-    {
-        "type": "Frameworks and Libraries",
-        "name": "Passport.js",
-        "proficiency": "Familiar",
-        "years": 2,
-        "icon": "fa fa-passport",
-        "color": "#8e44ad"
-    },
-    {
-        "type": "Frameworks and Libraries",
-        "name": "Material UI",
-        "proficiency": "Familiar",
-        "years": 1,
-        "icon": "fab fa-react",
-        "color": "#2196f3"
-    },
-    {
-        "type": "Soft Skills",
-        "name": "Project Management",
-        "proficiency": "Proficient",
-        "years": 3,
-        "icon": "fa fa-project-diagram",
-        "color": "#2196f3"
-    },
-    {
-        "type": "Frameworks and Libraries",
-        "name": "Pillow",
         "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-image",
@@ -886,8 +822,72 @@ const SKILLS_DATA: iSkill[] = [
     },
     {
         "type": "Frameworks and Libraries",
+        "name": "GSAP",
+        "proficiency": "Beginner",
+        "years": 1,
+        "icon": "fa fa-sliders-h",
+        "color": "#00695c"
+    },
+    {
+        "type": "Tools",
+        "name": "Marvel",
+        "proficiency": "Intermediate",
+        "years": 1,
+        "icon": "fa fa-trophy",
+        "color": "#ef6c00"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "PERT Analysis",
+        "proficiency": "Intermediate",
+        "years": 2,
+        "icon": "fa fa-chart-line",
+        "color": "#f57c00"
+    },
+    {
+        "type": "Tools",
+        "name": "REST APIs",
+        "proficiency": "Advanced",
+        "years": 5,
+        "icon": "fa fa-cloud",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Frameworks and Libraries",
+        "name": "Passport.js",
+        "proficiency": "Beginner",
+        "years": 2,
+        "icon": "fa fa-passport",
+        "color": "#8e44ad"
+    },
+    {
+        "type": "Frameworks and Libraries",
+        "name": "Material UI",
+        "proficiency": "Beginner",
+        "years": 1,
+        "icon": "fab fa-react",
+        "color": "#2196f3"
+    },
+    {
+        "type": "Soft Skills",
+        "name": "Project Management",
+        "proficiency": "Advanced",
+        "years": 3,
+        "icon": "fa fa-project-diagram",
+        "color": "#2196f3"
+    },
+    {
+        "type": "Frameworks and Libraries",
+        "name": "Pillow",
+        "proficiency": "Beginner",
+        "years": 2,
+        "icon": "fa fa-image",
+        "color": "#4a148c"
+    },
+    {
+        "type": "Frameworks and Libraries",
         "name": "Axios",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-cloud",
         "color": "#009688"
@@ -895,7 +895,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Test-Driven Development (TDD)",
-        "proficiency": "Proficient",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-check-square",
         "color": "#4caf50"
@@ -903,7 +903,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Behavior-Driven Development (BDD)",
-        "proficiency": "Proficient",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-check-square",
         "color": "#c300ef"
@@ -911,7 +911,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "CI/CD",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-arrow-rotate-right",
         "color": "#607d8b"
@@ -919,7 +919,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Unit Testing",
-        "proficiency": "Proficient",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-check-square",
         "color": "#4caf50"
@@ -927,7 +927,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Integration Testing",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-check-square",
         "color": "#607d8b"
@@ -935,7 +935,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "End-to-End Testing",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-check-square",
         "color": "#c300ef"
@@ -943,7 +943,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Mutation Testing",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-check-square",
         "color": "#d0ff00"
@@ -951,7 +951,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Static Analysis",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-check-square",
         "color": "#4565f7"
@@ -959,7 +959,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Responsive Web Design",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 10,
         "icon": "fa fa-sliders-h",
         "color": "#4caf50"
@@ -967,7 +967,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Web Accessibility",
-        "proficiency": "Familiar",
+        "proficiency": "Beginner",
         "years": 2,
         "icon": "fa fa-hand-holding-heart",
         "color": "#607d8b"
@@ -975,7 +975,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "SEO",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-search",
         "color": "#c300ef"
@@ -983,7 +983,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Google Analytics",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-chart-line",
         "color": "#d0ff00"
@@ -991,7 +991,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Google My Business",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-chart-line",
         "color": "#4565f7"
@@ -999,7 +999,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Google Search Console",
-        "proficiency": "Competent",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-chart-line",
         "color": "#4caf50"
@@ -1007,7 +1007,7 @@ const SKILLS_DATA: iSkill[] = [
     {
         "type": "Methodologies and Practices",
         "name": "Requirements Engineering",
-        "proficiency": "Proficient",
+        "proficiency": "Advanced",
         "years": 5,
         "icon": "fa fa-book",
         "color": "#607d8b"
