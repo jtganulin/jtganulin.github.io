@@ -5,44 +5,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import styles from '../styles/Home.module.css';
 
+import HomeSection from "../components/HomeSection";
 import Intro from '../views/Intro';
 import Bio from '../views/Bio';
 import Education from '../views/Education';
 import Experience from '../views/Experience';
 import SkillsList from '../components/SkillsList';
 
-const Background = ({ index }: { index: number; }) => {
-    return (
-        <div className={styles.bgContainer}>
-            <img src={`/images/Home/${index}.jpg`} alt={`Homepage background ${index}`}
-                width="1500" height="2000"
-                style={{
-                    maxWidth: "100%",
-                    height: "100%",
-                    objectFit: "fill",
-                    objectPosition: "center",
-                    aspectRatio: 1.3333
-                }}
-            />
-        </div>
-    );
-};
-
-const HomeSection = ({ id, bgIndex, children }: { id?: string; bgIndex: number; children: React.ReactNode; }) => {
-    return (
-        <section id={id}>
-            <div className={styles.homeSection}>
-                <div className={styles.homeSectionContent}>
-                    {children}
-                </div>
-            </div>
-            <Background index={bgIndex} />
-        </section>
-    );
-};
-
 export default function Home() {
-    const containerRef = useRef(null);
+    const containerRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
