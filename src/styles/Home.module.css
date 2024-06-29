@@ -58,14 +58,14 @@
     padding: 10px;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .homeSection {
         width: 75%;
         padding-top: 3rem;
     }
-}
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .homeSection {
         width: 100%;
     }
