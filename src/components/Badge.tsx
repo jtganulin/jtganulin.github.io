@@ -3,7 +3,7 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 
 export function Gold() {
     return (
-        <span title="Proficient">
+        <span title="Advanced">
             <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
                 color: 'gold'
             }} />
@@ -13,7 +13,7 @@ export function Gold() {
 
 export function Silver() {
     return (
-        <span title="Competent">
+        <span title="Intermediate">
             <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
                 color: 'silver'
             }} />
@@ -23,7 +23,7 @@ export function Silver() {
 
 export function Bronze() {
     return (
-        <span title="Familiar">
+        <span title="Beginner">
             <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
                 color: 'rgb(205, 127, 50)'
             }} />
