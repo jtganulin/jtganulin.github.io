@@ -41,15 +41,12 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
         const mobileNav = document.getElementsByClassName(styles.mobileNav)[0] as HTMLDivElement;
         mobileNav.classList.toggle(styles.displayMobileNav);
 
-        // TODO: On page resize, close the menu if it's open only if the page is resized to a desktop view
-        // TODO: Figure why have any other link except Home causes a horizontal overflow on mobile
-
         // While the menu is being displayed, prevent the user from scrolling the page
-        /*         if (mobileNav.classList.contains(styles.displayMobileNav)) {
-                    document.body.style.overflow = "hidden";
-                } else {
-                    document.body.style.overflow = "auto";
-                } */
+        if (mobileNav.classList.contains(styles.displayMobileNav)) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
     };
 
     return (
@@ -58,7 +55,8 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
                 <div className={styles.siteLogoTitle} onClick={() => navigate("/")}>
                     <Avatar style={{
                         marginLeft: "0.75rem",
-                        maxHeight: "85%"
+                        height: "75%",
+                        aspectRatio: 1
                     }} />
                     <h1>Jeffrey Ganulin&apos;s Portfolio</h1>
                 </div>

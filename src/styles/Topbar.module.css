@@ -1,6 +1,7 @@
 .topbar {
     z-index: 1000;
     background-color: var(--color-accent-2);
+    min-height: 75px;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -45,10 +46,10 @@
 .mobileNav {
     display: none;
     width: 100%;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - max(75px, 10vh));
     background-color: var(--color-accent-2);
     position: fixed;
-    top: 10vh;
+    top: max(75px, 10vh);
     left: 0;
     z-index: 1000;
     border-top: 1px solid var(--color-accent);
