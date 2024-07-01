@@ -40,7 +40,7 @@ function App() {
                 showAnim.play();
                 // showAnim.pause();
                 mobileNav.classList.remove(styles.displayMobileNav);
-                document.body.style.overflow = "auto";
+                // document.body.style.overflow = "auto";
             }, 200);
         });
 
