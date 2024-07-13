@@ -16,6 +16,9 @@ export default function Home() {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
+        // If the user prefers reduced animations, don't apply any to the home sections
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
         gsap.registerPlugin(ScrollTrigger);
 
         interface VarsType {
