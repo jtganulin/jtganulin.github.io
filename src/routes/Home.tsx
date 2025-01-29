@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { Helmet } from "react-helmet-async";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { useGSAP,} from "@gsap/react";
 import styles from '../styles/Home.module.css';
 
 import HomeSection from "../components/HomeSection";
@@ -73,6 +73,7 @@ export default function Home() {
                 onToggle(self) {
                     if (self.isActive) { // When user enters forward or backward
                         const imgElement: HTMLElement | null = sectionElement.querySelector<HTMLElement>("." + styles.bgContainer + " img");
+                        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
                         gsap.effects.zoom(imgElement, {
                             scale: zoom.scale,
                             origin: zoom.origin,
@@ -81,6 +82,7 @@ export default function Home() {
                         });
                     } else { // if user leaves the section
                         const imgElement: HTMLElement | null = sectionElement.querySelector<HTMLElement>("." + styles.bgContainer + " img");
+                        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
                         gsap.effects.zoom(imgElement, {
                             scale: 1,
                             origin: [0.5, 0.5],
