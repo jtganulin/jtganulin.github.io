@@ -190,7 +190,7 @@ const SKILLS_DATA: iSkill[] = [
         "name": "Prettier",
         "proficiency": "Intermediate",
         "years": 1,
-        "icon": "fa fa-broom",
+        "icon": "fas fa-broom",
         "color": "#5eb2b4"
     },
     {

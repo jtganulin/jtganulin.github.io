@@ -58,14 +58,18 @@
     padding: 10px;
 }
 
-/* @media screen and (max-width: 800px) {
+/* @media screen and (max-width: 768px) {
     .homeSection {
         width: 75%;
         padding-top: 3rem;
     }
+
+    .bgContainer {
+        width: 25%;
+    }
 } */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .homeSection {
         width: 100%;
     }

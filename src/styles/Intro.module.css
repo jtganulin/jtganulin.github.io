@@ -1,12 +1,12 @@
 .heading {
-    & h2:first-of-type {
+    & h2 {
         font-size: 1.5rem;
         font-weight: 600;
         margin: 0;
         padding: 0;
     }
-
-    & h1:first-of-type {
+    
+    & h1 {
         font-size: 3rem;
         font-weight: 600;
         margin: 0;
@@ -18,11 +18,7 @@
 .activities {
     margin-top: 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-start;
     width: calc(100% - 5rem);
-    border-radius: 1rem;
 }
 
 .activitiesWrapper {
@@ -53,8 +49,15 @@
     /* color: var(--color-text-opposite); */
 }
 
-@media screen and (max-width: 800px) {
-    .activities {
+@media screen and (max-width: 1024px) {
+    .activities,
+    .activitiesWrapper {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .heading h2 {
+        padding-top: 2rem;
     }
 }
