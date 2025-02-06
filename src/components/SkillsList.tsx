@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useMemo, useState } from 'react';
 import SKILLS_DATA from '../assets/SkillData';
 import type { iSkill } from '../assets/SkillData';
 import SkillBadge from './SkillBadge';
@@ -21,18 +21,12 @@ export default function SkillsList({
     showProficiency = false
 }: iSkillsListProps) {
     const [search, setSearch] = useState<string>("");
-    const [filteredSkills, setFilteredSkills] = useState<iSkill[]>(SKILLS_DATA);
-
-    useEffect(() => {
-        if (showSearch) {
-            if (search.trim() !== "") {
-                setFilteredSkills(SKILLS_DATA.filter(skill => skill.name.toLowerCase().includes(search.toLowerCase())));
-            } else {
-                setFilteredSkills(SKILLS_DATA);
-            }
-        } else {
-            setFilteredSkills(SKILLS_DATA);
-        }
+    const filteredSkills = useMemo(() => {
+        if (!showSearch) return SKILLS_DATA;
+        if (search.trim() === "") return SKILLS_DATA;
+        return SKILLS_DATA.filter((skill: iSkill) =>
+            skill.name.toLowerCase().includes(search.toLowerCase())
+        );
     }, [search, showSearch]);
 
     return (
@@ -52,7 +46,7 @@ export default function SkillsList({
             {showYears && (
                 <div><em>Years of experience include personal, academic, and professional experience.</em></div>
             )}
-            <div>
+            <div className={styles.skillsList}>
                 {displayCategories?.map(category => {
                     if (filteredSkills.filter(skill => skill.type === category).length > 0) {
                         return (

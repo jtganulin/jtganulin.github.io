@@ -15,7 +15,7 @@ import {
     faMapPin, faCloud, faDatabase, faCode, faTerminal, faArrowRotateRight,
     faMoon, faSun, faUsers, faComments, faQuestionCircle, faExternalLinkAlt,
     faPalette, faAdjust, faBolt, faSearch, faHandHoldingHeart, faHourglass,
-    faUserSecret, faGraduationCap, faProjectDiagram, faChartLine,
+    faUserSecret, faGraduationCap, faProjectDiagram, faChartLine, faBroom,
     faFileCode, faTasks, faColumns, faUserTie, faSlidersH, faPassport, faTrophy,
     faChalkboardTeacher, faTools, faCogs, faBook, faCheckSquare, faImage, faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
@@ -35,7 +35,7 @@ const NotFound = lazy(() => import('./routes/NotFound.tsx'));
 import './index.css';
 
 library.add(
-    faGitAlt, faJs, faHtml5, faCss3Alt, faReact, faNode, faPhp, faPython,
+    faGitAlt, faJs, faHtml5, faCss3Alt, faReact, faNode, faPhp, faPython, faBroom,
     faJava, faBootstrap, faWindows, faLinux, faApple, faAndroid, faAws, faDocker, faGithub,
     faJira, faTrello, faMicrosoft, faFigma, faWordpress, faLinkedin, faTwitter, faInstagram,
     faFacebook, faYoutube, faDiscord, faSteam, faGoogle, faMapPin, faCloud, faDatabase,
