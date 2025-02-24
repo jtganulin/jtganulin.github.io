@@ -54,7 +54,12 @@ export default function SkillsList({
                                 <h3>{category}</h3>
                                 <div className={styles.categoryContainer}>
                                     {filteredSkills.filter(skill => skill.type === category).map(skill => (
-                                        <SkillBadge key={skill?.name} skill={skill} showProficiency={showProficiency} showYears={showYears} />
+                                        <SkillBadge 
+                                            key={skill?.name}
+                                            skill={skill} 
+                                            showProficiency={showProficiency} 
+                                            showYears={showYears}
+                                        />
                                     ))}
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useLayoutEffect, useState } from "react";
 
 interface ThemeContextProps {
     theme: string;
@@ -10,19 +10,18 @@ const ThemeContext = createContext<ThemeContextProps>({
     toggleTheme: () => void(0),
 });
 
-function ThemeProvider({ children }: { children: React.ReactNode }) {
+function ThemeProvider({ children }: { children: React.ReactNode; }) {
     // By default, use the user's OS color scheme preference
-    const [theme, setTheme] = useState((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? "dark" : "light");
+    const [theme, setTheme] = useState((window?.matchMedia && window?.matchMedia('(prefers-color-scheme: dark)')?.matches) ? "dark" : "light");
 
     const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light");
-    }
+        setTheme((prev) => prev === "light" ? "dark" : "light");
+    };
 
     // If the user updates their OS color scheme preference, update the theme
     useEffect(() => {
         const changeTheme = (event: MediaQueryListEvent) => {
             const newColorScheme = event.matches ? "dark" : "light";
-            
             setTheme(newColorScheme);
         };
 
@@ -32,11 +31,13 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
         // Clean up the event listener on unmount
         return () => {
             window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', changeTheme);
-        }
+        };
     }, []);
 
-    useEffect(() => {
-        document.documentElement.setAttribute("data-theme", theme);
+    useLayoutEffect(() => {
+        if (document.documentElement.getAttribute("data-theme") !== theme) {
+            document.documentElement.setAttribute("data-theme", theme);
+        }
     }, [theme]);
 
     return (
