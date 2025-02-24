@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Outlet, ScrollRestoration } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -23,7 +23,6 @@ function App() {
         ScrollTrigger.create({
             trigger: containerRef.current,
             start: "top top",
-            end: document.body.scrollHeight,
             onUpdate: (self) => {
                 self.direction === -1 ? showAnim.play() : showAnim.reverse();
             }
@@ -68,7 +67,6 @@ function App() {
                 defaultTitle={import.meta.env.VITE_APP_NAME as string}
                 titleTemplate={"%s - " + import.meta.env.VITE_APP_NAME}
             />
-            <ScrollRestoration />
             <Topbar refer={topbarRef} />
             <div ref={containerRef} id="contentContainer">
                 <Outlet />

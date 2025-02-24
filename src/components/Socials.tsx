@@ -7,7 +7,7 @@ export default function Socials({ displayLocation = false, expanded = false }: {
     return (
         <div className={styles.socialsContainer}>
             {displayLocation && (
-                <div className={styles.contact}>
+                <div className={styles.location}>
                     <FontAwesomeIcon icon={"fa fa-map-pin" as IconName} color="red" /><span>&nbsp;Atlanta, GA</span>
                 </div>
             )}

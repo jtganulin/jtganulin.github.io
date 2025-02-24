@@ -3,6 +3,11 @@ import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    headers: {
+      'Cache-Control': 'no-store',
+    },
+  },
   plugins: [
     react()
   ],

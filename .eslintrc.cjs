@@ -23,5 +23,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/display-name': 'none'
   },
 }
