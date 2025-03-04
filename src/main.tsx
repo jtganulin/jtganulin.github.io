@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
 import { HelmetProvider } from 'react-helmet-async';
+import ThemeProvider from './providers/ThemeProvider';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
     faGitAlt, faJs, faHtml5, faCss3Alt, faReact, faNode, faPhp, faPython,
@@ -19,8 +20,6 @@ import {
     faFileCode, faTasks, faColumns, faUserTie, faSlidersH, faPassport, faTrophy,
     faChalkboardTeacher, faTools, faCogs, faBook, faCheckSquare, faImage, faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
-
-import ThemeProvider from './providers/ThemeProvider';
 
 import LoadingPage from "./routes/LoadingPage";
 import ErrorPage from './routes/ErrorPage';
