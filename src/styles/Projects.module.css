@@ -5,11 +5,3 @@
     width: 100%;
     gap: 1rem;
 }
-
-@media screen and (max-width: 800px) {
-    .projectsGrid {
-        gap: 0.15rem;
-        margin: 0;
-        padding: 0;
-    }
-}

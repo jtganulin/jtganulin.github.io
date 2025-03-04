@@ -1,16 +1,17 @@
+import { memo } from "react";
 import { Helmet } from "react-helmet-async";
-import type { iProject } from "../assets/ProjectData";
+import type { IProject } from "../assets/ProjectData";
 import PROJECTS_DATA from "../assets/ProjectData";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Projects.module.css";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-export default function Projects() {
+function Projects() {
     return (
         <>
             <Helmet>
                 <title>Projects</title>
-                <meta name="description" content="View my collection of personal, academic, and professional projects, ranging from full-stack web development, to desktop and mobile applications." />
+                <meta name="description" content="View my portfolio of software projects, ranging from full-stack web development, to desktop and mobile applications." />
                 <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/projects"} />
             </Helmet>
             <div className="constraint">
@@ -22,14 +23,16 @@ export default function Projects() {
                         along with the skills and technologies I used to bring them to life.
                     </p>
                     <div className={styles.projectsGrid}>
-                        {PROJECTS_DATA?.map((project: iProject) => (
+                        {PROJECTS_DATA?.map((project: IProject) => (
                             <ProjectCard key={project?.slug} project={project} />
                         )) || (
-                                <p>No projects found.</p>
-                            )}
+                            <p>Error loading projects, please refresh the page or try again later.</p>
+                        )}
                     </div>
                 </main>
             </div>
         </>
     );
 }
+
+export default memo(Projects);

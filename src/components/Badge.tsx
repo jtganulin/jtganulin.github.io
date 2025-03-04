@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 
-export function Gold() {
+const Gold = memo(() => {
     return (
         <span title="Advanced">
             <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
@@ -9,9 +10,9 @@ export function Gold() {
             }} />
         </span>
     );
-}
+});
 
-export function Silver() {
+const Silver = memo(() => {
     return (
         <span title="Intermediate">
             <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
@@ -19,9 +20,9 @@ export function Silver() {
             }} />
         </span>
     );
-}
+});
 
-export function Bronze() {
+const Bronze = memo(() => {
     return (
         <span title="Beginner">
             <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
@@ -29,4 +30,6 @@ export function Bronze() {
             }} />
         </span>
     );
-}
+});
+
+export { Gold, Silver, Bronze };
