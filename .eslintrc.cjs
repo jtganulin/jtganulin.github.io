@@ -23,6 +23,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
-    'react/display-name': 'none'
+    'react/display-name': 'off',
+    '@typescript-eslint/prefer-nullish-coalescing': 'off',
   },
 }
