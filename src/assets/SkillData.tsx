@@ -1,5 +1,5 @@
 
-export interface iSkill {
+export interface ISkill {
     type: string,
     name: string,
     proficiency: string,
@@ -8,7 +8,7 @@ export interface iSkill {
     color: string
 }
 
-const SKILLS_DATA: iSkill[] = [
+const SKILLS_DATA: ISkill[] = [
     {
         "type": "Databases",
         "name": "MySQL",
@@ -79,7 +79,7 @@ const SKILLS_DATA: iSkill[] = [
         "proficiency": "Advanced",
         "years": 2,
         "icon": "fab fa-node",
-        "color": "white"
+        "color": "#ffffff"
     },
     {
         "type": "Frameworks and Libraries",
@@ -383,7 +383,7 @@ const SKILLS_DATA: iSkill[] = [
         "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-code",
-        "color": "white"
+        "color": "#ffffff"
     },
     {
         "type": "Languages",
@@ -407,7 +407,7 @@ const SKILLS_DATA: iSkill[] = [
         "proficiency": "Beginner",
         "years": 1,
         "icon": "fa fa-code",
-        "color": "white"
+        "color": "#ffffff"
     },
     {
         "type": "Languages",
@@ -575,7 +575,7 @@ const SKILLS_DATA: iSkill[] = [
         "proficiency": "Advanced",
         "years": 20,
         "icon": "fab fa-windows",
-        "color": "white"
+        "color": "#ffffff"
     },
     {
         "type": "Operating Systems",
@@ -591,7 +591,7 @@ const SKILLS_DATA: iSkill[] = [
         "proficiency": "Beginner",
         "years": 3,
         "icon": "fab fa-apple",
-        "color": "white"
+        "color": "#ffffff"
     },
     {
         "type": "Platforms",
@@ -615,7 +615,7 @@ const SKILLS_DATA: iSkill[] = [
         "proficiency": "Intermediate",
         "years": 2,
         "icon": "fab fa-figma",
-        "color": "white"
+        "color": "#ffffff"
     },
     {
         "type": "Platforms",

@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react';
+import { memo, useMemo, useState } from 'react';
 import SKILLS_DATA from '../assets/SkillData';
-import type { iSkill } from '../assets/SkillData';
+import type { ISkill } from '../assets/SkillData';
 import SkillBadge from './SkillBadge';
 import styles from '../styles/SkillsList.module.css';
 import { Gold, Silver, Bronze } from './Badge';
 
-interface iSkillsListProps {
+interface ISkillsListProps {
     displayCategories?: string[],
     showSearch?: boolean,
     showLegend?: boolean,
@@ -13,18 +13,18 @@ interface iSkillsListProps {
     showProficiency?: boolean
 }
 
-export default function SkillsList({
+function SkillsList({
     displayCategories = ["Soft Skills", "Methodologies and Practices", "Languages", "Frameworks and Libraries", "Platforms", "Tools", "Databases", "Operating Systems"],
     showSearch = false,
     showLegend = false,
     showYears = false,
     showProficiency = false
-}: iSkillsListProps) {
+}: ISkillsListProps) {
     const [search, setSearch] = useState<string>("");
     const filteredSkills = useMemo(() => {
         if (!showSearch) return SKILLS_DATA;
         if (search.trim() === "") return SKILLS_DATA;
-        return SKILLS_DATA.filter((skill: iSkill) =>
+        return SKILLS_DATA.filter((skill: ISkill) =>
             skill.name.toLowerCase().includes(search.toLowerCase())
         );
     }, [search, showSearch]);
@@ -70,3 +70,5 @@ export default function SkillsList({
         </div>
     );
 }
+
+export default memo(SkillsList);

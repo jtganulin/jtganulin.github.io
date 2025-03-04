@@ -1,18 +1,16 @@
-import { useLayoutEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { memo, useEffect, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
-import type { iProject } from '../assets/ProjectData';
+import type { IProject } from '../assets/ProjectData';
 import styles from '../styles/ProjectCard.module.css';
 import SKILLS_DATA from '../assets/SkillData';
 import SkillBadge from './SkillBadge';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-export default function ProjectCard({ project }: { project: iProject; }) {
-    for (let i = 0; i < project?.skills?.length; i++) {
-        if (!SKILLS_DATA.find(s => s.name === project.skills[i])) {
-            console.log("Skill not found: " + project.skills[i]);
-        }
-    }
+function ProjectCard({ project }: { project: IProject; }) {
+    const skillsContainerRef = useRef<HTMLDivElement>(null);
+    const skillsRef = useRef<HTMLDivElement>(null);
+    const navigate = useNavigate();
 
     const toggleBlur = (e: React.UIEvent<HTMLDivElement>) => {
         // If the scroll position is at the top, restore the blur, otherwise hide it
@@ -21,24 +19,29 @@ export default function ProjectCard({ project }: { project: iProject; }) {
         }
     };
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         // If the height of the {styles.skills} div is less than the height of the {styles.skillsContainer} div, hide the blur
-        const skillsContainer = document.querySelectorAll("." + styles.skillsContainer);
-        const skills = document.querySelectorAll("." + styles.skills);
+        if (!(skillsRef.current && skillsContainerRef.current)) return;
 
-        for (let i = 0; i < skillsContainer.length; i++) {
-            if (skills[i].scrollHeight <= skillsContainer[i].clientHeight) {
-                (skillsContainer[i].children[1] as HTMLDivElement).style.display = "none";
-            }
+        if (skillsRef.current.scrollHeight <= skillsContainerRef.current.clientHeight) {
+            (skillsContainerRef.current.children[1] as HTMLDivElement).style.display = "none";
         }
-    }, []);
+    }, [skillsRef, skillsContainerRef]);
 
     return (
         <div className={styles.projectCard}>
             <div className={styles.projectIntro}>
-                <h3>{project.title}</h3>
+                <h3>
+                    <Link
+                        to={"/projects/" + project.slug}
+                        role="button"
+                        title={"View project details for " + project.title}
+                    >
+                        {project.title}
+                    </Link>
+                </h3>
                 {project?.subtitle && (
-                    <h4>{project.subtitle}</h4>
+                    <h4><em>{project.subtitle}</em></h4>
                 )}
             </div>
             {project?.images && project?.images.length > 0 && (
@@ -62,8 +65,8 @@ export default function ProjectCard({ project }: { project: iProject; }) {
                 </div>
             )}
             <p className={styles.projectSummary}>{project.summary}</p>
-            <div className={styles.skillsContainer}>
-                <div className={styles.skills} onScroll={e => toggleBlur(e)}>
+            <div className={styles.skillsContainer} ref={skillsContainerRef}>
+                <div className={styles.skills} onScroll={e => toggleBlur(e)} ref={skillsRef}>
                     {project?.skills?.map(skill => (
                         <div key={project.slug + skill}>
                             <SkillBadge skill={SKILLS_DATA.find(s => s.name === skill)!} showProficiency={false} />
@@ -74,11 +77,13 @@ export default function ProjectCard({ project }: { project: iProject; }) {
             </div>
             {project?.description && (
                 <div className={styles.projectLinks}>
-                    <Link to={"/projects/" + project.slug} role="button">
-                        <button>View Project Details</button>
-                    </Link>
+                    <button type="button" onClick={() => navigate("/projects/" + project.slug)}>
+                        View Project Details
+                    </button>
                 </div>
             )}
         </div>
     );
 }
+
+export default memo(ProjectCard);

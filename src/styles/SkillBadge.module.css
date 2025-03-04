@@ -4,9 +4,15 @@
     justify-content: flex-start;
     flex-shrink: 1;
     width: fit-content;
-    padding: 0.45rem;
-    border-radius: 0.75rem;
-    background-color: var(--color-accent-2);
-    /* TODO: Update upon new color scheme */
-    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    background-color: var(--color-foreground);
+    color: #ffffff;
+}
+
+.skillIcon {
+    width: 1rem;
+    margin: auto 0.25rem;
+    text-decoration: none;
 }
