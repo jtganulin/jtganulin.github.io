@@ -1,4 +1,4 @@
-export interface iProject {
+export interface IProject {
     slug: string;
     title: string;
     subtitle?: string;
@@ -146,12 +146,11 @@ const PROJECTS_DATA = [
         title: "Dice",
         subtitle: "A Yahtzee! clone for the web",
         summary: "A minimalist and intuitive Yahtzee! clone for the web.",
-        description: "Dice (Working Title) is a web-based clone of the classic dice game, Yahtzee! Players can roll dice, and score their rolls in various categories. Dice was developed as a personal project so that my family, friends, and I can play one of our favorite games on the go! Dice was developed using HTML, CSS, JavaScript, and jQuery. The game is fully functional and can be played in a web browser. The game is responsive and can be played on desktop and mobile devices. The game is also designed to be easy to use and intuitive, and minimalistic and performant.",
+        description: "Dice (working title) is a web-based clone of the classic dice game, Yahtzee! Players can roll dice, and score their rolls in various categories. Dice was developed as a personal project so that my family, friends, and I can play one of our favorite games on the go! Dice was developed using HTML, CSS, JavaScript, and jQuery. It's responsive and can be played on desktop and mobile devices. The game is designed to be minimalistic and performant while remaining easy to use and intuitive.",
         accomplishments: [
             "Designed and developed a web-based clone of the classic dice game, Yahtzee!, using HTML, CSS, JavaScript, and jQuery.",
             "Performed various iterations to ensure the game met all functional requirements and was easy to use and intuitive.",
             "Designed the game to be fully responsive and performant, and to be playable on desktop and mobile devices.",
-            "Developed the game to be minimalistic and easy to use, with a focus on the game itself.",
             "Prioritized the game's cross-browser compatibility and performance."
         ],
         type: "Personal",
@@ -163,7 +162,7 @@ const PROJECTS_DATA = [
     {
         slug: "MultiFileTextReplacer",
         title: "Multi-File Text Replacer",
-        subtitle: "Replace text across multiple text files on Windows",
+        subtitle: "Replace text across multiple files simultaneously on Windows",
         summary: "Utility for Windows that allows replacement of a given string or regular expression pattern across multiple text files.",
         description: "For scenarios where you need to replace text (either via string input or regular expression pattern) throughout multiple separate text files, Multi-File Text Replacer is a utility for Windows that allows you to do just that. The utility is designed to be easy to use, simple, and efficient. Multi-File Text Replacer was developed as a personal project to solve a problem I encountered in my own work. The utility was developed using C# and WPF (with XAML). The utility aims to present relevant controls and information to the user in a clear and quick to grasp manner, and also emphasizes safety and reliability, with its ability to create backups of files before making changes.",
         accomplishments: [
@@ -272,6 +271,6 @@ const PROJECTS_DATA = [
         images: [],
         skills: ["HTML", "CSS", "JavaScript", "React", "GSAP", "TypeScript", "Python", "Git", "GitHub", "Figma", "Markdown", "Adobe Photoshop CS6", "Communication", "Flexibility", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Creativity", "Accountability"],
     },
-] as iProject[];
+] as IProject[];
 
 export default PROJECTS_DATA;
