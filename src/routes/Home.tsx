@@ -140,38 +140,60 @@ export default function Home() {
         <>
             <Helmet>
                 <title>Home</title>
+                <meta name="description" content="Welcome to my software engineering portfolio. Discover my background, education, experience, and a wide range of technical skills that drive my development work." />
                 <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/"} />
             </Helmet>
-            <main ref={containerRef} className={styles.main}>
-                <HomeSection id="hello" bgIndex={1}>
+            <main ref={containerRef}>
+                <HomeSection
+                    id="hello"
+                    bgIndex={1}
+                    scrollBtnTarget="bio"
+                    scrollBtnLabel="Learn more about me"
+                >
                     <Intro />
-                    <br />
-                    <p>View my resume <a href="/#/about?resume">here</a> or scroll down to learn more about me.</p>
                 </HomeSection>
-                <HomeSection id="bio" bgIndex={2}>
+                <HomeSection 
+                    id="bio"
+                    sectionTitle="About Me"
+                    bgIndex={2}
+                    scrollBtnTarget="education"
+                    scrollBtnLabel="View my academic background"
+                >
                     <Bio />
-                    <p><em>Scroll further to view my education, experience, and skills.</em></p>
                 </HomeSection>
-                <HomeSection id="education" bgIndex={3}>
+                <HomeSection 
+                    id="education"
+                    sectionTitle="Education"
+                    bgIndex={3}
+                    scrollBtnTarget="experience"
+                    scrollBtnLabel="Learn about my experience"
+                >
                     <Education />
-                    <p><em>Scroll further to view my experience and skills.</em></p>
                 </HomeSection>
-                <HomeSection id="experience" bgIndex={4}>
+                <HomeSection
+                    id="experience"
+                    sectionTitle="Experience and Projects"
+                    bgIndex={4}
+                    scrollBtnTarget="skills"
+                    scrollBtnLabel="View my collection of technical and soft skills"
+                >
                     <Experience />
-                    <p><em>Scroll further to view my technical and soft skills.</em></p>
                 </HomeSection>
-                <HomeSection id="skills" bgIndex={5}>
+                <HomeSection
+                    id="skills"
+                    bgIndex={5}
+                >
                     <SkillsList showSearch showLegend showProficiency />
                 </HomeSection>
-                <div>
-                    <button
-                        onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }}
-                        className={styles.scrollToTop}
-                        aria-label="Scroll to Top"
-                    >
-                        ↑ Back to Top
-                    </button>
-                </div>
+                <button
+                    onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); }}
+                    className={styles.scrollToTop}
+                    aria-label="Scroll to top"
+                    title="Scroll to top"
+                    type="button"
+                >
+                    ↑ <span>Back to Top</span>
+                </button>
             </main>
         </>
     );
