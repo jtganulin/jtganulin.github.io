@@ -3,7 +3,7 @@ import styles from "../styles/Intro.module.css";
 
 export default function Intro() {
     return (
-        <>
+        <div className={styles.intro}>
             <div className={styles.heading}>
                 <h2><em>Hello, I&apos;m</em></h2>
                 <h1>Jeffrey Ganulin</h1>
@@ -34,6 +34,6 @@ export default function Intro() {
                 </div>
             </div>
             <Socials />
-        </>
+        </div>
     );
 }
