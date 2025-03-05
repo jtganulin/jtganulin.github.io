@@ -1,21 +1,40 @@
-.educationEntry {
-    padding-bottom: 1rem;
+.educationContainer {
+    max-height: 100%;
     width: 100%;
+    margin-top: 1rem;
+}
 
+.educationEntry {
+    width: 100%;
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+    
+    /* Styling the unopened summary area */
+    & details {
+        transition: background-color 0.2s ease;
+        background-color: var(--color-accent-2);
+        color: #ffffff;
+        &:hover {
+            background-color: var(--color-accent);
+        }
+    }
+    
     & summary {
+        padding: 1rem;
         width: 100%;
-        border-radius: 5px;
         cursor: pointer !important;
     }
-
-    & details {
-        padding: 1rem;
-        background-color: var(--color-accent-2);
-        color: white; /* TODO: Update upon new color scheme */
-    }
-
+    
     & details[open] summary {
-        padding-bottom: 1rem;
-        border-bottom: 1px solid var(--color-text-opposite);
+        background-color: var(--color-accent);
+        border-bottom: 1px solid var(--color-text-primary);
+    }
+    
+    /* The content in the expanded details */
+    & .coursework {
+        padding: 1rem;
+        width: 100%;
+        background-color: var(--color-foreground);
     }
 }
