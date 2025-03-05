@@ -38,14 +38,14 @@ const LinksSection = memo(({ project }: { project: IProject; }) => (
     <>
         {project?.github && (
             <div>
-                <a href={project?.github} target="_blank" rel="noopener, noreferrer" title={"View source code for " + project.title}>
+                <a href={project?.github} target="_blank" rel="noopener noreferrer" title={"View source code for " + project.title}>
                     <FontAwesomeIcon icon={"fab fa-github" as IconName} /> View Project on Github
                 </a>
             </div>
         )}
         {project?.url && (
             <div>
-                <a href={project?.url} target="_blank" rel="noopener, noreferrer" title={"View live demo of " + project.title}>
+                <a href={project?.url} target="_blank" rel="noopener noreferrer" title={"View live demo of " + project.title}>
                     <FontAwesomeIcon icon={"fas fa-external-link-alt" as IconName} /> View Project Demo
                 </a>
             </div>
