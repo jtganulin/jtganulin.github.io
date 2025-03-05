@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Socials from "../components/Socials";
 
-// TODO: Fix formatting
 export default function Contact() {
     return (
         <>
