@@ -1,6 +1,6 @@
 .topbar {
     z-index: 1000;
-    background-color: var(--color-accent-2);
+    background-color: var(--color-foreground);
     min-height: 75px;
     height: 10vh;
     width: 100%;
@@ -11,6 +11,10 @@
     left: 0;
     top: 0;
     border-bottom: 2px solid var(--color-accent);
+    /* Apply a box shadow to the bottom to give the top nav bar appearance of floating over the page content */
+    box-shadow: 0 0 0.5rem var(
+        --color-foreground
+    );
 }
 
 .siteLogoTitle {
@@ -26,9 +30,13 @@
     }
 
     & h1 {
-        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        font-size: 125%;
         font-weight: 600;
-        color: #fff;
+        color: #ffffff;
         margin: 0;
         padding: 0;
         margin-left: 1rem;
@@ -47,12 +55,11 @@
     display: none;
     width: 100%;
     height: calc(100vh - max(75px, 10vh));
-    background-color: var(--color-accent-2);
+    background-color: var(--color-foreground);
     position: fixed;
     top: max(75px, 10vh);
     left: 0;
     z-index: 1000;
-    border-top: 1px solid var(--color-accent);
 }
 
 .desktopLinks, .mobileLinks {
@@ -64,6 +71,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
+    font-weight: bold;
 }
 
 .desktopLinks {
@@ -91,18 +99,14 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #FFFFFF; /* TODO: Change upon adjusting color scheme */
+        color: #ffffff;
         transition: background-color 0.2s ease;
         text-align: center;
     }
 
     & a:hover {
-        background-color: var(--color-accent);
+        background-color: var(--color-accent-2);
     }
-}
-
-.desktopLinks li {
-    border-left: 1px solid var(--color-accent);
 }
 
 .mobileLinks li {
@@ -122,6 +126,10 @@
 }
 
 @media screen and (max-width: 800px) {
+    .siteLogoTitle h1 {
+        margin-left: 0.75rem;
+    }
+
     .desktopNav {
         display: none;
     }
@@ -133,20 +141,26 @@
         border-radius: 0;
         width: 15%;
         height: 100%;
-        background-color: var(--color-accent-2);
+        background-color: var(--color-accent);
+        transition: background-color 0.2s ease;
 
         &:hover {
             box-shadow: none;
+            background-color: var(--color-accent-2);
         }
 
         & svg {
             height: 2rem;
             width: 2rem;
-            fill: white;
+            fill: #ffffff;
         }
     }
 
     .displayMobileNav {
         display: block;
+    }
+
+    .activeLink {
+        background-color: var(--color-accent);
     }
 }
