@@ -1,23 +1,29 @@
 .toggleThemeButton {
     height: 100%;
-    width: 50%;
+    width: 100%;
     border: none;
     outline: none;
     border-radius: 0;
-    border-left: 1px solid var(--color-accent);
-    background-color: var(--color-accent-2);
+    background-color: var(--color-foreground);
     overflow: hidden;
     transition: background-color 0.2s ease;
+    &:hover {
+        box-shadow: none;
+        background-color: var(--color-accent-2);
+    }
 }
 
-.toggleThemeButton:hover {
-    box-shadow: none;
-    background-color: var(--color-accent);
+.toggleThemeLabel {
+    display: none;
 }
 
 @media screen and (max-width: 800px) {
     .toggleThemeButton {
         border: none !important;
         width: 100%;
+    }
+
+    .toggleThemeLabel {
+        display: block;
     }
 }

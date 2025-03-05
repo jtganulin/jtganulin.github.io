@@ -3,18 +3,22 @@ import styles from '../styles/Topbar.module.css';
 import ToggleThemeButton from './ToggleThemeButton';
 import Avatar from './Avatar';
 
-// Page friendly name: [path, caption]
+// { Page friendly name: [path, caption] }
 const ROUTES: Record<string, [string, string]> = {
     "Home": ["/", "Go to the homepage"],
-    "Projects": ["/projects", "See my work and projects"],
-    "About Me": ["/about", "Learn more about me"],
-    "Contact Me": ["/contact", "Get in touch with me"]
+    "Projects": ["/projects", "See my work and portfolio of software projects"],
+    "About": ["/about", "Learn more about me"],
+    "Contact": ["/contact", "Get in touch with me"]
 };
 
 export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivElement>; }) {
     const navigate = useNavigate();
 
-    const Links = ({ ctx }: { ctx: string; }) => {
+    const Links = ({ ctx }: {
+        // The context of the links, either "desktopLinks" or "mobileLinks"
+        // This controls styling for either desktop or mobile nav by assigning the appropriate className
+        ctx: "desktopLinks" | "mobileLinks";
+    }) => {
         return (
             <ul className={styles[ctx]}>
                 {Object.keys(ROUTES).map((route, i) => {
@@ -32,7 +36,9 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
                     );
                 }
                 )}
-                <ToggleThemeButton />
+                <li key="toggleThemeButton">
+                    <ToggleThemeButton handleClick={toggleMobileNav}/>
+                </li>
             </ul>
         );
     };
