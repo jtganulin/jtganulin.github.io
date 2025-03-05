@@ -11,7 +11,7 @@ export default function NotFound() {
         <div className="center">
             <h1 className="pageHeading">Page Not Found - Error 404</h1>
                 <p>Try checking the URL for any typos or head to the <Link to="/">homepage</Link>.</p>
-                <p>To quickly view my resume, click <a href="/JeffreyGanulinResume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                <p>To quickly view my resume, click <a href="/JeffreyGanulinResume.pdf" target="_blank" rel="noopener">here</a>.</p>
         </div>
         </>
     );
