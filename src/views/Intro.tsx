@@ -1,31 +1,39 @@
 import Socials from "../components/Socials";
 import styles from "../styles/Intro.module.css";
 
-const ACTIVITIES = [
-    "Full-stack Software Engineer",
-    "Web Developer",
-    "Software and Hardware Support Specialist",
-    "Graphic Designer",
-    "Food Enthusiast",
-    "Amateur Chef and Baker",
-    "Photographer",
-];
-
-export default function Intro({ refer }: { refer?: React.RefObject<HTMLDivElement> }) {
+export default function Intro() {
     return (
-        <div ref={refer}>
+        <>
             <div className={styles.heading}>
                 <h2><em>Hello, I&apos;m</em></h2>
                 <h1>Jeffrey Ganulin</h1>
-                <Socials displayLocation={true} />
-                <div className={styles.activities}>
-                    <div className={styles.activitiesWrapper}>
-                        {ACTIVITIES.map((activity, index) => (
-                            <div className="activity" key={index}>{activity}</div>
-                        ))}
+                <h3><em>I am a...</em></h3> 
+            </div>
+            <div className={styles.activitiesWrapper}>
+                <div>
+                    <div className={styles.activity}>
+                        Full-stack Software Engineer
+                    </div>
+                    <div className={styles.activity}>
+                        Web Developer
+                    </div>
+                    <div className={styles.activity}>
+                        Computer Support Specialist
+                    </div>
+                </div>
+                <div>
+                    <div className={styles.activity}>
+                        Graphic Designer
+                    </div>
+                    <div className={styles.activity}>
+                        Photographer
+                    </div>
+                    <div className={styles.activity}>
+                        Amateur Chef and Baker
                     </div>
                 </div>
             </div>
-        </div>
+            <Socials />
+        </>
     );
 }
