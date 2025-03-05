@@ -6,7 +6,7 @@ export default function NotFound() {
         <>
         <Helmet>
             <title>Page Not Found</title>
-            <meta name="robots" content="noindex, nofollow" />
+            <meta name="robots" content="noindex" />
         </Helmet>
         <div className="center">
             <h1 className="pageHeading">Page Not Found - Error 404</h1>

@@ -11,8 +11,8 @@
     & pre {
         text-align: left;
         padding: 0;
-        width: 90%;
-        overflow-x: scroll;
+        width: 50%;
+        overflow-x: auto;
         color: var(--color-text-primary);
     }
 
