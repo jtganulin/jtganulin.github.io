@@ -54,7 +54,7 @@
 .mobileNav {
     display: none;
     width: 100%;
-    height: calc(100vh - max(75px, 10vh));
+    height: calc(100svh - max(75px, 10vh));
     background-color: var(--color-foreground);
     position: fixed;
     top: max(75px, 10vh);
