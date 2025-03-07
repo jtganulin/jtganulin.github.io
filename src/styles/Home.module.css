@@ -1,24 +1,3 @@
-.homeSection {
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.homeSectionContent {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    justify-self: center;
-    flex-grow: 1;
-}
-
 .bgContainer {
     width: 40%;
     min-height: 100%;
@@ -62,14 +41,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 0.20;
-    align-self: center;
-    justify-self: flex-end;
-
-    /* Actual scroll button */
-    & button {
-        align-self: flex-end;
-        margin: 1rem auto;
-    }
+    margin: 1rem 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -87,7 +59,7 @@
     .bgContainer {
         display: none;
     }
-    
+
     .scrollToTop {
         /* Hide the 'scroll to top text' */
         & span {
