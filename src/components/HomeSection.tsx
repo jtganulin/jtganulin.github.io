@@ -19,7 +19,7 @@ const SectionScrollButton = memo(({ targetID, label }:
     if (!targetID) return null;
 
     return (
-        <div className={`${styles.sectionScrollButton}`}>
+        <div className={styles.sectionScrollButton}>
             <button
                 onClick={scroll}
                 type="button"
@@ -41,9 +41,13 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
 }) => {
     return (
         <section id={id} className="homeSectionContainer">
-            <div className={styles.homeSection}>
-                <div className={styles.homeSectionContent}>
-                    {sectionTitle && <h1 className={styles.sectionTitle}>{sectionTitle}</h1>}
+            <div className="homeSection">
+                <div className="homeSectionContent">
+                    {sectionTitle &&
+                        <h1 className={styles.sectionTitle}>
+                            {sectionTitle}
+                        </h1>
+                    }
                     {children}
                 </div>
                 {scrollBtnTarget && (
