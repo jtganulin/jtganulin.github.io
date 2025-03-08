@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../styles/Education.module.css";
 
 const educationEntries = [
@@ -52,20 +51,12 @@ const educationEntries = [
 
 // TODO: Constrain the total height of the section so that expanding relevant coursework doesn't excessively stretch the associated background image
 function Education() {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-    const toggleDetails = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
-
     return (
         <div className={styles.educationContainer}>
             {educationEntries.map((entry, index) => (
                 <EducationEntry
                     key={index}
                     {...entry}
-                    isOpen={openIndex === index}
-                    toggleOpen={() => toggleDetails(index)}
                 />
             ))}
         </div>
@@ -77,17 +68,13 @@ interface IEducationEntry {
     degree: string;
     honors?: string[];
     coursework: string[];
-    isOpen: boolean;
-    toggleOpen: () => void;
 }
 
 const EducationEntry = ({
     school,
     degree,
     honors,
-    coursework,
-    isOpen,
-    toggleOpen
+    coursework
 }: IEducationEntry) => {
     return (
         <div className={styles.educationEntry}>
@@ -101,10 +88,7 @@ const EducationEntry = ({
                     ))}
                 </ul>
             )}
-            <details open={isOpen} onClick={(e) => {
-                e.preventDefault();
-                toggleOpen();
-            }}>
+            <details>
                 <summary>Relevant Coursework</summary>
                 <div className={styles.coursework}>
                     <ul>
