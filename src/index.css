@@ -129,27 +129,6 @@ main {
     }
 }
 
-/* The left/text content side of each homepage section */
-.homeSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    width: 60%;
-}
-
-/* The actual text content in each left-side content section */
-.homeSectionContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-grow: 1;
-    width: 90%;
-    justify-self: center;
-}
-
 @media screen and (max-width: 800px) {
     .constraint {
         width: 100%;
