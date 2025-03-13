@@ -34,12 +34,13 @@ function App() {
         let resetTimer: ReturnType<typeof setTimeout>;
         const mobileNav = document.getElementsByClassName(styles.mobileNav)[0] as HTMLDivElement;
         window.addEventListener("resize", () => {
+            // Immediately hide the mobile nav to prevent flash on resize
+            mobileNav.classList.remove(styles.displayMobileNav);
+
             clearTimeout(resetTimer);
             resetTimer = setTimeout(() => {
                 showAnim.play();
-                // showAnim.pause();
-                mobileNav.classList.remove(styles.displayMobileNav);
-                // document.body.style.overflow = "auto";
+                document.body.style.overflow = "auto";
             }, 200);
         });
 
