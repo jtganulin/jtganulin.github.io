@@ -28,7 +28,10 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
                                 className={({ isActive }) => isActive ? styles.activeLink : undefined}
                                 title={ROUTES[route][1]}
                                 to={ROUTES[route][0]}
-                                onClick={toggleMobileNav} // Close the mobile menu when a link is clicked
+                                onClick={() => {
+                                    // Close the mobile menu when a link is clicked
+                                    if (ctx == "mobileLinks") toggleMobileNav();
+                                }}
                             >
                                 {route}
                             </NavLink>
@@ -37,7 +40,9 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
                 }
                 )}
                 <li key="toggleThemeButton">
-                    <ToggleThemeButton handleClick={toggleMobileNav}/>
+                    <ToggleThemeButton handleClick={() => {
+                        if (ctx == "mobileLinks") toggleMobileNav();
+                    }}/>
                 </li>
             </ul>
         );
