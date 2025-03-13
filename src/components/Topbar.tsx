@@ -48,11 +48,11 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
         mobileNav.classList.toggle(styles.displayMobileNav);
 
         // While the menu is being displayed, prevent the user from scrolling the page
-        // if (mobileNav.classList.contains(styles.displayMobileNav)) {
-        //     document.body.style.overflow = "hidden";
-        // } else {
-        //     document.body.style.overflow = "auto";
-        // }
+        if (mobileNav.classList.contains(styles.displayMobileNav)) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
     };
 
     return (
