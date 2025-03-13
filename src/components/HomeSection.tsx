@@ -41,8 +41,8 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
 }) => {
     return (
         <section id={id} className="homeSectionContainer">
-            <div className="homeSection">
-                <div className="homeSectionContent">
+            <div className={styles.homeSection}>
+                <div className={styles.homeSectionContent}>
                     {sectionTitle &&
                         <h1 className={styles.sectionTitle}>
                             {sectionTitle}
