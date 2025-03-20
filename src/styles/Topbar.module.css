@@ -125,7 +125,7 @@
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .siteLogoTitle h1 {
         margin-left: 0.75rem;
     }

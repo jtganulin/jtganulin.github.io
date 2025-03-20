@@ -14,12 +14,12 @@ export default function Contact() {
             <h1 className="pageHeading">Contact Me</h1>
             <main>
                 <p>
-                    Looking to get in touch to collaborate on a project, or seeking a valuable contributor for your business venture?
-                    Reach out to me on LinkedIn, GitHub, or by email using the buttons below.
+                    Looking to get in touch to collaborate on a project, or seeking a valuable contributor for your business venture? I&apos;m always interested in hearing about exciting projects where my unique skills and passion for technology can add value, so feel free to reach out to me on LinkedIn, GitHub, or by email using the buttons below.
                 </p>
                 <p>
                     I currently live in the northern Atlanta, GA area <em>(Timezone EST: UTC-5)</em>, and am open to remote work opportunities.
-                    <br />
+                </p>
+                <p>
                     Thanks for your time and interest in viewing my portfolio!
                 </p>
                 <Socials expanded />
