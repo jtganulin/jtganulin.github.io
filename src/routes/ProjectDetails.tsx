@@ -1,6 +1,6 @@
 import { memo, useMemo } from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import { Helmet } from "react-helmet-async";
+import { useHead, useLink } from "hoofd";
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import type { IProject } from "../assets/ProjectData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -20,10 +20,20 @@ const ImagesSection = memo(({ project }: { project: IProject; }) => (
         isPlaying={true}
     >
         <Slider>
-            {project.images?.map((image: string) => (
+            {project.images?.map((image: string, idx: number) => (
                 <Slide key={image} index={project.images!.indexOf(image)}>
-                    {/* TODO: Srcset: On mobile use scaled thumbnail, on tablet and desktop use full-size image */}
-                    <img height={1080} width={1920} src={"/images/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} />
+                    <img 
+                        height={1080} 
+                        width={1920} 
+                        src={"/images/" + project.slug + "/" + image} 
+                        srcSet={
+                            "/images/thumbnails/" + project.slug + "/" + image + " 500w, " +
+                            "/images/" + project.slug + "/" + image + " 1920w"
+                        }
+                        sizes="(max-width: 768px) 500px, 1920px"
+                        alt={`Image ${idx} of ${project.title}`} 
+                        title={`Image ${idx} of ${project.title}`} 
+                    />
                 </Slide>
             ))}
         </Slider>
@@ -64,58 +74,63 @@ const SkillsSection = memo(({ project }: { project: IProject; }) => (
     </>
 ));
 
-const ProjectDetails = memo(({ slug }: { slug?: string; }) => {
+const ProjectDetails = memo(() => {
     const params = useParams();
 
     const project: (IProject | undefined) = useMemo(() => {
-        return PROJECTS_DATA?.find?.((project: IProject) => project.slug === params?.slug || project?.slug === slug);
-    }, [params, slug]);
+        return PROJECTS_DATA?.find?.((project: IProject) => project.slug === params?.slug);
+    }, [params]);
 
+    useHead({
+        title: project?.title || "Project Not Found",
+        metas: [
+            { name: "description", content: project?.description || "No description available" },
+        ]
+    });
+
+    useLink({
+        rel: "canonical",
+        href: import.meta.env.VITE_APP_DOMAIN as string + "/projects/" + (project?.slug || "")
+    });
+    
     if (!project) {
         return <Navigate to='/projects/' replace={true} />;
     }
 
     return (
-        <>
-            <Helmet>
-                <title>{project.title}</title>
-                <meta name="description" content={project.description} />
-                <link rel="canonical" href={import.meta.env.VITE_APP_DOMAIN as string + "/projects/" + project.slug} />
-            </Helmet>
-            <div className="constraint">
-                <div className={styles.titleContainer}>
-                    <h1>{project.title}</h1>
-                    {project.subtitle && (
-                        <h4>{project.subtitle}</h4>
-                    )}
-                </div>
-                <div className={styles.projectContent}>
-                    {project.images && project.images.length > 1 && (
-                        <ImagesSection project={project} />
-                    )}
-                    {(project.url || project.github) && (
-                        <LinksSection project={project} />
-                    )}
-                    <div>
-                        <h3>Description</h3>
-                        {project.description}
-                    </div>
-                    {project.accomplishments && (
-                        <div>
-                            <h3>Accomplishments</h3>
-                            <ul>
-                                {project.accomplishments.map?.((accomplishment: string) => (
-                                    <li key={accomplishment}>{accomplishment}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
-                    {project.skills && project.skills.length > 0 && (
-                        <SkillsSection project={project} />
-                    )}
-                </div>
+        <div className="constraint">
+            <div className={styles.titleContainer}>
+                <h1>{project.title}</h1>
+                {project.subtitle && (
+                    <h4>{project.subtitle}</h4>
+                )}
             </div>
-        </>
+            <div className={styles.projectContent}>
+                {project.images && project.images.length > 1 && (
+                    <ImagesSection project={project} />
+                )}
+                {(project.url || project.github) && (
+                    <LinksSection project={project} />
+                )}
+                <div>
+                    <h3>Description</h3>
+                    {project.description}
+                </div>
+                {project.accomplishments && (
+                    <div>
+                        <h3>Accomplishments</h3>
+                        <ul>
+                            {project.accomplishments.map?.((accomplishment: string) => (
+                                <li key={accomplishment}>{accomplishment}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+                {project.skills && project.skills.length > 0 && (
+                    <SkillsSection project={project} />
+                )}
+            </div>
+        </div>
     );
 });
 

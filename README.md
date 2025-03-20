@@ -18,7 +18,7 @@ This is a portfolio site for my software and web development projects and resume
 ## Libraries and Dependencies
 - React Router
 - FontAwesome library for React
-- React Helmet
+- hoofd for dynamically setting document meta tags
 - pure-react-carousel
 - GSAP
 

@@ -1,4 +1,7 @@
-import { memo, useCallback } from "react";
+import { memo, useCallback, useEffect, useState, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import styles from "../styles/Home.module.css";
 
 const SectionScrollButton = memo(({ targetID, label }:
@@ -39,8 +42,117 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
     scrollBtnLabel?: string;
     children: React.ReactNode;
 }) => {
+    const [showImage, setShowImage] = useState(false);
+    const sectionRef = useRef<HTMLElement>(null);
+    
+    gsap.registerPlugin(ScrollTrigger);
+
+    useGSAP(() => {
+        if (!showImage || !sectionRef.current) return;
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+        // Zoom data for each section
+        const zoomData: { scale: number; origin: [number, number] }[] = [
+            { scale: 1.3, origin: [1, 0.15] },
+            { scale: 1.2, origin: [0.45, 0.45] },
+            { scale: 1.3, origin: [0.6, 0.5] },
+            { scale: 1.3, origin: [0.5, 0.5] },
+            { scale: 1.2, origin: [0.5, 0.25] }
+        ];
+
+        const zoom = zoomData[bgIndex - 1];
+        const imgElement = sectionRef.current.querySelector<HTMLElement>(`.${styles.bgContainer} img`);
+
+        if (!imgElement) return;
+
+        interface ZoomEffectConfig {
+            scale: number;
+            origin: [number, number];
+            duration?: number;
+            ease?: string;
+        }
+
+        const zoomEffect = (target: HTMLElement, config: ZoomEffectConfig) => {
+            const vars: gsap.TweenVars = { 
+                transformOrigin: "0px 0px",
+                xPercent: gsap.utils.clamp(-100 * (config.scale - 1), 0)((0.5 - config.origin[0] * config.scale) * 100),
+                yPercent: gsap.utils.clamp(-100 * (config.scale - 1), 0)((0.5 - config.origin[1] * config.scale) * 100),
+                scale: config.scale,
+                duration: config.duration,
+                ease: config.ease,
+                overwrite: "auto"
+            };
+            return gsap.to(target, vars);
+        };
+
+        ScrollTrigger.create({
+            trigger: sectionRef.current,
+            start: "top 25%",
+            end: "bottom 10%",
+            scrub: true,
+            onToggle(self) {
+                if (self.isActive) {
+                    zoomEffect(imgElement, {
+                        scale: zoom.scale,
+                        origin: zoom.origin,
+                        duration: 2,
+                        ease: "sine"
+                    });
+                } else {
+                    zoomEffect(imgElement, {
+                        scale: 1,
+                        origin: [0.5, 0.5],
+                        duration: 1,
+                        ease: "none"
+                    });
+                }
+            }
+        });
+
+        // Fade in animation for sections after the first
+        if (bgIndex - 1 > 0) {
+            gsap.fromTo(sectionRef.current.querySelector(`.${styles.homeSectionContent}`), {
+                autoAlpha: 0,
+                x: -50
+            }, {
+                autoAlpha: 1,
+                x: 0,
+                ease: "power2.inOut",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 80%",
+                    end: "bottom top",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        }
+
+    }, [showImage, bgIndex]);
+
+    useEffect(() => {
+        const debounce = (func: () => void, wait: number) => {
+            let timeout: number;
+            return () => {
+                clearTimeout(timeout);
+                timeout = setTimeout(func, wait);
+            };
+        };
+
+        const checkWidth = () => setShowImage(window.innerWidth > 1200);
+        const debouncedCheckWidth = debounce(checkWidth, 50);
+
+        checkWidth();
+
+        window.addEventListener('resize', debouncedCheckWidth);
+
+        return () => {
+            window.removeEventListener('resize', debouncedCheckWidth);
+        };
+    }, []);
+
     return (
-        <section id={id} className="homeSectionContainer">
+        <section id={id} className="homeSectionContainer" ref={sectionRef}>
             <div className={styles.homeSection}>
                 <div className={styles.homeSectionContent}>
                     {sectionTitle &&
@@ -57,11 +169,16 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
                     />
                 )}
             </div>
-            <div className={styles.bgContainer}>
-                <img src={`/images/Home/${bgIndex}.jpg`} alt={`Homepage background ${bgIndex}`}
-                    width="1500" height="2000" loading="lazy"
-                />
-            </div>
+            {showImage && (
+                <div className={styles.bgContainer}>
+                    <img
+                        src={`/images/Home/${bgIndex}.webp`}
+                        alt={`Homepage image ${bgIndex}`}
+                        width="1500"
+                        height="2000"
+                    />
+                </div>
+            )}
         </section>
     );
 };

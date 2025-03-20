@@ -38,7 +38,7 @@ const PROJECTS_DATA = [
         type: "Academic",
         url: "",
         github: "https://github.com/jtganulin/capstone",
-        images: ["VillageHours1.jpg", "VillageHours2.jpg", "VillageHours3.jpg", "VillageHours4.jpg", "VillageHours5.jpg", "VillageHours6.jpg", "VillageHours7.jpg", "VillageHours8.jpg", "VillageHours9.jpg", "VillageHours10.jpg", "VillageHours11.jpg",],
+        images: ["VillageHours1.webp", "VillageHours2.webp", "VillageHours3.webp", "VillageHours4.webp", "VillageHours5.webp", "VillageHours6.webp", "VillageHours7.webp", "VillageHours8.webp", "VillageHours9.webp", "VillageHours10.webp", "VillageHours11.webp",],
         skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Chakra UI", "React Query", "Redux", "Node.js", "Express", "SQL", "MySQL", "Git", "GitHub", "Docker", "Microsoft Azure", "Atlassian Trello", "Markdown", "Cypress", "Jest", "React Testing Library", "Supertest", "Vitest", "Figma", "JSDoc", "Google Docs", "Leadership", "Communication", "Teamwork", "Agile", "Kanban", "CI/CD", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Mentoring", "Training", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
     },
     {
@@ -64,7 +64,7 @@ const PROJECTS_DATA = [
         type: "Academic",
         url: "https://intrepid.herokuapp.com/",
         github: "https://github.com/jtganulin/intrepid-swe6733",
-        images: ["Intrepid1.jpg", "Intrepid2.jpg", "Intrepid3.jpg", "Intrepid4.jpg", "Intrepid5.jpg"],
+        images: ["Intrepid1.webp", "Intrepid2.webp", "Intrepid3.webp", "Intrepid4.webp", "Intrepid5.webp"],
         skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB", "Passport.js", "Git", "GitHub", "Heroku", "CircleCI", "Atlassian Jira", "Material UI",
             "Leadership", "Communication", "Teamwork", "Agile", "Scrum", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Mentoring", "Training", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability", "REST APIs"],
     },
@@ -92,7 +92,7 @@ const PROJECTS_DATA = [
         type: "Academic",
         url: "https://fireside-gaming-frontend.herokuapp.com/",
         github: "https://github.com/jtganulin/Team-5-Web-Services-Engineering",
-        images: ["FiresideGaming1.jpg", "FiresideGaming2.jpg", "FiresideGaming3.jpg", "FiresideGaming4.jpg", "FiresideGaming5.jpg",],
+        images: ["FiresideGaming1.webp", "FiresideGaming2.webp", "FiresideGaming3.webp", "FiresideGaming4.webp", "FiresideGaming5.webp",],
         skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "Python", "Django", "SQL", "SQLite", "Git", "GitHub", "Heroku", "REST APIs", "CircleCI", "Atlassian Jira", "Leadership", "Communication", "Teamwork", "Agile", "Scrum", "Kanban", "CI/CD", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Mentoring", "Training", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
     },
     {
@@ -117,7 +117,7 @@ const PROJECTS_DATA = [
         type: "Academic",
         url: "",
         github: "https://github.com/jtganulin/swe6633-group2-pms",
-        images: ["SPMS1.jpg", "SPMS2.jpg", "SPMS3.jpg", "SPMS4.jpg"],
+        images: ["SPMS1.webp", "SPMS2.webp", "SPMS3.webp", "SPMS4.webp"],
         skills: ["HTML", "CSS", "JavaScript", "React", "Chakra UI", "Node.js", "Express", "MongoDB", "Git", "GitHub", "Heroku", "CircleCI", "Atlassian Jira", "Marvel",
             "Leadership", "Communication", "Teamwork", "Agile", "Scrum", "PERT Analysis", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Mentoring", "Training", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
     },
@@ -138,7 +138,7 @@ const PROJECTS_DATA = [
         type: "Academic",
         url: "",
         github: "https://github.com/jtganulin/kitchen-companion",
-        images: ["KitchenCompanion1.jpg", "KitchenCompanion2.jpg", "KitchenCompanion3.jpg", "KitchenCompanion4.jpg", "KitchenCompanion5.jpg", "KitchenCompanion6.jpg", "KitchenCompanion7.jpg", "KitchenCompanion8.jpg"],
+        images: ["KitchenCompanion1.webp", "KitchenCompanion2.webp", "KitchenCompanion3.webp", "KitchenCompanion4.webp", "KitchenCompanion5.webp", "KitchenCompanion6.webp", "KitchenCompanion7.webp", "KitchenCompanion8.webp"],
         skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "JSDoc", "MongoDB", "Git", "GitHub", "Heroku", "Adobe Photoshop CS6", "REST APIs", "Problem Solving", "Critical Thinking", "Quick Learning", "Creativity", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Accountability"],
     },
     {
@@ -156,7 +156,7 @@ const PROJECTS_DATA = [
         type: "Personal",
         url: "https://jgproductions.x10.bz/Dice/",
         github: "https://github.com/jtganulin/Dice",
-        images: ["Dice1.jpg", "Dice2.jpg", "Dice3.jpg"],
+        images: ["Dice1.webp", "Dice2.webp", "Dice3.webp"],
         skills: ["HTML", "CSS", "JavaScript", "jQuery", "Git", "GitHub", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Creativity", "Accountability"],
     },
     {
@@ -173,7 +173,7 @@ const PROJECTS_DATA = [
         type: "Personal",
         url: "",
         github: "https://github.com/jtganulin/multi-file-text-replacer",
-        images: ["MultiFileTextReplacer1.jpg", "MultiFileTextReplacer2.jpg", "MultiFileTextReplacer3.jpg"],
+        images: ["MultiFileTextReplacer1.webp", "MultiFileTextReplacer2.webp", "MultiFileTextReplacer3.webp"],
         skills: ["C#", "WPF", "XAML", "Git", "GitHub", "Regular Expressions", "Microsoft Visual Studio", "Windows", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Creativity", "Accountability"],
     },
     {
@@ -192,7 +192,7 @@ const PROJECTS_DATA = [
         type: "Personal",
         url: "",
         github: "https://github.com/jtganulin/image-combiner",
-        images: ["ImageCombiner1.jpg", "ImageCombiner2.jpg", "ImageCombiner3.jpg", "ImageCombiner4.jpg", "ImageCombiner5.jpg"],
+        images: ["ImageCombiner1.webp", "ImageCombiner2.webp", "ImageCombiner3.webp", "ImageCombiner4.webp", "ImageCombiner5.webp"],
         skills: ["C#", "WinForms", "Git", "GitHub", "Microsoft Visual Studio", "Windows", "ImageMagick", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Creativity", "Accountability"],
     },
     {
@@ -212,7 +212,7 @@ const PROJECTS_DATA = [
         type: "Academic",
         url: "",
         github: "",
-        images: ["PMOS1.jpg", "PMOS2.jpg", "PMOS3.jpg", "PMOS4.jpg", "PMOS5.jpg"],
+        images: ["PMOS1.webp", "PMOS2.webp", "PMOS3.webp", "PMOS4.webp", "PMOS5.webp"],
         skills: ["HTML", "CSS", "JavaScript", "PHP", "Git", "GitHub", "Leadership", "Communication", "Teamwork", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Mentoring", "Training", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
     },
     {
