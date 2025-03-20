@@ -49,7 +49,6 @@ const educationEntries = [
     }
 ];
 
-// TODO: Constrain the total height of the section so that expanding relevant coursework doesn't excessively stretch the associated background image
 function Education() {
     return (
         <div className={styles.educationContainer}>

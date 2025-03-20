@@ -3,13 +3,15 @@ import { Outlet } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Helmet } from "react-helmet-async";
+import { useTitleTemplate } from "hoofd";
 import Topbar from "./components/Topbar";
 import styles from "./styles/Topbar.module.css";
 
 function App() {
     const topbarRef = useRef<HTMLDivElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
+
+    useTitleTemplate("%s - " + import.meta.env.VITE_APP_NAME);
 
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -31,17 +33,10 @@ function App() {
         // When the user resizes the browser window up, prevent the mobile menu from
         // opening automatically on subsequent resizes back down;
         // Also, restore user ability to scroll 
-        let resetTimer: ReturnType<typeof setTimeout>;
         const mobileNav = document.getElementsByClassName(styles.mobileNav)[0] as HTMLDivElement;
         window.addEventListener("resize", () => {
-            // Immediately hide the mobile nav to prevent flash on resize
             mobileNav.classList.remove(styles.displayMobileNav);
-
-            clearTimeout(resetTimer);
-            resetTimer = setTimeout(() => {
-                showAnim.play();
-                document.body.style.overflow = "auto";
-            }, 200);
+            document.body.style.overflow = "auto";
         });
 
         // When the user re-focuses on the page, show topbar
@@ -64,10 +59,6 @@ function App() {
 
     return (
         <>
-            <Helmet
-                defaultTitle={import.meta.env.VITE_APP_NAME as string}
-                titleTemplate={"%s - " + import.meta.env.VITE_APP_NAME}
-            />
             <Topbar refer={topbarRef} />
             <div ref={containerRef} id="contentContainer">
                 <Outlet />

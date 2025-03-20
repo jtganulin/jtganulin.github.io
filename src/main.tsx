@@ -1,8 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider, ScrollRestoration } from 'react-router-dom';
 import { ErrorBoundary } from 'react-error-boundary';
-import { HelmetProvider } from 'react-helmet-async';
 import ThemeProvider from './providers/ThemeProvider';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -50,6 +49,7 @@ const Router = createHashRouter([
         path: '/',
         element: (
             <ErrorBoundary FallbackComponent={ErrorPage}>
+                <ScrollRestoration />
                 <App />
             </ErrorBoundary>
         ),
@@ -83,15 +83,11 @@ const Router = createHashRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-    <>
-        <React.StrictMode>
-            <HelmetProvider>
-                <ThemeProvider>
-                    <Suspense fallback={<LoadingPage />}>
-                        <RouterProvider router={Router} />
-                    </Suspense>
-                </ThemeProvider>
-            </HelmetProvider>
-        </React.StrictMode>
-    </>
+    <React.StrictMode>
+        <ThemeProvider>
+            <Suspense fallback={<LoadingPage />}>
+                <RouterProvider router={Router} />
+            </Suspense>
+        </ThemeProvider>
+    </React.StrictMode>
 );
