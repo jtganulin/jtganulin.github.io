@@ -10,7 +10,7 @@ export default function NotFound() {
     });
 
     return (
-        <div className="center">
+        <div className="constraint center">
             <h1 className="pageHeading">Page Not Found</h1>
             <h2>Error 404</h2>
             <p>Try checking the URL for any typos or head to the <Link to="/">homepage</Link>.</p>
