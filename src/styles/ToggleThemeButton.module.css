@@ -8,8 +8,7 @@
     overflow: hidden;
     transition: background-color 0.2s ease;
     &:hover {
-        box-shadow: none;
-        background-color: var(--color-accent-2);
+        background-color: var(--color-accent);
     }
 }
 
