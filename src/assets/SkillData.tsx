@@ -29,7 +29,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Databases",
         "name": "MongoDB",
         "proficiency": "Intermediate",
-        "years": 2,
+        "years": 3,
         "icon": "fa fa-database",
         "color": "green"
     },
@@ -61,7 +61,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Frameworks and Libraries",
         "name": "React",
         "proficiency": "Advanced",
-        "years": 2,
+        "years": 3,
         "icon": "fab fa-react",
         "color": "cyan"
     },
@@ -69,7 +69,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Frameworks and Libraries",
         "name": "Node.js",
         "proficiency": "Advanced",
-        "years": 2,
+        "years": 3,
         "icon": "fab fa-node",
         "color": "green"
     },
@@ -77,7 +77,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Frameworks and Libraries",
         "name": "Express",
         "proficiency": "Advanced",
-        "years": 2,
+        "years": 3,
         "icon": "fab fa-node",
         "color": "#ffffff"
     },
@@ -101,7 +101,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Frameworks and Libraries",
         "name": "Redux",
         "proficiency": "Intermediate",
-        "years": 1,
+        "years": 2,
         "icon": "fab fa-react",
         "color": "purple"
     },
@@ -205,7 +205,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Frameworks and Libraries",
         "name": "Tailwind",
         "proficiency": "Beginner",
-        "years": 1,
+        "years": 2,
         "icon": "fab fa-css3-alt",
         "color": "blue"
     },
@@ -365,7 +365,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Languages",
         "name": "Java",
         "proficiency": "Intermediate",
-        "years": 10,
+        "years": 8,
         "icon": "fab fa-java",
         "color": "red"
     },
@@ -373,7 +373,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Languages",
         "name": "C#",
         "proficiency": "Intermediate",
-        "years": 9,
+        "years": 8,
         "icon": "fa fa-code",
         "color": "teal"
     },
@@ -392,6 +392,14 @@ const SKILLS_DATA: ISkill[] = [
         "years": 2,
         "icon": "fab fa-markdown",
         "color": "#083fa1"
+    },
+    {
+        "type": "Languages",
+        "name": "JSDoc",
+        "proficiency": "Intermediate",
+        "years": 2,
+        "icon": "fa fa-file-code",
+        "color": "#f0db4f"
     },
     {
         "type": "Languages",
@@ -483,6 +491,14 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         "type": "Methodologies and Practices",
+        "name": "REST APIs",
+        "proficiency": "Advanced",
+        "years": 5,
+        "icon": "fa fa-cloud",
+        "color": "#4caf50"
+    },
+    {
+        "type": "Methodologies and Practices",
         "name": "Kanban",
         "proficiency": "Intermediate",
         "years": 2,
@@ -535,7 +551,7 @@ const SKILLS_DATA: ISkill[] = [
         "proficiency": "Intermediate",
         "years": 2,
         "icon": "fa fa-check-square",
-        "color": "#c300ef"
+        "color": "#a3e7cb"
     },
     {
         "type": "Methodologies and Practices",
@@ -544,6 +560,22 @@ const SKILLS_DATA: ISkill[] = [
         "years": 3,
         "icon": "fa fa-search",
         "color": "#c300ef"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Static Analysis",
+        "proficiency": "Intermediate",
+        "years": 2,
+        "icon": "fa fa-check-square",
+        "color": "#4565f7"
+    },
+    {
+        "type": "Methodologies and Practices",
+        "name": "Prompt Engineering",
+        "proficiency": "Intermediate",
+        "years": 1,
+        "icon": "fa fa-robot",
+        "color": "#f39c12"
     },
     {
         "type": "Methodologies and Practices",
@@ -632,14 +664,6 @@ const SKILLS_DATA: ISkill[] = [
         "years": 1,
         "icon": "fab fa-trello",
         "color": "blue"
-    },
-    {
-        "type": "Platforms",
-        "name": "Static Analysis",
-        "proficiency": "Intermediate",
-        "years": 2,
-        "icon": "fa fa-check-square",
-        "color": "#4565f7"
     },
     {
         "type": "Platforms",
@@ -932,14 +956,6 @@ const SKILLS_DATA: ISkill[] = [
         "color": "#4285f4"
     },
     {
-        "type": "Tools",
-        "name": "REST APIs",
-        "proficiency": "Advanced",
-        "years": 5,
-        "icon": "fa fa-cloud",
-        "color": "#4caf50"
-    },
-    {
         "name": "Git",
         "proficiency": "Intermediate",
         "years": 2,
@@ -988,20 +1004,12 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Tools"
     },
     {
-        "name": "Adobe Photoshop CS6",
+        "name": "Adobe Photoshop",
         "proficiency": "Intermediate",
         "years": 5,
         "icon": "fa fa-image",
         "color": "blue",
         "type": "Tools"
-    },
-    {
-        "type": "Tools",
-        "name": "JSDoc",
-        "proficiency": "Intermediate",
-        "years": 2,
-        "icon": "fa fa-file-code",
-        "color": "#f0db4f"
     },
     {
         "type": "Tools",
@@ -1012,11 +1020,35 @@ const SKILLS_DATA: ISkill[] = [
         "color": "#ef6c00"
     },
     {
+        "type": "Tools",
+        "name": "ChatGPT",
+        "proficiency": "Intermediate",
+        "years": 1,
+        "icon": "fa fa-robot",
+        "color": "#ffffff"
+    },
+    {
+        "type": "Tools",
+        "name": "Claude",
+        "proficiency": "Intermediate",
+        "years": 1,
+        "icon": "fa fa-robot",
+        "color": "#d97757"
+    },
+    {
         "name": "Android Studio",
         "proficiency": "Beginner",
         "years": 2,
         "icon": "fab fa-android",
         "color": "lightgreen",
+        "type": "Tools"
+    },
+    {
+        "name": "Swagger / OpenAPI",
+        "proficiency": "Beginner",
+        "years": 1,
+        "icon": "fa fa-code",
+        "color": "#7bff00",
         "type": "Tools"
     },
     {
@@ -1026,7 +1058,7 @@ const SKILLS_DATA: ISkill[] = [
         "years": 3,
         "icon": "fa fa-database",
         "color": "#0db7ed"
-    }
+    },
 ];
 
 export default SKILLS_DATA;
