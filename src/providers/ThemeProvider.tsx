@@ -25,7 +25,6 @@ function ThemeProvider({ children }: { children: React.ReactNode; }) {
             setTheme(newColorScheme);
         };
 
-        // Update theme if user's OS color scheme preference changes
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeTheme);
 
         // Clean up the event listener on unmount

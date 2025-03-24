@@ -52,7 +52,7 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
 
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-        // Zoom data for each section
+        // Zoom data for each section's image
         const zoomData: { scale: number; origin: [number, number] }[] = [
             { scale: 1.3, origin: [1, 0.15] },
             { scale: 1.2, origin: [0.45, 0.45] },
