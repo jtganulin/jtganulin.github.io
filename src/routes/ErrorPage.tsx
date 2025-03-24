@@ -8,7 +8,7 @@ export default function ErrorPage({ error }: { error: Error }) {
     const { theme } = useContext(ThemeContext);
     
     useHead({
-        title: "Error",
+        title: `Error - ${import.meta.env.VITE_APP_NAME}`,
         metas: [
             { name: "robots", content: "noindex" },
         ]
