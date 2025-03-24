@@ -104,7 +104,7 @@
     }
 
     & a:hover {
-        background-color: var(--color-accent-2);
+        background-color: var(--color-accent);
     }
 }
 
@@ -157,9 +157,5 @@
 
     .displayMobileNav {
         display: block;
-    }
-
-    .activeLink {
-        background-color: var(--color-accent);
     }
 }

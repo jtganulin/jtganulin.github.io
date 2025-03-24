@@ -863,17 +863,8 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         "type": "Soft Skills",
-        "name": "Mentoring",
-        "proficiency": "Advanced",
-        "years": 3,
-        "icon": "fa fa-user-tie",
-        "color": "#8e44ad"
-    },
-    {
-        "type": "Soft Skills",
         "name": "Documentation",
         "proficiency": "Advanced",
-        "years": 3,
         "icon": "fa fa-book",
         "color": "#34495e"
     },
@@ -893,8 +884,16 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         "type": "Soft Skills",
-        "name": "Project Management",
+        "name": "Mentoring",
         "proficiency": "Advanced",
+        "years": 3,
+        "icon": "fa fa-user-tie",
+        "color": "#8e44ad"
+    },
+    {
+        "type": "Soft Skills",
+        "name": "Project Management",
+        "proficiency": "Intermediate",
         "years": 3,
         "icon": "fa fa-project-diagram",
         "color": "#2196f3"
@@ -1055,7 +1054,7 @@ const SKILLS_DATA: ISkill[] = [
         "type": "Tools",
         "name": "Docker",
         "proficiency": "Beginner",
-        "years": 3,
+        "years": 1,
         "icon": "fa fa-database",
         "color": "#0db7ed"
     },
