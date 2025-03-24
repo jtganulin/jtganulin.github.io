@@ -50,14 +50,20 @@ export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivEleme
 
     const toggleMobileNav = () => {
         const mobileNav = document.getElementsByClassName(styles.mobileNav)[0] as HTMLDivElement;
-        mobileNav.classList.toggle(styles.displayMobileNav);
+        const isOpening = !mobileNav.classList.contains(styles.displayMobileNav);
 
-        // While the menu is being displayed, prevent the user from scrolling the page
-        if (mobileNav.classList.contains(styles.displayMobileNav)) {
+        if (isOpening) {
+            // Preserve scrollbar width to prevent layout shift
+            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
             document.body.style.overflow = "hidden";
         } else {
+            // Restore default body styling
             document.body.style.overflow = "auto";
+            document.body.style.paddingRight = "";
         }
+
+        mobileNav.classList.toggle(styles.displayMobileNav);
     };
 
     return (
