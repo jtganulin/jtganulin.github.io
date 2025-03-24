@@ -37,12 +37,12 @@ function App() {
         window.addEventListener("resize", () => {
             mobileNav.classList.remove(styles.displayMobileNav);
             document.body.style.overflow = "auto";
+            document.body.style.paddingRight = "";
         });
 
         // When the user re-focuses on the page, show topbar
         document.addEventListener('visibilitychange', function () {
             if (!document.hidden) {
-                // Page is visible again, reset the topbar
                 showAnim.play();
             }
         }, false);
@@ -55,7 +55,7 @@ function App() {
                 }
             });
         };
-    });
+    }, { scope: containerRef });
 
     return (
         <>

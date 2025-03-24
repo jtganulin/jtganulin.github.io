@@ -11,7 +11,6 @@
     left: 0;
     top: 0;
     border-bottom: 2px solid var(--color-accent);
-    /* Apply a box shadow to the bottom to give the top nav bar appearance of floating over the page content */
     box-shadow: 0 0 0.5rem var(
         --color-foreground
     );
