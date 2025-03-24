@@ -5,9 +5,7 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 const Gold = memo(() => {
     return (
         <span title="Advanced">
-            <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
-                color: 'gold'
-            }} />
+            <FontAwesomeIcon icon={"fa fa-trophy" as IconName} color="gold" fixedWidth />
         </span>
     );
 });
@@ -15,9 +13,7 @@ const Gold = memo(() => {
 const Silver = memo(() => {
     return (
         <span title="Intermediate">
-            <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
-                color: 'silver'
-            }} />
+            <FontAwesomeIcon icon={"fa fa-trophy" as IconName} color="silver" fixedWidth />
         </span>
     );
 });
@@ -25,9 +21,7 @@ const Silver = memo(() => {
 const Bronze = memo(() => {
     return (
         <span title="Beginner">
-            <FontAwesomeIcon icon={"fa fa-trophy" as IconName} style={{
-                color: 'rgb(205, 127, 50)'
-            }} />
+            <FontAwesomeIcon icon={"fa fa-trophy" as IconName} color="#cd7f32" fixedWidth />
         </span>
     );
 });

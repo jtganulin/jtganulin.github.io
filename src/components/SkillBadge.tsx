@@ -23,6 +23,7 @@ function SkillBadge({ skill, showProficiency = true, showYears = false }: { skil
                     color={skill?.color}
                     title={skill?.name}
                     className={styles.skillIcon}
+                    fixedWidth
                 />
             )}
             <span>
