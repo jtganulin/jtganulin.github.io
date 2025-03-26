@@ -626,28 +626,28 @@ const SKILLS_DATA: ISkill[] = [
         "color": "#ffffff"
     },
     {
+        "type": "Operating Systems",
+        "proficiency": "Advanced",
+        "name": "Android",
+        "years": 10,
+        "icon": "fab fa-android",
+        "color": "#a4c639"
+    },
+    {
+        "type": "Operating Systems",
+        "name": "iOS",
+        "proficiency": "Intermediate",
+        "years": 8,
+        "icon": "fab fa-apple",
+        "color": "#ffffff"
+    },
+    {
         "type": "Platforms",
         "name": "GitHub",
         "proficiency": "Advanced",
         "years": 5,
         "icon": "fab fa-github",
         "color": "purple"
-    },
-    {
-        "type": "Platforms",
-        "name": "Heroku",
-        "proficiency": "Intermediate",
-        "years": 2,
-        "icon": "fa fa-cloud",
-        "color": "violet"
-    },
-    {
-        "type": "Platforms",
-        "name": "Figma",
-        "proficiency": "Intermediate",
-        "years": 2,
-        "icon": "fab fa-figma",
-        "color": "#ffffff"
     },
     {
         "type": "Platforms",
@@ -664,6 +664,22 @@ const SKILLS_DATA: ISkill[] = [
         "years": 1,
         "icon": "fab fa-trello",
         "color": "blue"
+    },
+    {
+        "type": "Platforms",
+        "name": "Figma",
+        "proficiency": "Intermediate",
+        "years": 2,
+        "icon": "fab fa-figma",
+        "color": "#ffffff"
+    },
+    {
+        "type": "Platforms",
+        "name": "Heroku",
+        "proficiency": "Intermediate",
+        "years": 2,
+        "icon": "fa fa-cloud",
+        "color": "violet"
     },
     {
         "type": "Platforms",

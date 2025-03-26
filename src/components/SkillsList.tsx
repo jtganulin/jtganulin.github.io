@@ -44,7 +44,7 @@ function SkillsList({
                 </div>
             )}
             {showYears && (
-                <div><em>Years of experience include personal, academic, and professional experience.</em></div>
+                <p><em>Years of experience include personal, academic, and professional experience.</em></p>
             )}
             <div className={styles.skillsList}>
                 {displayCategories?.map(category => {

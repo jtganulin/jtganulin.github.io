@@ -1,12 +1,4 @@
 .container {
-    & h1 {
-        margin-bottom: 0;
-    }
-
-    & h2 {
-        margin: 0;
-    }
-
     & ul {
         padding-left: 1rem;
     }
