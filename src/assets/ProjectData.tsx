@@ -142,11 +142,11 @@ const PROJECTS_DATA = [
         skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "JSDoc", "MongoDB", "Git", "GitHub", "Adobe Photoshop CS6", "REST APIs", "Problem Solving", "Critical Thinking", "Quick Learning", "Creativity", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Accountability"],
     },
     {
-        slug: "Dice",
-        title: "Dice",
+        slug: "FiveDiceFrenzy",
+        title: "Five Dice Frenzy",
         subtitle: "A Yahtzee! clone for the web",
-        summary: "A minimalist and intuitive Yahtzee! clone for the web.",
-        description: "Dice (working title) is a web-based clone of the classic dice game, Yahtzee! Players can roll dice, and score their rolls in various categories. Dice was developed as a personal project so that my family, friends, and I can play one of our favorite games on the go! Dice was developed using HTML, CSS, JavaScript, and jQuery. It's responsive and can be played on desktop and mobile devices. The game is designed to be minimalistic and performant while remaining easy to use and intuitive.",
+        summary: "A simple and fun Yahtzee! clone for the web.",
+        description: "Five Dice Frenzy is a web-based clone of the classic dice game, Yahtzee! Players can roll dice, and score their rolls in various categories. This game was developed as a personal project so that my family, friends, and I can play one of our favorite games on the go. It was developed using HTML, CSS, JavaScript, and jQuery. The game is designed to be minimalistic and performant while remaining easy to use and intuitive, and responsive design means it can be played on desktop and mobile devices on a variety of browsers.",
         accomplishments: [
             "Designed and developed a web-based clone of the classic dice game, Yahtzee!, using HTML, CSS, JavaScript, and jQuery.",
             "Performed various iterations to ensure the game met all functional requirements and was easy to use and intuitive.",
@@ -154,9 +154,16 @@ const PROJECTS_DATA = [
             "Prioritized the game's cross-browser compatibility and performance."
         ],
         type: "Personal",
-        url: "https://jgproductions.x10.bz/Dice/",
-        github: "https://github.com/jtganulin/Dice",
-        images: ["Dice1.webp", "Dice2.webp", "Dice3.webp"],
+        url: "https://jgproductions.x10.bz/FiveDiceFrenzy/",
+        github: "https://github.com/jtganulin/Five-Dice-Frenzy",
+        images: [
+            "FiveDiceFrenzy1.webp",
+            "FiveDiceFrenzy2.webp",
+            "FiveDiceFrenzy3.webp",
+            "FiveDiceFrenzy4.webp",
+            "FiveDiceFrenzy5.webp",
+            "FiveDiceFrenzy6.webp",
+        ],
         skills: ["HTML", "CSS", "JavaScript", "jQuery", "Git", "GitHub", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Creativity", "Accountability"],
     },
     {
