@@ -18,7 +18,7 @@ export default function Bio() {
             </p>
             <h4>Personal Summary</h4>
             <p>
-                Beyond my passion for technology, I&apos;m also a food enthusiast who loves cooking and baking. I enjoy reading, hiking, as well as photography. I enjoy traveling, exploring different cultures, and learning about their cuisines and languages.
+                Beyond my passion for technology, I&apos;m also a food enthusiast who loves cooking and baking. I enjoy reading, hiking, as well as photography, and I&apos;m interested in traveling, exploring different cultures, and learning about their cuisines and languages.
             </p>
         </div>
     );
