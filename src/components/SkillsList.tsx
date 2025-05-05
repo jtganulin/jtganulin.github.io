@@ -40,7 +40,9 @@ function SkillsList({
             )}
             {showLegend && (
                 <div className={styles.legend}>
-                    <span title="I have proven experience with this technology and can use it in numerous situations"><Gold /> Advanced</span> &bull; <span title="I am comfortable with this technology but I'm not yet an expert with it"><Silver /> Intermediate</span> &bull; <span title="I know basic concepts about this technology but have not used it extensively"><Bronze /> Beginner</span>
+                    <span title="I have proven experience with this skill and can use it in numerous scenarios"><Gold /> Advanced</span> &bull; 
+                    <span title="I am comfortable with this skill but have more learning to do before full mastery"><Silver /> Intermediate</span> &bull; 
+                    <span title="I know basic concepts about this skill and I'm learning more to become proficient"><Bronze /> Beginner</span>
                 </div>
             )}
             {showYears && (

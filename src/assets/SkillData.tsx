@@ -611,22 +611,6 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         "type": "Operating Systems",
-        "name": "Linux",
-        "proficiency": "Intermediate",
-        "years": 5,
-        "icon": "fab fa-linux",
-        "color": "orange"
-    },
-    {
-        "type": "Operating Systems",
-        "name": "macOS",
-        "proficiency": "Beginner",
-        "years": 3,
-        "icon": "fab fa-apple",
-        "color": "#ffffff"
-    },
-    {
-        "type": "Operating Systems",
         "proficiency": "Advanced",
         "name": "Android",
         "years": 10,
@@ -635,9 +619,25 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         "type": "Operating Systems",
+        "name": "Linux",
+        "proficiency": "Intermediate",
+        "years": 5,
+        "icon": "fab fa-linux",
+        "color": "orange"
+    },
+    {
+        "type": "Operating Systems",
         "name": "iOS",
         "proficiency": "Intermediate",
         "years": 8,
+        "icon": "fab fa-apple",
+        "color": "#ffffff"
+    },
+    {
+        "type": "Operating Systems",
+        "name": "macOS",
+        "proficiency": "Beginner",
+        "years": 3,
         "icon": "fab fa-apple",
         "color": "#ffffff"
     },
