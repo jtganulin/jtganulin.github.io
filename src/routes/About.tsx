@@ -26,14 +26,14 @@ export default function About() {
             </div>
             <h2>Summary</h2>
             <p>
-                I&apos;m Jeffrey Ganulin, a full-stack software engineer based in Atlanta, GA, passionate about leveraging technology to solve problems and create meaningful impact.
-                From a young age, I&apos;ve been fascinated by how technology can improve lives, and I&apos;m eager to apply my skills, experience, and unique perspectives to bring value to industry and society.
+                I&apos;m Jeffrey Ganulin, a full-stack software engineer based in Atlanta, GA, passionate about leveraging technology to solve problems and create meaningful impact in any project I take on.
+                From a young age, I&apos;ve been fascinated by how technology can improve lives, and I&apos;m eager to apply the skills, experience, and unique perspectives I&apos;ve gained to bring value to industry and society.
             </p>
             <h2>Educational Background</h2>
             <p>
                 Before my formal education in computer science and software engineering, I developed a foundation in programming and web development through self-study and online resources, which fueled my passion for technology.
                 I went on to earn a Master&apos;s degree in Software Engineering and a Bachelor&apos;s degree in Information Technology from Kennesaw State University, as well as an Associate&apos;s degree in Computer Science from the University of North Georgia.
-                Beyond formal education, I continuously expand my knowledge through self-led research, online courses, and hands-on experience. As a quick learner, I&apos;m always exploring new technologies and refining my skill set.
+                As a quick learner dedicated to self-improvement, I&apos;m always exploring new technologies and refining my skill set.
             </p>
             <h2>Technical Background</h2>
             <p>
@@ -47,9 +47,9 @@ export default function About() {
                 Outside web development, I have experience in desktop application development using C# (.NET with WinForms and WPF), as well as Java and Python.
                 One of my key interests is in automation and productivity tools, and I frequently use Python and C# to automate tasks and optimize workflows across various projects.
                 <br /><br />
-                I&apos;m also familiar with cloud computing and deployment, having worked with AWS, Heroku, and Microsoft Azure, and I&apos;m in the process of gaining further knowledge on these platforms.
-                I have a solid understanding of DevOps practices, including CI/CD pipelines, the benefits of virtualization, and containerization with Docker, which help me streamline development and deployment processes.
-                My experience with version control systems like Git and platforms like GitHub allows me to collaborate effectively with other developers and contribute to open-source projects.
+                I&apos;m also familiar with cloud computing and deployment, having worked in  varying extents with AWS, Heroku, and Microsoft Azure, and I&apos;m in the process of gaining further knowledge on these platforms.
+                I have a solid understanding of DevOps practices, including CI/CD pipelines using Github Actions and CircleCI, and containerization with Docker, which help me streamline development and deployment processes.
+                My experience with version control systems like Git and the GitHub platform allows me to collaborate effectively with other developers and contribute to open-source projects.
                 <br /><br />
                 My long-standing interest in computers and tech in general has also led me to become proficient in hardware and software troubleshooting, configuration, and maintenance across a variety of scenarios.
                 My ability to diagnose and resolve issues across multiple fronts while communicating effectively with users of varied technical knowledge has proven invaluable in both personal and professional settings.

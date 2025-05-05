@@ -24,9 +24,12 @@ function Projects() {
             <h1 className="pageHeading">Projects</h1>
             <main>
                 <p>
-                    I&apos;ve led and contributed to a variety of personal, academic, and professional, projects, ranging
-                    from full-stack web development, to desktop and mobile applications. You can view some of my work below,
-                    along with the skills and technologies I used to bring them to life.
+                    I&apos;ve led and contributed to a variety of personal, academic,
+                    and professional projects ranging from full-stack web development
+                    to desktop and mobile applications in industries like tech, gaming, 
+                    education, and more.
+                    You can view some of my work below, along with the skills and technologies
+                    I used to bring them to life.
                 </p>
                 <div className={styles.projectsGrid}>
                     {PROJECTS_DATA?.map((project: IProject) => (

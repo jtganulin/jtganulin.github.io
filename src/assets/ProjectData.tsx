@@ -199,7 +199,7 @@ const PROJECTS_DATA = [
         type: "Personal",
         url: "",
         github: "https://github.com/jtganulin/image-combiner",
-        images: ["ImageCombiner1.webp", "ImageCombiner2.webp", "ImageCombiner3.webp", "ImageCombiner4.webp", "ImageCombiner5.webp"],
+        images: ["ImageCombiner1.webp", "ImageCombiner2.webp", "ImageCombiner3.webp", "ImageCombiner4.webp"],
         skills: ["C#", "WinForms", "Git", "GitHub", "Microsoft Visual Studio", "Windows", "ImageMagick", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Flexibility", "Creativity", "Accountability"],
     },
     {
