@@ -110,7 +110,7 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
         });
 
         // Fade in animation for sections after the first
-        if (bgIndex - 1 > 0) {
+        if (bgIndex > 1) {
             gsap.fromTo(sectionRef.current.querySelector(`.${styles.homeSectionContent}`), {
                 autoAlpha: 0,
                 x: -50
@@ -147,17 +147,15 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
                     />
                 )}
             </div>
-            {/* {showImage && ( */}
-                <div className={styles.bgContainer}>
-                    <img
-                        src={`/images/Home/${bgIndex}.webp`}
-                        alt={`Homepage image ${bgIndex}`}
-                        width="1500"
-                        height="2000"
-                        loading={bgIndex === 0 ? "eager" : "lazy"}
-                    />
-                </div>
-            {/* )} */}
+            <div className={styles.bgContainer}>
+                <img
+                    src={`/images/Home/${bgIndex}.webp`}
+                    alt={`Homepage image ${bgIndex}`}
+                    width="1500"
+                    height="2000"
+                    loading={bgIndex === 1 ? "eager" : "lazy"}
+                />
+            </div>
         </section>
     );
 };
