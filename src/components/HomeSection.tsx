@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useState, useRef } from "react";
+import { memo, useCallback, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -42,13 +42,12 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
     scrollBtnLabel?: string;
     children: React.ReactNode;
 }) => {
-    const [showImage, setShowImage] = useState(false);
     const sectionRef = useRef<HTMLElement>(null);
     
     gsap.registerPlugin(ScrollTrigger);
 
     useGSAP(() => {
-        if (!showImage || !sectionRef.current) return;
+        if (!sectionRef.current) return;
 
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
@@ -128,37 +127,16 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
             });
         }
 
-    }, [showImage, bgIndex]);
-
-    useEffect(() => {
-        const debounce = (func: () => void, wait: number) => {
-            let timeout: number;
-            return () => {
-                clearTimeout(timeout);
-                timeout = setTimeout(func, wait);
-            };
-        };
-
-        const checkWidth = () => setShowImage(window.innerWidth > 1200);
-        const debouncedCheckWidth = debounce(checkWidth, 50);
-
-        checkWidth();
-
-        window.addEventListener('resize', debouncedCheckWidth);
-
-        return () => {
-            window.removeEventListener('resize', debouncedCheckWidth);
-        };
-    }, []);
+    }, [bgIndex]);
 
     return (
         <section id={id} className="homeSectionContainer" ref={sectionRef}>
             <div className={styles.homeSection}>
                 <div className={styles.homeSectionContent}>
                     {sectionTitle &&
-                        <h1 className={styles.sectionTitle}>
+                        <h2 className={styles.sectionTitle}>
                             {sectionTitle}
-                        </h1>
+                        </h2>
                     }
                     {children}
                 </div>
@@ -169,16 +147,17 @@ const HomeSection = ({ id, sectionTitle, bgIndex, scrollBtnTarget, scrollBtnLabe
                     />
                 )}
             </div>
-            {showImage && (
+            {/* {showImage && ( */}
                 <div className={styles.bgContainer}>
                     <img
                         src={`/images/Home/${bgIndex}.webp`}
                         alt={`Homepage image ${bgIndex}`}
                         width="1500"
                         height="2000"
+                        loading={bgIndex === 0 ? "eager" : "lazy"}
                     />
                 </div>
-            )}
+            {/* )} */}
         </section>
     );
 };

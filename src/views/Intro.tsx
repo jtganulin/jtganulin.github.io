@@ -5,8 +5,8 @@ export default function Intro() {
     return (
         <div className={styles.intro}>
             <div className={styles.heading}>
-                <h2><em>Hello, I&apos;m</em></h2>
-                <h1>Jeffrey Ganulin</h1>
+                <h1><em>Hello, I&apos;m</em></h1>
+                <h2>Jeffrey Ganulin</h2>
                 <h3><em>I am a...</em></h3> 
             </div>
             <div className={styles.activitiesWrapper}>
