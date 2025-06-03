@@ -64,6 +64,7 @@
     .activitiesWrapper {
         column-gap: 0.5rem;
         
+        /* Containers holding 3 .activity, with the second set hidden on mobile */
         & > div {
             flex-direction: column;
             justify-content: center;
