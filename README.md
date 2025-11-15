@@ -1,9 +1,9 @@
-# Portfolio Site
-This is a portfolio site for my software and web development projects and resume. Built using React and bespoke CSS, it is a single page application that showcases my work and provides a way to contact me.
+# My Portfolio Site
+This is a portfolio site for my software and web development projects and resume. Built using React and bespoke CSS, this SPA showcases my work and provides multiple routes to contact me.
 
 ## Technologies Used
 - React
-- CSS
+- CSS (Modules)
 - HTML
 - JavaScript (ES6)
 - TypeScript
@@ -17,16 +17,14 @@ This is a portfolio site for my software and web development projects and resume
 
 ## Libraries and Dependencies
 - React Router
-- FontAwesome library for React
+- FontAwesome library for React for skill icons
 - hoofd for dynamically setting document meta tags
-- pure-react-carousel
-- GSAP
+- pure-react-carousel for project image carousels
+- GSAP for animation
 
 ## Features
-- Single page application
-- Responsive design
 - Information about me and my work
 - Links to my resume and social media
 - Details on my projects and links to their repositories
-- Carousels for project images
+- Responsive design
 - Dark and light modes that follow system settings
