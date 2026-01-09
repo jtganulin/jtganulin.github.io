@@ -69,8 +69,6 @@ jobs:
         run: |
           printf "VITE_APP_NAME=%q\n" "${{ vars.VITE_APP_NAME }}" > .env 
           printf "VITE_APP_DOMAIN=%q\n" "${{ vars.VITE_APP_DOMAIN }}" >> .env
-      - name: Print env vars
-        run: cat .env
       - name: Build with Vite
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
       - name: Copy 404.html
