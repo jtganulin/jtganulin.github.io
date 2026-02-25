@@ -16,6 +16,7 @@ const PROJECTS_DATA = [
     {
         slug: "TheEntrywaySurgeon",
         title: "The Entryway Surgeon",
+        subtitle: "Iron door and window installation company",
         summary: "Website for The Entryway Surgeon iron door installation and repair company, featuring galleries, user reviews, and admin dashboard.",
         description: "This website was developed for The Entryway Surgeon, a company that specializes in the installation and repair of iron, french steel, fiberglass doors, and windows. The website was initially developed using HTML, CSS, JavaScript, jQuery, and PHP with Laravel 8. It was eventually migrated to Laravel 12 and Alpine.js replaced jQuery. The site features an admin panel for managing gallery images and user reviews. Integration with Google's APIs via OAuth allows the site to display the company's Google reviews directly on the site. The website is fully responsive and can be viewed on desktop and mobile devices.The website features a gallery of the company's work, a contact form, and a user reviews page.",
         accomplishments: [

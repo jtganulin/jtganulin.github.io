@@ -55,6 +55,11 @@
     white-space: nowrap;
 }
 
+/* Light mode: make role chips lighter gray */
+:root:not([data-theme="dark"]) .activity {
+    background-color: #6c6c6c;
+}
+
 @media screen and (max-width: 576px) {
     .intro {   
         align-items: center;
