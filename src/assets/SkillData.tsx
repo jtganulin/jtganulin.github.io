@@ -203,8 +203,8 @@ const SKILLS_DATA: ISkill[] = [
     {
         type: "Frameworks and Libraries",
         name: "Tailwind",
-        proficiency: "Beginner",
-        years: 2,
+        proficiency: "Advanced",
+        years: 3,
         icon: "fab fa-css3-alt",
         color: "blue",
     },

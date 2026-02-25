@@ -17,7 +17,7 @@ import {
     faPalette, faAdjust, faBolt, faSearch, faHandHoldingHeart, faHourglass,
     faUserSecret, faGraduationCap, faProjectDiagram, faChartLine, faBroom,
     faFileCode, faTasks, faColumns, faUserTie, faSlidersH, faPassport, faTrophy,
-    faChalkboardTeacher, faTools, faCogs, faBook, faCheckSquare, faImage,
+    faChalkboardTeacher, faTools, faCogs, faBook, faCheckSquare, faImage, faShieldAlt,
     faEnvelope, faRobot,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -42,7 +42,7 @@ library.add(
     faQuestionCircle, faChartLine, faPalette, faAdjust, faBolt, faSearch, faEnvelope,
     faHandHoldingHeart, faHourglass, faUserSecret, faGraduationCap, faProjectDiagram,
     faMarkdown, faFileCode, faTasks, faColumns, faUserTie, faChalkboardTeacher, faTools,
-    faCogs, faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy, faExternalLinkAlt, faRobot
+    faCogs, faBook, faCheckSquare, faImage, faSlidersH, faPassport, faTrophy, faExternalLinkAlt, faRobot, faShieldAlt
 );
 
 const Router = createHashRouter([
