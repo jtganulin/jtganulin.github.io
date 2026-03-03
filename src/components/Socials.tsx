@@ -12,7 +12,7 @@ export default function Socials({ expanded = false }: { expanded?: boolean; }) {
                 <a href="https://linkedin.com/in/jtganulin" target="_blank" rel="noopener nofollow noreferrer" title="View my LinkedIn profile" className={styles.social}><FontAwesomeIcon icon={"fab fa-linkedin" as IconName} fixedWidth /> {expanded && "LinkedIn"}</a>
             </div>
             <div>
-                <a href="mailto:jganulin6@gmail.com" target="_blank" rel="noopener nofollow noreferrer" title="Send me an email" className={styles.social}><FontAwesomeIcon icon={"fa fa-envelope" as IconName} fixedWidth /> {expanded && "Email Me"}</a>
+                <a href="mailto:contact@jeffreyganulin.com" target="_blank" rel="noopener nofollow noreferrer" title="Send me an email" className={styles.social}><FontAwesomeIcon icon={"fa fa-envelope" as IconName} fixedWidth /> {expanded && "Email Me"}</a>
             </div>
             <div>
                 <a href="/JeffreyGanulinResume.pdf" target="_blank" rel="noopener" title="View my resume" className={styles.social}>
