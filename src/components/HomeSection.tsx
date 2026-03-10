@@ -13,10 +13,25 @@ const SectionScrollButton = memo(({ targetID, label }:
     const scroll = useCallback(() => {
         if (!targetID) return;
 
-        document.getElementById(targetID)?.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+        const targetElement = document.getElementById(targetID);
+        if (!targetElement) return;
+
+        // For the skills section, apply an explicit offset equal to the fixed topbar height
+        // to prevent the top bit of the section from being hidden behind the fixed topbar
+        if (targetID === "skills") {
+            const topbarHeight = Math.max(window.innerHeight * 0.10, 75); // matches Topbar height: min 75px, height 10vh
+            const targetTop = targetElement.getBoundingClientRect().top + window.scrollY - topbarHeight;
+
+            window.scrollTo({
+                top: targetTop,
+                behavior: "smooth"
+            });
+        } else {
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
     }, [targetID]);
 
     if (!targetID) return null;
