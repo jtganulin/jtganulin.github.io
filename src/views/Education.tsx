@@ -52,9 +52,9 @@ const educationEntries = [
 function Education() {
     return (
         <div className={styles.educationContainer}>
-            {educationEntries.map((entry, index) => (
+            {educationEntries.map((entry: IEducationEntry) => (
                 <EducationEntry
-                    key={index}
+                    key={entry.degree}
                     {...entry}
                 />
             ))}
@@ -82,8 +82,8 @@ const EducationEntry = ({
             <em>{school}</em>
             {honors && (
                 <ul>
-                    {honors.map((honor, index) => (
-                        <li key={index}>{honor}</li>
+                    {honors.map((honor: string) => (
+                        <li key={degree + "-" + honor}>{honor}</li>
                     ))}
                 </ul>
             )}
@@ -91,8 +91,8 @@ const EducationEntry = ({
                 <summary>Relevant Coursework</summary>
                 <div className={styles.coursework}>
                     <ul>
-                        {coursework.map((course, index) => (
-                            <li key={index}>{course}</li>
+                        {coursework.map((course: string) => (
+                            <li key={degree + "-" + course}>{course}</li>
                         ))}
                     </ul>
                 </div>

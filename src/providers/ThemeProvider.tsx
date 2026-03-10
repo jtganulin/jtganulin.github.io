@@ -25,6 +25,7 @@ function ThemeProvider({ children }: { children: React.ReactNode; }) {
             setTheme(newColorScheme);
         };
 
+        //eslint-disable-next-line @eslint-react/web-api/no-leaked-event-listener
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeTheme);
 
         // Clean up the event listener on unmount

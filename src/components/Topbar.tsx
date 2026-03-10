@@ -11,60 +11,60 @@ const ROUTES: Record<string, [string, string]> = {
     "Contact": ["/contact", "Get in touch with me"]
 };
 
+const Links = ({ ctx = "desktopLinks" }: {
+    // The context of the links, either "desktopLinks" or "mobileLinks"
+    // This controls styling for either desktop or mobile nav by assigning the appropriate className
+    ctx?: "desktopLinks" | "mobileLinks";
+}) => {
+    return (
+        <ul className={styles[ctx]}>
+            {Object.keys(ROUTES).map((route: string) => {
+                return (
+                    <li key={route}>
+                        <NavLink
+                            className={({ isActive }) => isActive ? styles.activeLink : undefined}
+                            title={ROUTES[route][1]}
+                            to={ROUTES[route][0]}
+                            onClick={() => {
+                                // Close the mobile menu when a link is clicked
+                                if (ctx == "mobileLinks") toggleMobileNav();
+                            }}
+                        >
+                            {route}
+                        </NavLink>
+                    </li>
+                );
+            }
+            )}
+            <li key="toggleThemeButton">
+                <ToggleThemeButton handleClick={() => {
+                    if (ctx == "mobileLinks") toggleMobileNav();
+                }}/>
+            </li>
+        </ul>
+    );
+};
+
+const toggleMobileNav = () => {
+    const mobileNav = document.getElementsByClassName(styles.mobileNav)[0] as HTMLDivElement;
+    const isOpening = !mobileNav.classList.contains(styles.displayMobileNav);
+
+    if (isOpening) {
+        // Preserve scrollbar width to prevent layout shift
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
+        document.body.style.overflow = "hidden";
+    } else {
+        // Restore default body styling
+        document.body.style.overflow = "auto";
+        document.body.style.paddingRight = "";
+    }
+
+    mobileNav.classList.toggle(styles.displayMobileNav);
+};
+
 export default function Topbar({ refer }: { refer?: React.RefObject<HTMLDivElement>; }) {
     const navigate = useNavigate();
-
-    const Links = ({ ctx }: {
-        // The context of the links, either "desktopLinks" or "mobileLinks"
-        // This controls styling for either desktop or mobile nav by assigning the appropriate className
-        ctx: "desktopLinks" | "mobileLinks";
-    }) => {
-        return (
-            <ul className={styles[ctx]}>
-                {Object.keys(ROUTES).map((route, i) => {
-                    return (
-                        <li key={i}>
-                            <NavLink
-                                className={({ isActive }) => isActive ? styles.activeLink : undefined}
-                                title={ROUTES[route][1]}
-                                to={ROUTES[route][0]}
-                                onClick={() => {
-                                    // Close the mobile menu when a link is clicked
-                                    if (ctx == "mobileLinks") toggleMobileNav();
-                                }}
-                            >
-                                {route}
-                            </NavLink>
-                        </li>
-                    );
-                }
-                )}
-                <li key="toggleThemeButton">
-                    <ToggleThemeButton handleClick={() => {
-                        if (ctx == "mobileLinks") toggleMobileNav();
-                    }}/>
-                </li>
-            </ul>
-        );
-    };
-
-    const toggleMobileNav = () => {
-        const mobileNav = document.getElementsByClassName(styles.mobileNav)[0] as HTMLDivElement;
-        const isOpening = !mobileNav.classList.contains(styles.displayMobileNav);
-
-        if (isOpening) {
-            // Preserve scrollbar width to prevent layout shift
-            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-            document.body.style.paddingRight = `${scrollbarWidth}px`;
-            document.body.style.overflow = "hidden";
-        } else {
-            // Restore default body styling
-            document.body.style.overflow = "auto";
-            document.body.style.paddingRight = "";
-        }
-
-        mobileNav.classList.toggle(styles.displayMobileNav);
-    };
 
     return (
         <>

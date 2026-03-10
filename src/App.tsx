@@ -26,7 +26,13 @@ function App() {
             trigger: containerRef.current,
             start: "top top",
             onUpdate: (self) => {
-                self.direction === -1 ? showAnim.play() : showAnim.reverse();
+                if (!self?.direction) return;
+
+                if (self.direction === 1) {
+                    showAnim.play();
+                } else {
+                    showAnim.reverse();
+                }
             }
         });
 

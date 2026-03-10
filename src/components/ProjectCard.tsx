@@ -55,8 +55,8 @@ function ProjectCard({ project }: { project: IProject; }) {
                         infinite={true}
                     >
                         <Slider>
-                            {project?.images?.map((image, index) => (
-                                <Slide index={index} key={project.slug + index}>
+                            {project?.images?.map((image: string, index: number) => (
+                                <Slide index={index} key={project.slug + "-" + image}>
                                     <img className={styles.image} src={"../images/thumbnails/" + project.slug + "/" + image} alt={"Image of " + project.title} title={"Image of " + project.title} height={300} width={530} loading="lazy" />
                                 </Slide>
                             ))}
@@ -68,7 +68,7 @@ function ProjectCard({ project }: { project: IProject; }) {
             <div className={styles.skillsContainer} ref={skillsContainerRef}>
                 <div className={styles.skills} onScroll={e => toggleBlur(e)} ref={skillsRef}>
                     {project?.skills?.map(skill => (
-                        <div key={project.slug + skill}>
+                        <div key={project.slug + "-" + skill}>
                             <SkillBadge skill={SKILLS_DATA.find(s => s.name === skill)!} showProficiency={false} />
                         </div>
                     ))}
