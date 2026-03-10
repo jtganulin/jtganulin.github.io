@@ -185,7 +185,7 @@ const PROJECTS_DATA = [
             "Prioritized the game's cross-browser compatibility and performance."
         ],
         type: "Personal",
-        url: "https://jgproductions.x10.bz/FiveDiceFrenzy/",
+        url: "https://jeffreyganulin.com/Five-Dice-Frenzy/",
         github: "https://github.com/jtganulin/Five-Dice-Frenzy",
         images: [
             "FiveDiceFrenzy1.webp",
