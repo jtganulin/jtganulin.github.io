@@ -31,7 +31,6 @@
 .social:hover {
     transition: background-color 0.2s linear, color 0.2s linear;
     opacity: 1;
-    box-shadow: 0 0 5px 2px var(--color-accent-2);
     background-color: var(--color-accent);
     color: #ffffff;
 }
