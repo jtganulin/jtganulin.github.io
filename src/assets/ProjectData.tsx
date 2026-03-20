@@ -14,13 +14,13 @@ export interface IProject {
 
 const PROJECTS_DATA = [
     {
-        slug: "TheEntrywaySurgeon",
-        title: "The Entryway Surgeon",
+        slug: "TheEntrywaySurgeons",
+        title: "The Entryway Surgeons",
         subtitle: "Iron door and window installation company",
-        summary: "Website for The Entryway Surgeon iron door installation and repair company, featuring galleries, user reviews, and admin dashboard.",
-        description: "This website was developed for The Entryway Surgeon, a company that specializes in the installation and repair of iron, french steel, fiberglass doors, and windows. The website was initially developed using HTML, CSS, JavaScript, jQuery, and PHP with Laravel 8. It was eventually migrated to Laravel 12 and Alpine.js replaced jQuery. The site features an admin panel for managing gallery images and user reviews. Integration with Google's APIs via OAuth allows the site to display the company's Google reviews directly on the site. The website is fully responsive and can be viewed on desktop and mobile devices.The website features a gallery of the company's work, a contact form, and a user reviews page.",
+        summary: "Website for The Entryway Surgeons iron door installation and repair company, featuring galleries, user reviews, and admin dashboard.",
+        description: "This website was developed for The Entryway Surgeons, a company that specializes in the installation and repair of iron, french steel, fiberglass doors, and windows. The website was initially developed using HTML, CSS, JavaScript, jQuery, and PHP with Laravel 8. It was eventually migrated to Laravel 12, and Alpine.js replaced jQuery. The site features an admin panel for managing gallery images and user reviews. Integration with Google's APIs via OAuth allows the site to display the company's Google reviews directly on the site. The website is fully responsive and can be viewed on desktop and mobile devices.The website features a gallery of the company's work, a contact form, and a user reviews page.",
         accomplishments: [
-            "Designed and developed a website for The Entryway Surgeon using HTML5, CSS3, JavaScript, Alpine.js, PHP 8, and Laravel 12.",
+            "Designed and developed a website for The Entryway Surgeons using HTML5, CSS3, JavaScript, Alpine.js, PHP 8, and Laravel 12.",
             "Designed the website to be fully responsive and viewable on desktop and mobile devices.",
             "Ensured the website is easy to use and intuitive, and emphasizes the company's work and reputation using multimedia.",
             "Engineered a user review system to allow customers to leave their feedback for the company's services.",
@@ -31,17 +31,17 @@ const PROJECTS_DATA = [
             "Integrated Sentry to track and resolve application errors in real-time.",
         ],
         type: "Professional",
-        url: "https://theirondoorspecialist.com/",
+        url: "https://entrywaysurgeons.com/",
         github: "",
         images: [
-            "TheEntrywaySurgeon1.webp",
-            "TheEntrywaySurgeon2.webp",
-            "TheEntrywaySurgeon3.webp",
-            "TheEntrywaySurgeon4.webp",
-            "TheEntrywaySurgeon5.webp",
-            "TheEntrywaySurgeon6.webp"
+            "TheEntrywaySurgeons1.webp",
+            "TheEntrywaySurgeons2.webp",
+            "TheEntrywaySurgeons3.webp",
+            "TheEntrywaySurgeons4.webp",
+            "TheEntrywaySurgeons5.webp",
+            "TheEntrywaySurgeons6.webp"
         ],
-        skills: ["HTML", "CSS", "JavaScript", "jQuery", "Alpine.js", "PHP", "Laravel", "Python", "C#", "Sentry", "Communication", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
+        skills: ["HTML", "CSS", "JavaScript", "jQuery", "Alpine.js", "PHP", "Laravel", "Python", "C#", "SQL", "MySQL", "Sentry", "Git", "GitHub","Communication", "Flexibility", "Adaptability", "Problem Solving", "Critical Thinking", "Quick Learning", "Documentation", "Presentation", "Time Management", "Organization", "Attention to Detail", "Responsibility", "Accountability"],
     },
     {
         slug: "VillageHours",
