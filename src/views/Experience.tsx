@@ -18,15 +18,15 @@ export default function Experience() {
                     </ul>
                 </li>
                 <li>
-                    <h4>Full-stack Software Engineer<span> - <em>The Entryway Surgeons</em> - (August 2019 - Present)</span></h4>
+                    <h4>Full-stack Software Engineer<span> - <em>The Entryway Surgeons</em> (August 2019 - Present)</span></h4>
                     <ul>
-                        <li>Designed and developed a dynamic website with HTML5, CSS3, JavaScript, Alpine.js, PHP 8, and Laravel 12, featuring photo galleries, user feedback capabilities, and administration functions, boosting audience reach by 100%.</li>
-                        <li>Engineered image processing programs with Python and C# to streamline content management processes by over 100%.</li>
-                        <li>Integrated Google Business Profile APIs via OAuth to display the company's Google reviews directly on the site, boosting user trust.</li>
-                        <li>Implemented an admin interface to allow company staff to manage user reviews and gallery images.</li>
-                        <li>Established and managed the company&apos;s online presence across platforms like Google My Business, enhancing visibility and engagement with Google Analytics tracking.</li>
-                        <li>Collaborated with key stakeholders to plan content updates and implement new features based on business needs.</li>
-                        <li>Maintain the website to handle upgrades, content changes, and feature requests in a flexible requirements environment.</li>
+                        <li>Designed and developed a dynamic website with HTML5, CSS3, JavaScript, Alpine.js, PHP 8, and Laravel 12, featuring photo galleries, user feedback capabilities, and administration functions, boosting audience reach by 100%</li>
+                        <li>Engineered image processing programs with Python and C# to streamline content management processes by over 100%</li>
+                        <li>Integrated Google Business Profile APIs via OAuth to display the company's Google reviews directly on the site, boosting user trust</li>
+                        <li>Implemented an admin interface to allow company staff to manage user reviews and gallery images</li>
+                        <li>Established and managed the company&apos;s online presence across platforms like Google My Business, enhancing visibility and engagement with Google Analytics tracking</li>
+                        <li>Collaborated with key stakeholders to plan content updates and implement new features based on business needs</li>
+                        <li>Maintain the website to handle upgrades, content changes, and feature requests in a flexible requirements environment</li>
                     </ul>
                 </li>
             </ul>
