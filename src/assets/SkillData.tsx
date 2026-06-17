@@ -178,6 +178,14 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         type: "Frameworks and Libraries",
+        name: "Nodemailer",
+        proficiency: "Beginner",
+        years: 1,
+        icon: "fa fa-envelope",
+        color: "#3498db",
+    },
+    {
+        type: "Frameworks and Libraries",
         name: "ESLint",
         proficiency: "Intermediate",
         years: 1,
@@ -266,6 +274,14 @@ const SKILLS_DATA: ISkill[] = [
     },
     {
         type: "Frameworks and Libraries",
+        name: "Testcontainers",
+        proficiency: "Beginner",
+        years: 1,
+        icon: "fa fa-cubes",
+        color: "#00b4a0",
+    },
+    {
+        type: "Frameworks and Libraries",
         name: "GSAP",
         proficiency: "Beginner",
         years: 1,
@@ -279,6 +295,30 @@ const SKILLS_DATA: ISkill[] = [
         years: 2,
         icon: "fa fa-passport",
         color: "#8e44ad",
+    },
+    {
+        type: "Frameworks and Libraries",
+        name: "better-auth",
+        proficiency: "Beginner",
+        years: 1,
+        icon: "fa fa-shield-alt",
+        color: "#8e44ad",
+    },
+    {
+        type: "Frameworks and Libraries",
+        name: "Zod",
+        proficiency: "Beginner",
+        years: 1,
+        icon: "fa fa-check-square",
+        color: "#3e67b1",
+    },
+    {
+        type: "Frameworks and Libraries",
+        name: "Prisma",
+        proficiency: "Beginner",
+        years: 1,
+        icon: "fa fa-database",
+        color: "#2d3748",
     },
     {
         type: "Frameworks and Libraries",
@@ -1088,6 +1128,14 @@ const SKILLS_DATA: ISkill[] = [
         years: 1,
         icon: "fa fa-database",
         color: "#0db7ed",
+    },
+    {
+        type: "Tools",
+        name: "Turborepo",
+        proficiency: "Beginner",
+        years: 1,
+        icon: "fa fa-layer-group",
+        color: "#ef4444",
     },
 ];
 
