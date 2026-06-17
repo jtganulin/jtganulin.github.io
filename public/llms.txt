@@ -1,0 +1,68 @@
+# Jeffrey Ganulin's Portfolio
+
+> Personal portfolio of Jeffrey Ganulin, a full-stack software engineer and web developer based in northern Atlanta, GA (EST). The site showcases education, professional experience, technical and soft skills, and software projects across academic, personal, and professional work. Primary site: https://jeffreyganulin.com
+
+Jeffrey Ganulin is a self-motivated, detail-oriented full-stack software engineer specializing in web development. He is initially self-taught and has furthered his skills through formal education (M.S. Software Engineering, B.S. Information Technology), hands-on client work, and continuous learning.
+
+**Roles:** Full-stack Software Engineer, Web Developer, Computer Support Specialist, Graphic Designer, Photographer
+
+**Focus areas:** Full-stack web development, responsive UI, Laravel and React ecosystems, Agile/Scrum delivery, REST APIs, testing and CI/CD, and client-facing collaboration.
+
+**Location & availability:** Northern Atlanta, GA area (EST, UTC-5). Open to remote work opportunities.
+
+## Pages
+
+- [Home](https://jeffreyganulin.com/#/): Introduction, bio, education, experience, and searchable skills
+- [About](https://jeffreyganulin.com/#/about): Extended background and professional summary
+- [Projects](https://jeffreyganulin.com/#/projects): Portfolio of academic, personal, and professional software projects
+- [Contact](https://jeffreyganulin.com/#/contact): Collaboration inquiries and social links
+
+## Professional Experience
+
+- **Freelance Web Developer** (February 2025 – Present): Client websites in healthcare and education using WordPress, PHP 8, HTML5, JavaScript, and CSS3; custom forms, CMS customization, and deployment planning.
+- **Full-Stack Software Engineer, The Entryway Surgeons** (January 2026 – March 2026): Migrated legacy Laravel platform to Laravel 12, PHP 8, Tailwind CSS v4, and Alpine.js; OAuth Google Business Profile review sync; SEO and admin tooling improvements.
+- **Full-Stack Software Engineer, The Entryway Surgeons** (August 2019 – February 2022): Built responsive Laravel 8 platform with galleries, admin tools, and review systems; Python and C# automation for image processing.
+
+## Education
+
+- [M.S. Software Engineering](https://jeffreyganulin.com/#/): Kennesaw State University (2023). Dean's 4.0 GPA Club. Coursework includes software architecture, testing, project management, web services, and capstone.
+- [B.S. Information Technology – Web & Mobile Systems](https://jeffreyganulin.com/#/): Kennesaw State University (2020). President's List, National Society of Collegiate Scholars.
+- [A.S. Computer Science](https://jeffreyganulin.com/#/): University of North Georgia (2017). Graduated with Distinction; Phi Theta Kappa Honor Society.
+
+## Projects
+
+- [The Entryway Surgeons](https://jeffreyganulin.com/#/projects/TheEntrywaySurgeons): Professional — Laravel 12 website for an iron door and window installation company with galleries, reviews, and admin dashboard. Live: https://entrywaysurgeons.com/
+- [VillageHours](https://jeffreyganulin.com/#/projects/VillageHours): Academic — Non-profit organization management platform (React, TypeScript, Node.js, Express, MySQL). GitHub: https://github.com/jtganulin/capstone
+- [Kitchen Companion](https://jeffreyganulin.com/#/projects/KitchenCompanion): Academic — Recipe management and kitchen utility app (React, TypeScript, Node.js, PostgreSQL, Prisma, better-auth). GitHub: https://github.com/jtganulin/kitchen-companion
+- [Intrepid](https://jeffreyganulin.com/#/projects/Intrepid): Academic — Dating and chat app for outdoor adventurers (React, Node.js, MongoDB). GitHub: https://github.com/jtganulin/intrepid-swe6733
+- [Fireside Gaming](https://jeffreyganulin.com/#/projects/FiresideGaming): Academic — Gamer matchmaking and social platform (React, Django, Node.js middleware). GitHub: https://github.com/jtganulin/Team-5-Web-Services-Engineering
+- [Software Project Management System](https://jeffreyganulin.com/#/projects/SPMS): Academic — MERN project management system for software teams. GitHub: https://github.com/jtganulin/swe6633-group2-pms
+- [Five Dice Frenzy](https://jeffreyganulin.com/#/projects/FiveDiceFrenzy): Personal — Web-based Yahtzee clone. Live: https://jeffreyganulin.com/Five-Dice-Frenzy/
+- [Multi-File Text Replacer](https://jeffreyganulin.com/#/projects/MultiFileTextReplacer): Personal — Windows utility for bulk find-and-replace across text files (C#, WPF). GitHub: https://github.com/jtganulin/multi-file-text-replacer
+- [Image Combiner](https://jeffreyganulin.com/#/projects/ImageCombiner): Personal — Windows utility to combine images horizontally or vertically (C#, WinForms). GitHub: https://github.com/jtganulin/image-combiner
+- [PMO Management System](https://jeffreyganulin.com/#/projects/PMOS): Academic — Bachelor's capstone for PMO and contract management (PHP, MySQL).
+- [Image Processing Python Scripts](https://jeffreyganulin.com/#/projects/PythonImageScripts): Professional — Python scripts for resizing, converting, and compressing images (Pillow, ImageMagick).
+- [Portfolio Website](https://jeffreyganulin.com/#/projects/Portfolio): Personal — This React and TypeScript portfolio site. GitHub: https://github.com/jtganulin/jtganulin.github.io
+
+## Technical Skills
+
+**Languages (advanced):** JavaScript, HTML, CSS, PHP, Python, Regular Expressions
+
+**Frameworks & libraries (notable):** React, Node.js, Express, jQuery, Laravel, Tailwind CSS, Redux, TypeScript, Prisma, better-auth
+
+**Databases:** MySQL, MariaDB, MongoDB, PostgreSQL, SQLite, Microsoft SQL Server
+
+**Practices:** Agile, Scrum, responsive web design, requirements engineering, REST APIs, CI/CD, test-driven development (Jest, Cypress, Vitest)
+
+**Platforms & tools:** GitHub, Docker, Microsoft Azure, Heroku, CircleCI, GitHub Actions, Figma, WordPress, VS Code
+
+## Contact
+
+- Email: contact@jeffreyganulin.com
+- [LinkedIn](https://linkedin.com/in/jtganulin): Professional profile
+- [GitHub](https://github.com/jtganulin): Open-source projects and code samples
+
+## Optional
+
+- [Resume (PDF)](https://jeffreyganulin.com/JeffreyGanulinResume.pdf): Downloadable resume
+- [The Entryway Surgeons (live client site)](https://entrywaysurgeons.com/): Production website built and maintained by Jeffrey
